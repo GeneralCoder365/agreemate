@@ -1,0 +1,332 @@
+{
+  "train": {
+    "record_counts": {
+      "raw": 5247,
+      "processed": 5202,
+      "retention_rate": 99.14
+    },
+    "categories": {
+      "distribution": {
+        "vehicles": {
+          "count": 1635,
+          "percentage": 31.43
+        },
+        "furniture": {
+          "count": 1287,
+          "percentage": 24.74
+        },
+        "electronics": {
+          "count": 1226,
+          "percentage": 23.57
+        },
+        "housing": {
+          "count": 1054,
+          "percentage": 20.26
+        }
+      },
+      "price_ranges": {
+        "electronics": {
+          "min": 3.0,
+          "max": 2200.0,
+          "mean": 203.20717781402936,
+          "median": 100.0
+        },
+        "vehicles": {
+          "min": 10.0,
+          "max": 56500.0,
+          "mean": 5025.327828746177,
+          "median": 1400.0
+        },
+        "housing": {
+          "min": 946.0,
+          "max": 9495.0,
+          "mean": 2447.642314990512,
+          "median": 2250.0
+        },
+        "furniture": {
+          "min": 5.0,
+          "max": 3000.0,
+          "mean": 292.46542346542344,
+          "median": 125.0
+        }
+      },
+      "price_tiers": {
+        "electronics": {
+          "low": 1226,
+          "mid": 0,
+          "high": 0
+        },
+        "vehicles": {
+          "low": 925,
+          "mid": 429,
+          "high": 281
+        },
+        "housing": {
+          "low": 883,
+          "mid": 171,
+          "high": 0
+        },
+        "furniture": {
+          "low": 1287,
+          "mid": 0,
+          "high": 0
+        }
+      }
+    },
+    "quality_metrics": {
+      "description_lengths": {
+        "min": 23,
+        "max": 1305,
+        "mean": 251.81
+      },
+      "price_confidence": {
+        "pass_rate": 100.0
+      },
+      "data_completeness": {
+        "mean": 100.0,
+        "complete_records": 100.0
+      }
+    },
+    "negotiation_metrics": {
+      "price_delta": {
+        "mean_pct": 28.24,
+        "median_pct": 30.0,
+        "by_category": {
+          "electronics": 28.45,
+          "vehicles": 28.23,
+          "housing": 28.23,
+          "furniture": 28.07
+        }
+      }
+    }
+  },
+  "test": {
+    "record_counts": {
+      "raw": 838,
+      "processed": 809,
+      "retention_rate": 96.54
+    },
+    "categories": {
+      "distribution": {
+        "vehicles": {
+          "count": 243,
+          "percentage": 30.04
+        },
+        "furniture": {
+          "count": 212,
+          "percentage": 26.21
+        },
+        "housing": {
+          "count": 177,
+          "percentage": 21.88
+        },
+        "electronics": {
+          "count": 177,
+          "percentage": 21.88
+        }
+      },
+      "price_ranges": {
+        "electronics": {
+          "min": 5.0,
+          "max": 1200.0,
+          "mean": 156.22598870056498,
+          "median": 50.0
+        },
+        "housing": {
+          "min": 979.0,
+          "max": 4000.0,
+          "mean": 2343.6271186440677,
+          "median": 2295.0
+        },
+        "vehicles": {
+          "min": 25.0,
+          "max": 27500.0,
+          "mean": 4868.267489711934,
+          "median": 1700.0
+        },
+        "furniture": {
+          "min": 15.0,
+          "max": 1900.0,
+          "mean": 269.6556603773585,
+          "median": 150.0
+        }
+      },
+      "price_tiers": {
+        "electronics": {
+          "low": 177,
+          "mid": 0,
+          "high": 0
+        },
+        "housing": {
+          "low": 139,
+          "mid": 38,
+          "high": 0
+        },
+        "vehicles": {
+          "low": 133,
+          "mid": 69,
+          "high": 41
+        },
+        "furniture": {
+          "low": 212,
+          "mid": 0,
+          "high": 0
+        }
+      }
+    },
+    "quality_metrics": {
+      "description_lengths": {
+        "min": 27,
+        "max": 1053,
+        "mean": 270.85
+      },
+      "price_confidence": {
+        "pass_rate": 100.0
+      },
+      "data_completeness": {
+        "mean": 100.0,
+        "complete_records": 100.0
+      }
+    },
+    "negotiation_metrics": {
+      "price_delta": {
+        "mean_pct": 28.42,
+        "median_pct": 30.0,
+        "by_category": {
+          "electronics": 28.22,
+          "housing": 28.74,
+          "vehicles": 28.47,
+          "furniture": 28.28
+        }
+      }
+    }
+  },
+  "validation": {
+    "record_counts": {
+      "raw": 597,
+      "processed": 597,
+      "retention_rate": 100.0
+    },
+    "categories": {
+      "distribution": {
+        "furniture": {
+          "count": 178,
+          "percentage": 29.82
+        },
+        "vehicles": {
+          "count": 174,
+          "percentage": 29.15
+        },
+        "housing": {
+          "count": 124,
+          "percentage": 20.77
+        },
+        "electronics": {
+          "count": 121,
+          "percentage": 20.27
+        }
+      },
+      "price_ranges": {
+        "electronics": {
+          "min": 2.0,
+          "max": 2500.0,
+          "mean": 246.7520661157025,
+          "median": 80.0
+        },
+        "housing": {
+          "min": 1150.0,
+          "max": 10995.0,
+          "mean": 2573.4919354838707,
+          "median": 2250.0
+        },
+        "furniture": {
+          "min": 15.0,
+          "max": 1250.0,
+          "mean": 252.7191011235955,
+          "median": 160.0
+        },
+        "vehicles": {
+          "min": 10.0,
+          "max": 30600.0,
+          "mean": 4351.333333333333,
+          "median": 1250.0
+        }
+      },
+      "price_tiers": {
+        "electronics": {
+          "low": 121,
+          "mid": 0,
+          "high": 0
+        },
+        "housing": {
+          "low": 110,
+          "mid": 10,
+          "high": 4
+        },
+        "furniture": {
+          "low": 178,
+          "mid": 0,
+          "high": 0
+        },
+        "vehicles": {
+          "low": 93,
+          "mid": 61,
+          "high": 20
+        }
+      }
+    },
+    "quality_metrics": {
+      "description_lengths": {
+        "min": 39,
+        "max": 1106,
+        "mean": 242.17
+      },
+      "price_confidence": {
+        "pass_rate": 100.0
+      },
+      "data_completeness": {
+        "mean": 100.0,
+        "complete_records": 100.0
+      }
+    },
+    "negotiation_metrics": {
+      "price_delta": {
+        "mean_pct": 27.33,
+        "median_pct": 30.0,
+        "by_category": {
+          "electronics": 28.83,
+          "housing": 28.17,
+          "furniture": 25.87,
+          "vehicles": 27.16
+        }
+      }
+    }
+  },
+  "dataset_summary": {
+    "total_records": {
+      "raw": 6682,
+      "processed": 6608,
+      "overall_retention": 98.89
+    },
+    "split_sizes": {
+      "train": {
+        "count": 5202,
+        "percentage": 78.72
+      },
+      "test": {
+        "count": 809,
+        "percentage": 12.24
+      },
+      "validation": {
+        "count": 597,
+        "percentage": 9.03
+      }
+    },
+    "category_totals": {
+      "electronics": 1524,
+      "furniture": 1677,
+      "housing": 1355,
+      "vehicles": 2052
+    }
+  }
+}
