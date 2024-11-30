@@ -39,7 +39,8 @@ class ModelLoader:
     def load_model_and_tokenizer(
         self,
         device: str = "cuda" if torch.cuda.is_available() else "cpu",
-        torch_dtype: torch.dtype = torch.bfloat16
+        torch_dtype: torch.dtype = torch.bfloat16,
+        local_only: bool = False
     ) -> Tuple[AutoModelForCausalLM, AutoTokenizer]:
         """Load Llama model and tokenizer."""
 
@@ -48,7 +49,8 @@ class ModelLoader:
                 self.tokenizer = AutoTokenizer.from_pretrained(
                     self.MODEL_ID,
                     cache_dir=self.cache_dir,
-                    trust_remote_code=True
+                    trust_remote_code=True,
+                    local_files_only=local_only
                 )
                 print("✓ Tokenizer loaded successfully")
 
@@ -66,6 +68,7 @@ class ModelLoader:
                     cache_dir=self.cache_dir,
                     torch_dtype=torch_dtype,
                     device_map="auto",
+                    local_files_only=local_only,
                     max_memory={ # set memory limits for GPU and CPU
                         0: gpu_memory_limit_str,
                         "cpu": cpu_memory_limit_str

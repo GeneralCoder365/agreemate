@@ -1,2 +1,4 @@
 # don't upload models
 /finetuning/models--*/
+*.pyc
+/finetuning/.ipynb_checkpoints
