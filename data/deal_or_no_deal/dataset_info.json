@@ -1,0 +1,67 @@
+{
+  "record_counts": {
+    "raw": 12234,
+    "processed": 12234,
+    "retention_rate": 100.0,
+    "by_split": {
+      "train": 10095,
+      "test": 1052,
+      "validation": 1087
+    }
+  },
+  "dialogue_metrics": {
+    "turns_per_dialogue": {
+      "min": 2,
+      "max": 26,
+      "mean": 5.982589504659146,
+      "median": 5.0,
+      "total_turns": 73191
+    },
+    "tokens_per_turn": {
+      "min": 1,
+      "max": 70,
+      "mean": 7.540244019073383,
+      "total_tokens": 551878,
+      "total_turns": 73191
+    },
+    "utterance_lengths": {
+      "min": 1,
+      "max": 267,
+      "mean": 31.592381576969846,
+      "total_length": 2312278,
+      "total_utterances": 73191
+    }
+  },
+  "negotiation_metrics": {
+    "successful_deals": 9602,
+    "failed_deals": 2632,
+    "success_rate": 78.48618603890796,
+    "by_role": {
+      "buyer": {
+        "turns": 36596,
+        "avg_turn_length": 31.667750573833207
+      },
+      "seller": {
+        "turns": 36595,
+        "avg_turn_length": 31.51701052056292
+      }
+    },
+    "value_distribution": {
+      "books": {
+        "min": 0,
+        "max": 10,
+        "mean": 2.2115416053621058
+      },
+      "hats": {
+        "min": 0,
+        "max": 10,
+        "mean": 2.2322216772927908
+      },
+      "balls": {
+        "min": 0,
+        "max": 10,
+        "mean": 2.195765898316168
+      }
+    }
+  }
+}
