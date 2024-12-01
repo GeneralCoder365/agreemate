@@ -12,13 +12,20 @@ class ModelLoader:
     Simplified model loader specifically for Llama-3.2-1B-Instruct finetuning.
     Handles basic model loading, caching, and testing functionality.
     """
-    MODEL_ID = "meta-llama/Llama-3.2-1B-Instruct"
 
     def __init__(self, cache_dir: Optional[str] = None):
         """Initialize with optional cache directory."""
         # setup default cache directory in project structure
         finetuning_dir = os.path.dirname(os.path.abspath(__file__))
-        self.cache_dir = Path(cache_dir or finetuning_dir)
+
+        if cache_dir: # point to snapshot cache if provided
+            snapshot_dir = os.path.join(cache_dir, "snapshots")
+            snapshot_folder = next(os.walk(snapshot_dir))[1][0] # get first folder
+            self.MODEL_ID = os.path.join(snapshot_dir, snapshot_folder)
+            self.cache_dir = Path(os.path.join(snapshot_dir, snapshot_folder))
+        else: # point to online cache
+            self.MODEL_ID = "meta-llama/Llama-3.2-1B-Instruct"
+            self.cache_dir = Path(finetuning_dir)
 
         # ensure cache directory exists
         self.cache_dir.mkdir(parents=True, exist_ok=True)
@@ -47,7 +54,7 @@ class ModelLoader:
         try:
             if self.tokenizer is None:
                 self.tokenizer = AutoTokenizer.from_pretrained(
-                    self.MODEL_ID,
+                    pretrained_model_name_or_path=self.MODEL_ID,
                     cache_dir=self.cache_dir,
                     trust_remote_code=True,
                     local_files_only=local_only
@@ -64,7 +71,7 @@ class ModelLoader:
                 cpu_memory_limit_str = self.format_memory_size(cpu_memory_limit)
 
                 self.model = AutoModelForCausalLM.from_pretrained(
-                    self.MODEL_ID,
+                    pretrained_model_name_or_path=self.MODEL_ID,
                     cache_dir=self.cache_dir,
                     torch_dtype=torch_dtype,
                     device_map="auto",
@@ -144,7 +151,7 @@ class ModelLoader:
         """Helper to reload a model from its specified path."""
         try:
             model = AutoModelForCausalLM.from_pretrained(
-                model_path,
+                pretrained_model_name_or_path=model_path,
                 torch_dtype=torch.bfloat16,
                 device_map="auto",
                 trust_remote_code=True
