@@ -46,7 +46,7 @@ class ModelLoader:
     def load_model_and_tokenizer(
         self,
         device: str = "cuda" if torch.cuda.is_available() else "cpu",
-        torch_dtype: torch.dtype = torch.bfloat16,
+        torch_dtype: torch.dtype = torch.float32,
         local_only: bool = False
     ) -> Tuple[AutoModelForCausalLM, AutoTokenizer]:
         """Load Llama model and tokenizer."""
@@ -102,7 +102,7 @@ class ModelLoader:
                 "role": "system",
                 "content": "You are a helpful assistant. Please respond exactly as instructed."
             }, {
-                "role": "user", 
+                "role": "user",
                 "content": "Please respond with exactly these words: 'test successful'"
             }]
 
@@ -152,7 +152,7 @@ class ModelLoader:
         try:
             model = AutoModelForCausalLM.from_pretrained(
                 pretrained_model_name_or_path=model_path,
-                torch_dtype=torch.bfloat16,
+                torch_dtype=torch.float16,
                 device_map="auto",
                 trust_remote_code=True
             )

@@ -1,0 +1,21 @@
+tqdm # for progress bars
+
+# PyTorch and related packages
+torch
+torchvision
+torchaudio
+
+# Transformers and Huggingface ecosystem
+transformers
+datasets
+accelerate
+
+# Machine Learning utilities
+scikit-learn
+triton
+tensorboard
+torchvision
+
+# Google Colab-specific packages
+google-colab
+cloud-tpu-client

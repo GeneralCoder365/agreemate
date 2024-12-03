@@ -1,4 +1,14 @@
-# don't upload models
-/finetuning/models--*/
-*.pyc
-/finetuning/.ipynb_checkpoints
+# ignore python bytecode
+__pycache__/
+*.py[cod]
+
+# ignore jupyter notebook checkpoints
+.ipynb_checkpoints/
+
+# ignore large model files
+blobs/
+model.safetensors
+optimizer.pt
+
+# ignore redundant files
+.locks/

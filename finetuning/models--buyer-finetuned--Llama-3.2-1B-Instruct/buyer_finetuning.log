@@ -1,0 +1,512 @@
+2024-12-02 08:09:54,539 - INFO - 
+==================================================
+2024-12-02 08:09:54,541 - INFO - Starting BUYER model finetuning
+2024-12-02 08:09:54,542 - INFO - Training Output Directory: /content/drive/My Drive/agreemate/finetuning/progress/buyer
+2024-12-02 08:09:54,543 - INFO - Finetuned Model Save Directory: /content/drive/My Drive/agreemate/finetuning/models--buyer-finetuned--Llama-3.2-1B-Instruct
+2024-12-02 08:09:54,845 - INFO - Selected buyer datasets - Train size: 32936, Eval size: 3660
+2024-12-02 08:09:54,899 - INFO - Initializing training for buyer model
+2024-12-02 08:09:54,905 - INFO - Logging training progress to: /content/drive/My Drive/agreemate/finetuning/progress/tensorboard_logs
+2024-12-02 08:09:54,975 - INFO - Starting training
+2024-12-02 08:09:55,276 - INFO - Initializing layerwise learning rates with decay factor 0.95
+2024-12-02 08:09:55,278 - INFO - Base learning rate: 5e-05
+2024-12-02 08:09:55,280 - INFO - embedding: lr = 2.20e-05
+2024-12-02 08:09:55,282 - INFO - layer.0: lr = 2.32e-05
+2024-12-02 08:09:55,283 - INFO - layer.1: lr = 2.44e-05
+2024-12-02 08:09:55,284 - INFO - layer.2: lr = 2.57e-05
+2024-12-02 08:09:55,286 - INFO - layer.3: lr = 2.70e-05
+2024-12-02 08:09:55,287 - INFO - layer.4: lr = 2.84e-05
+2024-12-02 08:09:55,289 - INFO - layer.5: lr = 2.99e-05
+2024-12-02 08:09:55,290 - INFO - layer.6: lr = 3.15e-05
+2024-12-02 08:09:55,292 - INFO - layer.7: lr = 3.32e-05
+2024-12-02 08:09:55,293 - INFO - layer.8: lr = 3.49e-05
+2024-12-02 08:09:55,295 - INFO - layer.9: lr = 3.68e-05
+2024-12-02 08:09:55,296 - INFO - layer.10: lr = 3.87e-05
+2024-12-02 08:09:55,297 - INFO - layer.11: lr = 4.07e-05
+2024-12-02 08:09:55,299 - INFO - layer.12: lr = 4.29e-05
+2024-12-02 08:09:55,300 - INFO - layer.13: lr = 4.51e-05
+2024-12-02 08:09:55,302 - INFO - layer.14: lr = 4.75e-05
+2024-12-02 08:09:55,303 - INFO - layer.15: lr = 5.00e-05
+2024-12-02 08:09:55,305 - INFO - output_norm: lr = 5.00e-05
+2024-12-02 08:09:56,304 - INFO - Initializing 3 training cycles with 1029 steps per cycle
+2024-12-02 08:10:53,734 - INFO - Memory usage (GB) - Peak: 21.09, Current: 18.43, Difference from start: 4.62
+2024-12-02 08:10:53,851 - INFO - Memory usage (GB) - Peak: 25.46, Current: 18.43, Difference from start: 0.00
+2024-12-02 08:10:54,063 - INFO - Memory usage (GB) - Peak: 25.46, Current: 18.43, Difference from start: 0.00
+2024-12-02 08:10:54,290 - INFO - Memory usage (GB) - Peak: 25.46, Current: 18.43, Difference from start: 0.00
+ [3087/3087 1:53:25, Epoch 2/3]
+Step	Training Loss	Validation Loss
+100	1.781600	1.860077
+200	1.799900	1.816288
+300	1.909400	1.864705
+400	1.842300	1.806848
+500	1.782800	1.783769
+600	1.775100	1.742605
+700	1.725500	1.705174
+800	1.816800	1.692957
+900	1.718100	1.663924
+1000	1.630500	1.647089
+1100	1.385500	1.658059
+1200	1.347600	1.682495
+1300	1.452400	1.648015
+1400	1.415300	1.626816
+1500	1.357100	1.607610
+1600	1.376400	1.593954
+1700	1.396900	1.587827
+1800	1.412000	1.557950
+1900	1.289200	1.560560
+2000	1.371200	1.543095
+2100	0.870000	1.757726
+2200	0.857500	1.749917
+2300	0.841400	1.762947
+2400	0.836600	1.790669
+2500	0.812500	1.803728
+2600	0.821300	1.820715
+2700	0.839600	1.804812
+2800	0.796900	1.811554
+2900	0.805500	1.812085
+3000	0.823100	1.812852
+2024-12-02 08:11:04,623 - INFO - New best EMA loss: 3.4397 (improved by inf)
+2024-12-02 08:11:15,391 - INFO - New best EMA loss: 3.4199 (improved by 0.0198)
+2024-12-02 08:11:26,175 - INFO - New best EMA loss: 3.3930 (improved by 0.0269)
+2024-12-02 08:11:36,959 - INFO - New best EMA loss: 3.3620 (improved by 0.0310)
+2024-12-02 08:11:47,753 - INFO - New best EMA loss: 3.3299 (improved by 0.0320)
+2024-12-02 08:11:58,550 - INFO - New best EMA loss: 3.3022 (improved by 0.0278)
+2024-12-02 08:12:09,353 - INFO - New best EMA loss: 3.2722 (improved by 0.0299)
+2024-12-02 08:12:20,143 - INFO - New best EMA loss: 3.2435 (improved by 0.0287)
+2024-12-02 08:12:30,955 - INFO - New best EMA loss: 3.2148 (improved by 0.0287)
+2024-12-02 08:12:41,750 - INFO - New best EMA loss: 3.1862 (improved by 0.0287)
+2024-12-02 08:14:16,359 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 08:14:16,779 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:14:16,897 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:14:17,263 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:14:27,254 - INFO - New best EMA loss: 3.1589 (improved by 0.0273)
+2024-12-02 08:14:38,127 - INFO - New best EMA loss: 3.1342 (improved by 0.0246)
+2024-12-02 08:14:49,034 - INFO - New best EMA loss: 3.1111 (improved by 0.0232)
+2024-12-02 08:15:00,004 - INFO - New best EMA loss: 3.0855 (improved by 0.0255)
+2024-12-02 08:15:10,908 - INFO - New best EMA loss: 3.0599 (improved by 0.0256)
+2024-12-02 08:15:21,770 - INFO - New best EMA loss: 3.0352 (improved by 0.0247)
+2024-12-02 08:15:32,648 - INFO - New best EMA loss: 3.0134 (improved by 0.0219)
+2024-12-02 08:15:43,507 - INFO - New best EMA loss: 2.9915 (improved by 0.0219)
+2024-12-02 08:15:54,401 - INFO - New best EMA loss: 2.9669 (improved by 0.0246)
+2024-12-02 08:16:05,330 - INFO - New best EMA loss: 2.9435 (improved by 0.0233)
+2024-12-02 08:17:54,269 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 08:17:54,728 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:17:54,835 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:17:55,227 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:18:05,056 - INFO - New best EMA loss: 2.9229 (improved by 0.0207)
+2024-12-02 08:18:15,852 - INFO - New best EMA loss: 2.8998 (improved by 0.0231)
+2024-12-02 08:18:26,657 - INFO - New best EMA loss: 2.8770 (improved by 0.0228)
+2024-12-02 08:18:37,531 - INFO - New best EMA loss: 2.8569 (improved by 0.0201)
+2024-12-02 08:18:48,446 - INFO - New best EMA loss: 2.8370 (improved by 0.0199)
+2024-12-02 08:18:59,331 - INFO - New best EMA loss: 2.8196 (improved by 0.0174)
+2024-12-02 08:19:10,262 - INFO - New best EMA loss: 2.8003 (improved by 0.0194)
+2024-12-02 08:19:21,172 - INFO - New best EMA loss: 2.7799 (improved by 0.0203)
+2024-12-02 08:19:32,034 - INFO - New best EMA loss: 2.7624 (improved by 0.0176)
+2024-12-02 08:19:42,878 - INFO - New best EMA loss: 2.7453 (improved by 0.0171)
+2024-12-02 08:21:20,528 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 08:21:20,937 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:21:21,061 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:21:21,449 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:21:31,326 - INFO - New best EMA loss: 2.7276 (improved by 0.0177)
+2024-12-02 08:21:42,126 - INFO - New best EMA loss: 2.7101 (improved by 0.0175)
+2024-12-02 08:21:52,963 - INFO - New best EMA loss: 2.6937 (improved by 0.0164)
+2024-12-02 08:22:03,824 - INFO - New best EMA loss: 2.6787 (improved by 0.0151)
+2024-12-02 08:22:14,660 - INFO - New best EMA loss: 2.6601 (improved by 0.0186)
+2024-12-02 08:22:25,542 - INFO - New best EMA loss: 2.6437 (improved by 0.0163)
+2024-12-02 08:22:36,453 - INFO - New best EMA loss: 2.6264 (improved by 0.0173)
+2024-12-02 08:22:47,277 - INFO - New best EMA loss: 2.6100 (improved by 0.0165)
+2024-12-02 08:22:58,118 - INFO - New best EMA loss: 2.5947 (improved by 0.0152)
+2024-12-02 08:23:08,918 - INFO - New best EMA loss: 2.5797 (improved by 0.0150)
+2024-12-02 08:24:58,865 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 08:24:59,032 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:24:59,394 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:24:59,653 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:25:09,728 - INFO - New best EMA loss: 2.5656 (improved by 0.0141)
+2024-12-02 08:25:20,852 - INFO - New best EMA loss: 2.5515 (improved by 0.0141)
+2024-12-02 08:25:31,884 - INFO - New best EMA loss: 2.5368 (improved by 0.0146)
+2024-12-02 08:25:42,957 - INFO - New best EMA loss: 2.5237 (improved by 0.0131)
+2024-12-02 08:25:54,044 - INFO - New best EMA loss: 2.5110 (improved by 0.0127)
+2024-12-02 08:26:05,107 - INFO - New best EMA loss: 2.4992 (improved by 0.0118)
+2024-12-02 08:26:16,236 - INFO - New best EMA loss: 2.4856 (improved by 0.0136)
+2024-12-02 08:26:27,329 - INFO - New best EMA loss: 2.4724 (improved by 0.0133)
+2024-12-02 08:26:38,463 - INFO - New best EMA loss: 2.4601 (improved by 0.0123)
+2024-12-02 08:26:49,487 - INFO - New best EMA loss: 2.4465 (improved by 0.0135)
+2024-12-02 08:28:35,625 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 08:28:36,055 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:28:36,194 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:28:36,565 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:28:46,595 - INFO - New best EMA loss: 2.4331 (improved by 0.0135)
+2024-12-02 08:28:57,716 - INFO - New best EMA loss: 2.4184 (improved by 0.0146)
+2024-12-02 08:29:08,790 - INFO - New best EMA loss: 2.4063 (improved by 0.0121)
+2024-12-02 08:29:19,948 - INFO - New best EMA loss: 2.3937 (improved by 0.0127)
+2024-12-02 08:29:31,067 - INFO - New best EMA loss: 2.3807 (improved by 0.0129)
+2024-12-02 08:29:42,143 - INFO - New best EMA loss: 2.3679 (improved by 0.0129)
+2024-12-02 08:29:53,261 - INFO - New best EMA loss: 2.3533 (improved by 0.0146)
+2024-12-02 08:30:04,422 - INFO - New best EMA loss: 2.3410 (improved by 0.0123)
+2024-12-02 08:30:15,547 - INFO - New best EMA loss: 2.3303 (improved by 0.0107)
+2024-12-02 08:30:26,564 - INFO - New best EMA loss: 2.3192 (improved by 0.0111)
+2024-12-02 08:32:02,906 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 08:32:03,325 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:32:03,431 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:32:03,810 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:32:13,826 - INFO - New best EMA loss: 2.3079 (improved by 0.0113)
+2024-12-02 08:32:24,981 - INFO - New best EMA loss: 2.3010 (improved by 0.0069)
+2024-12-02 08:32:36,154 - INFO - New best EMA loss: 2.2934 (improved by 0.0076)
+2024-12-02 08:32:47,210 - INFO - New best EMA loss: 2.2817 (improved by 0.0118)
+2024-12-02 08:32:58,428 - INFO - New best EMA loss: 2.2723 (improved by 0.0094)
+2024-12-02 08:33:09,540 - INFO - New best EMA loss: 2.2616 (improved by 0.0107)
+2024-12-02 08:33:20,738 - INFO - New best EMA loss: 2.2495 (improved by 0.0120)
+2024-12-02 08:33:31,822 - INFO - New best EMA loss: 2.2380 (improved by 0.0115)
+2024-12-02 08:33:42,927 - INFO - New best EMA loss: 2.2290 (improved by 0.0091)
+2024-12-02 08:33:54,034 - INFO - New best EMA loss: 2.2189 (improved by 0.0101)
+2024-12-02 08:35:40,273 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 08:35:40,705 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:35:40,817 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:35:41,213 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:35:51,021 - INFO - New best EMA loss: 2.2100 (improved by 0.0089)
+2024-12-02 08:36:01,866 - INFO - New best EMA loss: 2.2023 (improved by 0.0077)
+2024-12-02 08:36:12,678 - INFO - New best EMA loss: 2.1897 (improved by 0.0125)
+2024-12-02 08:36:23,564 - INFO - New best EMA loss: 2.1838 (improved by 0.0059)
+2024-12-02 08:36:34,433 - INFO - New best EMA loss: 2.1732 (improved by 0.0107)
+2024-12-02 08:36:45,272 - INFO - New best EMA loss: 2.1659 (improved by 0.0072)
+2024-12-02 08:36:56,201 - INFO - New best EMA loss: 2.1568 (improved by 0.0092)
+2024-12-02 08:37:07,054 - INFO - New best EMA loss: 2.1493 (improved by 0.0075)
+2024-12-02 08:37:17,896 - INFO - New best EMA loss: 2.1404 (improved by 0.0089)
+2024-12-02 08:37:28,758 - INFO - New best EMA loss: 2.1339 (improved by 0.0065)
+2024-12-02 08:39:19,636 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 08:39:20,075 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:39:20,184 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:39:20,552 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:39:30,500 - INFO - New best EMA loss: 2.1269 (improved by 0.0070)
+2024-12-02 08:39:41,519 - INFO - New best EMA loss: 2.1184 (improved by 0.0085)
+2024-12-02 08:39:52,656 - INFO - New best EMA loss: 2.1103 (improved by 0.0080)
+2024-12-02 08:40:03,711 - INFO - New best EMA loss: 2.1012 (improved by 0.0091)
+2024-12-02 08:40:14,835 - INFO - New best EMA loss: 2.0922 (improved by 0.0090)
+2024-12-02 08:40:25,954 - INFO - New best EMA loss: 2.0848 (improved by 0.0074)
+2024-12-02 08:40:37,113 - INFO - New best EMA loss: 2.0786 (improved by 0.0062)
+2024-12-02 08:40:48,238 - INFO - New best EMA loss: 2.0705 (improved by 0.0081)
+2024-12-02 08:40:59,317 - INFO - New best EMA loss: 2.0659 (improved by 0.0046)
+2024-12-02 08:41:10,409 - INFO - New best EMA loss: 2.0589 (improved by 0.0070)
+2024-12-02 08:42:56,692 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 08:42:57,162 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:42:57,416 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:42:57,678 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:43:07,746 - INFO - New best EMA loss: 2.0505 (improved by 0.0085)
+2024-12-02 08:43:18,807 - INFO - New best EMA loss: 2.0442 (improved by 0.0062)
+2024-12-02 08:43:29,930 - INFO - New best EMA loss: 2.0388 (improved by 0.0054)
+2024-12-02 08:43:41,012 - INFO - New best EMA loss: 2.0315 (improved by 0.0073)
+2024-12-02 08:43:52,169 - INFO - New best EMA loss: 2.0258 (improved by 0.0057)
+2024-12-02 08:44:03,298 - INFO - New best EMA loss: 2.0201 (improved by 0.0057)
+2024-12-02 08:44:14,473 - INFO - New best EMA loss: 2.0122 (improved by 0.0079)
+2024-12-02 08:44:25,681 - INFO - New best EMA loss: 2.0035 (improved by 0.0087)
+2024-12-02 08:44:36,893 - INFO - New best EMA loss: 1.9951 (improved by 0.0084)
+2024-12-02 08:44:48,034 - INFO - New best EMA loss: 1.9878 (improved by 0.0073)
+2024-12-02 08:46:40,418 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 08:46:40,858 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:46:40,991 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:46:41,356 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:46:51,386 - INFO - New best EMA loss: 1.9837 (improved by 0.0041)
+2024-12-02 08:47:02,462 - INFO - New best EMA loss: 1.9787 (improved by 0.0050)
+2024-12-02 08:47:12,320 - INFO - Moving to training cycle 2/3
+2024-12-02 08:47:13,521 - INFO - New best EMA loss: 1.9758 (improved by 0.0030)
+2024-12-02 08:47:24,704 - INFO - New best EMA loss: 1.9641 (improved by 0.0116)
+2024-12-02 08:47:35,908 - INFO - New best EMA loss: 1.9537 (improved by 0.0104)
+2024-12-02 08:47:46,926 - INFO - New best EMA loss: 1.9429 (improved by 0.0108)
+2024-12-02 08:47:57,753 - INFO - New best EMA loss: 1.9325 (improved by 0.0105)
+2024-12-02 08:48:08,596 - INFO - New best EMA loss: 1.9228 (improved by 0.0096)
+2024-12-02 08:48:19,435 - INFO - New best EMA loss: 1.9127 (improved by 0.0101)
+2024-12-02 08:48:30,287 - INFO - New best EMA loss: 1.9022 (improved by 0.0105)
+2024-12-02 08:50:19,110 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 08:50:19,523 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:50:19,630 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:50:20,018 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:50:30,084 - INFO - New best EMA loss: 1.8923 (improved by 0.0098)
+2024-12-02 08:50:41,174 - INFO - New best EMA loss: 1.8835 (improved by 0.0088)
+2024-12-02 08:50:52,326 - INFO - New best EMA loss: 1.8739 (improved by 0.0096)
+2024-12-02 08:51:03,426 - INFO - New best EMA loss: 1.8656 (improved by 0.0083)
+2024-12-02 08:51:14,610 - INFO - New best EMA loss: 1.8550 (improved by 0.0106)
+2024-12-02 08:51:25,760 - INFO - New best EMA loss: 1.8461 (improved by 0.0089)
+2024-12-02 08:51:36,885 - INFO - New best EMA loss: 1.8383 (improved by 0.0077)
+2024-12-02 08:51:48,036 - INFO - New best EMA loss: 1.8296 (improved by 0.0087)
+2024-12-02 08:51:59,077 - INFO - New best EMA loss: 1.8210 (improved by 0.0086)
+2024-12-02 08:52:10,113 - INFO - New best EMA loss: 1.8116 (improved by 0.0095)
+2024-12-02 08:54:01,153 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 08:54:01,613 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:54:01,738 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:54:02,116 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:54:12,116 - INFO - New best EMA loss: 1.8028 (improved by 0.0087)
+2024-12-02 08:54:23,103 - INFO - New best EMA loss: 1.7952 (improved by 0.0076)
+2024-12-02 08:54:34,231 - INFO - New best EMA loss: 1.7862 (improved by 0.0090)
+2024-12-02 08:54:45,310 - INFO - New best EMA loss: 1.7791 (improved by 0.0071)
+2024-12-02 08:54:56,467 - INFO - New best EMA loss: 1.7708 (improved by 0.0083)
+2024-12-02 08:55:07,460 - INFO - New best EMA loss: 1.7657 (improved by 0.0051)
+2024-12-02 08:55:18,598 - INFO - New best EMA loss: 1.7573 (improved by 0.0084)
+2024-12-02 08:55:29,690 - INFO - New best EMA loss: 1.7496 (improved by 0.0077)
+2024-12-02 08:55:40,737 - INFO - New best EMA loss: 1.7419 (improved by 0.0077)
+2024-12-02 08:55:51,736 - INFO - New best EMA loss: 1.7361 (improved by 0.0058)
+2024-12-02 08:57:41,415 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 08:57:41,846 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:57:42,137 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:57:42,425 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 08:57:52,455 - INFO - New best EMA loss: 1.7297 (improved by 0.0064)
+2024-12-02 08:58:03,441 - INFO - New best EMA loss: 1.7232 (improved by 0.0065)
+2024-12-02 08:58:14,497 - INFO - New best EMA loss: 1.7173 (improved by 0.0060)
+2024-12-02 08:58:25,575 - INFO - New best EMA loss: 1.7108 (improved by 0.0065)
+2024-12-02 08:58:36,617 - INFO - New best EMA loss: 1.7050 (improved by 0.0057)
+2024-12-02 08:58:47,660 - INFO - New best EMA loss: 1.6990 (improved by 0.0060)
+2024-12-02 08:58:58,703 - INFO - New best EMA loss: 1.6946 (improved by 0.0045)
+2024-12-02 08:59:09,814 - INFO - New best EMA loss: 1.6886 (improved by 0.0060)
+2024-12-02 08:59:20,842 - INFO - New best EMA loss: 1.6825 (improved by 0.0060)
+2024-12-02 08:59:31,866 - INFO - New best EMA loss: 1.6772 (improved by 0.0053)
+2024-12-02 09:01:17,946 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 09:01:18,381 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:01:18,662 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:01:18,949 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:01:29,017 - INFO - New best EMA loss: 1.6715 (improved by 0.0056)
+2024-12-02 09:01:40,026 - INFO - New best EMA loss: 1.6645 (improved by 0.0071)
+2024-12-02 09:01:51,136 - INFO - New best EMA loss: 1.6596 (improved by 0.0049)
+2024-12-02 09:02:02,169 - INFO - New best EMA loss: 1.6555 (improved by 0.0040)
+2024-12-02 09:02:13,314 - INFO - New best EMA loss: 1.6496 (improved by 0.0059)
+2024-12-02 09:02:24,361 - INFO - New best EMA loss: 1.6442 (improved by 0.0054)
+2024-12-02 09:02:35,368 - INFO - New best EMA loss: 1.6407 (improved by 0.0035)
+2024-12-02 09:02:46,406 - INFO - New best EMA loss: 1.6340 (improved by 0.0067)
+2024-12-02 09:02:57,546 - INFO - New best EMA loss: 1.6280 (improved by 0.0060)
+2024-12-02 09:03:08,653 - INFO - New best EMA loss: 1.6226 (improved by 0.0054)
+2024-12-02 09:05:00,204 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 09:05:00,657 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:05:00,939 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:05:01,227 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:05:11,245 - INFO - New best EMA loss: 1.6176 (improved by 0.0050)
+2024-12-02 09:05:22,281 - INFO - New best EMA loss: 1.6126 (improved by 0.0050)
+2024-12-02 09:05:33,432 - INFO - New best EMA loss: 1.6093 (improved by 0.0033)
+2024-12-02 09:05:44,471 - INFO - New best EMA loss: 1.6071 (improved by 0.0021)
+2024-12-02 09:05:55,497 - INFO - New best EMA loss: 1.6010 (improved by 0.0061)
+2024-12-02 09:06:06,537 - INFO - New best EMA loss: 1.5983 (improved by 0.0028)
+2024-12-02 09:06:17,657 - INFO - New best EMA loss: 1.5932 (improved by 0.0051)
+2024-12-02 09:06:28,711 - INFO - New best EMA loss: 1.5891 (improved by 0.0041)
+2024-12-02 09:06:39,739 - INFO - New best EMA loss: 1.5846 (improved by 0.0045)
+2024-12-02 09:06:50,766 - INFO - New best EMA loss: 1.5804 (improved by 0.0042)
+2024-12-02 09:08:43,295 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 09:08:43,729 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:08:44,000 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:08:44,288 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:08:54,358 - INFO - New best EMA loss: 1.5763 (improved by 0.0041)
+2024-12-02 09:09:05,540 - INFO - New best EMA loss: 1.5719 (improved by 0.0044)
+2024-12-02 09:09:16,634 - INFO - New best EMA loss: 1.5695 (improved by 0.0024)
+2024-12-02 09:09:27,677 - INFO - New best EMA loss: 1.5651 (improved by 0.0044)
+2024-12-02 09:09:38,724 - INFO - New best EMA loss: 1.5617 (improved by 0.0035)
+2024-12-02 09:09:49,785 - INFO - New best EMA loss: 1.5583 (improved by 0.0033)
+2024-12-02 09:10:00,822 - INFO - New best EMA loss: 1.5558 (improved by 0.0026)
+2024-12-02 09:10:11,900 - INFO - New best EMA loss: 1.5527 (improved by 0.0030)
+2024-12-02 09:10:22,925 - INFO - New best EMA loss: 1.5492 (improved by 0.0035)
+2024-12-02 09:10:33,948 - INFO - New best EMA loss: 1.5462 (improved by 0.0030)
+2024-12-02 09:12:22,855 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 09:12:23,309 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:12:23,586 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:12:23,873 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:12:33,867 - INFO - New best EMA loss: 1.5430 (improved by 0.0031)
+2024-12-02 09:12:44,907 - INFO - New best EMA loss: 1.5393 (improved by 0.0037)
+2024-12-02 09:12:55,922 - INFO - New best EMA loss: 1.5367 (improved by 0.0026)
+2024-12-02 09:13:06,953 - INFO - New best EMA loss: 1.5338 (improved by 0.0030)
+2024-12-02 09:13:18,007 - INFO - New best EMA loss: 1.5306 (improved by 0.0032)
+2024-12-02 09:13:29,084 - INFO - New best EMA loss: 1.5267 (improved by 0.0038)
+2024-12-02 09:13:40,121 - INFO - New best EMA loss: 1.5221 (improved by 0.0046)
+2024-12-02 09:13:51,149 - INFO - New best EMA loss: 1.5178 (improved by 0.0044)
+2024-12-02 09:14:02,141 - INFO - New best EMA loss: 1.5145 (improved by 0.0033)
+2024-12-02 09:14:13,150 - INFO - New best EMA loss: 1.5125 (improved by 0.0021)
+2024-12-02 09:16:04,020 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 09:16:04,424 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:16:04,721 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:16:05,008 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:16:15,060 - INFO - New best EMA loss: 1.5099 (improved by 0.0026)
+2024-12-02 09:16:26,138 - INFO - New best EMA loss: 1.5061 (improved by 0.0037)
+2024-12-02 09:16:37,151 - INFO - New best EMA loss: 1.5025 (improved by 0.0036)
+2024-12-02 09:16:48,238 - INFO - New best EMA loss: 1.5003 (improved by 0.0022)
+2024-12-02 09:16:59,284 - INFO - New best EMA loss: 1.4961 (improved by 0.0042)
+2024-12-02 09:17:10,320 - INFO - New best EMA loss: 1.4934 (improved by 0.0027)
+2024-12-02 09:17:21,369 - INFO - New best EMA loss: 1.4909 (improved by 0.0025)
+2024-12-02 09:17:32,407 - INFO - New best EMA loss: 1.4898 (improved by 0.0011)
+2024-12-02 09:17:43,406 - INFO - New best EMA loss: 1.4875 (improved by 0.0023)
+2024-12-02 09:17:54,457 - INFO - New best EMA loss: 1.4835 (improved by 0.0040)
+2024-12-02 09:19:40,652 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 09:19:41,088 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:19:41,374 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:19:41,660 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:19:51,742 - INFO - New best EMA loss: 1.4798 (improved by 0.0037)
+2024-12-02 09:20:02,778 - INFO - New best EMA loss: 1.4767 (improved by 0.0031)
+2024-12-02 09:20:13,799 - INFO - New best EMA loss: 1.4737 (improved by 0.0030)
+2024-12-02 09:20:24,958 - INFO - New best EMA loss: 1.4703 (improved by 0.0034)
+2024-12-02 09:20:35,970 - INFO - New best EMA loss: 1.4676 (improved by 0.0026)
+2024-12-02 09:20:46,946 - INFO - New best EMA loss: 1.4666 (improved by 0.0011)
+2024-12-02 09:20:57,933 - INFO - New best EMA loss: 1.4646 (improved by 0.0020)
+2024-12-02 09:21:08,904 - INFO - New best EMA loss: 1.4614 (improved by 0.0032)
+2024-12-02 09:21:19,909 - INFO - New best EMA loss: 1.4586 (improved by 0.0028)
+2024-12-02 09:21:30,897 - INFO - New best EMA loss: 1.4568 (improved by 0.0017)
+2024-12-02 09:23:21,899 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 09:23:22,350 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:23:22,631 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:23:22,918 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:23:32,926 - INFO - New best EMA loss: 1.4540 (improved by 0.0029)
+2024-12-02 09:23:44,055 - INFO - New best EMA loss: 1.4506 (improved by 0.0034)
+2024-12-02 09:23:55,070 - INFO - New best EMA loss: 1.4481 (improved by 0.0025)
+2024-12-02 09:24:06,160 - INFO - New best EMA loss: 1.4459 (improved by 0.0022)
+2024-12-02 09:24:17,156 - INFO - New best EMA loss: 1.4443 (improved by 0.0016)
+2024-12-02 09:24:25,933 - INFO - Moving to training cycle 3/3
+2024-12-02 09:24:28,195 - INFO - New best EMA loss: 1.4409 (improved by 0.0034)
+2024-12-02 09:24:39,274 - INFO - New best EMA loss: 1.4318 (improved by 0.0090)
+2024-12-02 09:24:50,239 - INFO - New best EMA loss: 1.4214 (improved by 0.0105)
+2024-12-02 09:25:01,192 - INFO - New best EMA loss: 1.4109 (improved by 0.0104)
+2024-12-02 09:25:12,137 - INFO - New best EMA loss: 1.4001 (improved by 0.0108)
+2024-12-02 09:27:02,713 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 09:27:03,154 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:27:03,457 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:27:03,743 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:27:13,764 - INFO - New best EMA loss: 1.3898 (improved by 0.0103)
+2024-12-02 09:27:24,777 - INFO - New best EMA loss: 1.3787 (improved by 0.0112)
+2024-12-02 09:27:35,763 - INFO - New best EMA loss: 1.3695 (improved by 0.0092)
+2024-12-02 09:27:46,758 - INFO - New best EMA loss: 1.3596 (improved by 0.0099)
+2024-12-02 09:27:57,818 - INFO - New best EMA loss: 1.3501 (improved by 0.0095)
+2024-12-02 09:28:08,842 - INFO - New best EMA loss: 1.3402 (improved by 0.0098)
+2024-12-02 09:28:19,860 - INFO - New best EMA loss: 1.3306 (improved by 0.0096)
+2024-12-02 09:28:30,856 - INFO - New best EMA loss: 1.3210 (improved by 0.0097)
+2024-12-02 09:28:41,881 - INFO - New best EMA loss: 1.3118 (improved by 0.0091)
+2024-12-02 09:28:52,929 - INFO - New best EMA loss: 1.3027 (improved by 0.0091)
+2024-12-02 09:30:43,632 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 09:30:44,060 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:30:44,366 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:30:44,654 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:30:54,651 - INFO - New best EMA loss: 1.2936 (improved by 0.0092)
+2024-12-02 09:31:05,676 - INFO - New best EMA loss: 1.2853 (improved by 0.0083)
+2024-12-02 09:31:16,728 - INFO - New best EMA loss: 1.2754 (improved by 0.0099)
+2024-12-02 09:31:27,718 - INFO - New best EMA loss: 1.2668 (improved by 0.0086)
+2024-12-02 09:31:38,762 - INFO - New best EMA loss: 1.2581 (improved by 0.0087)
+2024-12-02 09:31:49,804 - INFO - New best EMA loss: 1.2496 (improved by 0.0085)
+2024-12-02 09:32:00,818 - INFO - New best EMA loss: 1.2406 (improved by 0.0090)
+2024-12-02 09:32:11,791 - INFO - New best EMA loss: 1.2323 (improved by 0.0083)
+2024-12-02 09:32:22,767 - INFO - New best EMA loss: 1.2241 (improved by 0.0082)
+2024-12-02 09:32:33,768 - INFO - New best EMA loss: 1.2165 (improved by 0.0077)
+2024-12-02 09:34:23,305 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 09:34:23,718 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:34:24,037 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:34:24,324 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:34:34,289 - INFO - New best EMA loss: 1.2089 (improved by 0.0076)
+2024-12-02 09:34:45,277 - INFO - New best EMA loss: 1.2009 (improved by 0.0080)
+2024-12-02 09:34:56,327 - INFO - New best EMA loss: 1.1941 (improved by 0.0068)
+2024-12-02 09:35:07,319 - INFO - New best EMA loss: 1.1864 (improved by 0.0077)
+2024-12-02 09:35:18,259 - INFO - New best EMA loss: 1.1792 (improved by 0.0072)
+2024-12-02 09:35:29,205 - INFO - New best EMA loss: 1.1727 (improved by 0.0065)
+2024-12-02 09:35:40,144 - INFO - New best EMA loss: 1.1656 (improved by 0.0071)
+2024-12-02 09:35:51,104 - INFO - New best EMA loss: 1.1587 (improved by 0.0069)
+2024-12-02 09:36:02,075 - INFO - New best EMA loss: 1.1525 (improved by 0.0062)
+2024-12-02 09:36:13,056 - INFO - New best EMA loss: 1.1462 (improved by 0.0063)
+2024-12-02 09:38:01,954 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 09:38:02,394 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:38:02,701 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:38:02,999 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:38:13,006 - INFO - New best EMA loss: 1.1398 (improved by 0.0064)
+2024-12-02 09:38:24,039 - INFO - New best EMA loss: 1.1344 (improved by 0.0054)
+2024-12-02 09:38:35,080 - INFO - New best EMA loss: 1.1277 (improved by 0.0066)
+2024-12-02 09:38:46,082 - INFO - New best EMA loss: 1.1226 (improved by 0.0051)
+2024-12-02 09:38:57,133 - INFO - New best EMA loss: 1.1160 (improved by 0.0066)
+2024-12-02 09:39:08,180 - INFO - New best EMA loss: 1.1103 (improved by 0.0057)
+2024-12-02 09:39:19,141 - INFO - New best EMA loss: 1.1047 (improved by 0.0056)
+2024-12-02 09:39:30,109 - INFO - New best EMA loss: 1.0989 (improved by 0.0057)
+2024-12-02 09:39:41,082 - INFO - New best EMA loss: 1.0944 (improved by 0.0045)
+2024-12-02 09:39:52,060 - INFO - New best EMA loss: 1.0888 (improved by 0.0056)
+2024-12-02 09:41:40,041 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 09:41:40,476 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:41:40,778 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:41:41,066 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:41:51,093 - INFO - New best EMA loss: 1.0834 (improved by 0.0054)
+2024-12-02 09:42:02,178 - INFO - New best EMA loss: 1.0789 (improved by 0.0045)
+2024-12-02 09:42:13,176 - INFO - New best EMA loss: 1.0744 (improved by 0.0044)
+2024-12-02 09:42:24,181 - INFO - New best EMA loss: 1.0697 (improved by 0.0047)
+2024-12-02 09:42:35,181 - INFO - New best EMA loss: 1.0641 (improved by 0.0056)
+2024-12-02 09:42:46,181 - INFO - New best EMA loss: 1.0589 (improved by 0.0051)
+2024-12-02 09:42:57,242 - INFO - New best EMA loss: 1.0540 (improved by 0.0049)
+2024-12-02 09:43:08,230 - INFO - New best EMA loss: 1.0487 (improved by 0.0054)
+2024-12-02 09:43:19,237 - INFO - New best EMA loss: 1.0437 (improved by 0.0049)
+2024-12-02 09:43:30,210 - INFO - New best EMA loss: 1.0393 (improved by 0.0044)
+2024-12-02 09:45:18,942 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 09:45:19,358 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:45:19,658 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:45:19,943 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:45:29,944 - INFO - New best EMA loss: 1.0343 (improved by 0.0049)
+2024-12-02 09:45:40,907 - INFO - New best EMA loss: 1.0304 (improved by 0.0039)
+2024-12-02 09:45:51,971 - INFO - New best EMA loss: 1.0256 (improved by 0.0049)
+2024-12-02 09:46:03,002 - INFO - New best EMA loss: 1.0217 (improved by 0.0039)
+2024-12-02 09:46:14,058 - INFO - New best EMA loss: 1.0178 (improved by 0.0039)
+2024-12-02 09:46:25,081 - INFO - New best EMA loss: 1.0132 (improved by 0.0046)
+2024-12-02 09:46:36,068 - INFO - New best EMA loss: 1.0093 (improved by 0.0039)
+2024-12-02 09:46:47,108 - INFO - New best EMA loss: 1.0047 (improved by 0.0046)
+2024-12-02 09:46:58,101 - INFO - New best EMA loss: 1.0017 (improved by 0.0030)
+2024-12-02 09:47:09,148 - INFO - New best EMA loss: 0.9984 (improved by 0.0032)
+2024-12-02 09:49:03,809 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 09:49:04,249 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:49:04,562 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:49:04,849 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:49:14,910 - INFO - New best EMA loss: 0.9945 (improved by 0.0039)
+2024-12-02 09:49:25,991 - INFO - New best EMA loss: 0.9907 (improved by 0.0039)
+2024-12-02 09:49:37,069 - INFO - New best EMA loss: 0.9874 (improved by 0.0032)
+2024-12-02 09:49:48,078 - INFO - New best EMA loss: 0.9838 (improved by 0.0037)
+2024-12-02 09:49:59,064 - INFO - New best EMA loss: 0.9802 (improved by 0.0036)
+2024-12-02 09:50:10,071 - INFO - New best EMA loss: 0.9761 (improved by 0.0041)
+2024-12-02 09:50:21,090 - INFO - New best EMA loss: 0.9724 (improved by 0.0037)
+2024-12-02 09:50:32,151 - INFO - New best EMA loss: 0.9685 (improved by 0.0038)
+2024-12-02 09:50:43,148 - INFO - New best EMA loss: 0.9650 (improved by 0.0035)
+2024-12-02 09:50:54,142 - INFO - New best EMA loss: 0.9616 (improved by 0.0034)
+2024-12-02 09:52:42,915 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 09:52:43,347 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:52:43,656 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:52:43,943 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:52:53,963 - INFO - New best EMA loss: 0.9581 (improved by 0.0035)
+2024-12-02 09:53:04,922 - INFO - New best EMA loss: 0.9558 (improved by 0.0023)
+2024-12-02 09:53:15,937 - INFO - New best EMA loss: 0.9524 (improved by 0.0034)
+2024-12-02 09:53:26,985 - INFO - New best EMA loss: 0.9497 (improved by 0.0027)
+2024-12-02 09:53:37,993 - INFO - New best EMA loss: 0.9465 (improved by 0.0032)
+2024-12-02 09:53:48,924 - INFO - New best EMA loss: 0.9432 (improved by 0.0033)
+2024-12-02 09:53:59,920 - INFO - New best EMA loss: 0.9410 (improved by 0.0023)
+2024-12-02 09:54:10,906 - INFO - New best EMA loss: 0.9378 (improved by 0.0031)
+2024-12-02 09:54:21,875 - INFO - New best EMA loss: 0.9351 (improved by 0.0027)
+2024-12-02 09:54:32,899 - INFO - New best EMA loss: 0.9325 (improved by 0.0026)
+2024-12-02 09:56:39,708 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 09:56:40,151 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:56:40,457 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:56:40,745 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 09:56:50,779 - INFO - New best EMA loss: 0.9296 (improved by 0.0029)
+2024-12-02 09:57:01,764 - INFO - New best EMA loss: 0.9270 (improved by 0.0026)
+2024-12-02 09:57:12,817 - INFO - New best EMA loss: 0.9244 (improved by 0.0026)
+2024-12-02 09:57:23,890 - INFO - New best EMA loss: 0.9214 (improved by 0.0030)
+2024-12-02 09:57:34,871 - INFO - New best EMA loss: 0.9185 (improved by 0.0028)
+2024-12-02 09:57:45,909 - INFO - New best EMA loss: 0.9164 (improved by 0.0022)
+2024-12-02 09:57:56,904 - INFO - New best EMA loss: 0.9140 (improved by 0.0023)
+2024-12-02 09:58:07,916 - INFO - New best EMA loss: 0.9121 (improved by 0.0019)
+2024-12-02 09:58:18,887 - INFO - New best EMA loss: 0.9101 (improved by 0.0020)
+2024-12-02 09:58:29,895 - INFO - New best EMA loss: 0.9083 (improved by 0.0017)
+2024-12-02 10:00:20,420 - INFO - Memory usage (GB) - Peak: 30.06, Current: 27.64, Difference from start: 4.60
+2024-12-02 10:00:20,852 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 10:00:21,162 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 10:00:21,453 - INFO - Memory usage (GB) - Peak: 34.66, Current: 27.64, Difference from start: 0.00
+2024-12-02 10:00:31,502 - INFO - New best EMA loss: 0.9066 (improved by 0.0017)
+2024-12-02 10:00:42,468 - INFO - New best EMA loss: 0.9038 (improved by 0.0028)
+2024-12-02 10:00:53,469 - INFO - New best EMA loss: 0.9022 (improved by 0.0016)
+2024-12-02 10:01:04,443 - INFO - New best EMA loss: 0.9000 (improved by 0.0022)
+2024-12-02 10:01:15,467 - INFO - New best EMA loss: 0.8984 (improved by 0.0016)
+2024-12-02 10:01:26,476 - INFO - New best EMA loss: 0.8960 (improved by 0.0025)
+2024-12-02 10:01:37,431 - INFO - New best EMA loss: 0.8946 (improved by 0.0014)
+2024-12-02 10:01:48,426 - INFO - New best EMA loss: 0.8921 (improved by 0.0024)
+There were missing keys in the checkpoint model loaded: ['lm_head.weight'].
+2024-12-02 10:04:20,118 - INFO - ✓ Training completed. Metrics: {'train_runtime': 6863.817, 'train_samples_per_second': 14.395, 'train_steps_per_second': 0.45, 'total_flos': 2.785884074995876e+17, 'train_loss': 1.340340360067483, 'epoch': 2.9992713140636384}
+2024-12-02 10:04:20,122 - INFO - Cleaned existing directory: /content/drive/My Drive/agreemate/finetuning/models--buyer-finetuned--Llama-3.2-1B-Instruct
+2024-12-02 10:06:30,503 - INFO - ✓ Saved best model to: /content/drive/My Drive/agreemate/finetuning/models--buyer-finetuned--Llama-3.2-1B-Instruct
+2024-12-02 10:06:30,512 - INFO - ✓ Saved training metadata to /content/drive/My Drive/agreemate/finetuning/models--buyer-finetuned--Llama-3.2-1B-Instruct/training_meta.json
+2024-12-02 10:06:31,384 - INFO - ✓ Successfully Completed buyer training
+2024-12-02 10:06:31,387 - INFO - Training metrics: {
+    "train_runtime": 6863.817,
+    "train_samples_per_second": 14.395,
+    "train_steps_per_second": 0.45,
+    "total_flos": 2.785884074995876e+17,
+    "train_loss": 1.340340360067483,
+    "epoch": 2.9992713140636384
+}
+2024-12-02 10:06:32,068 - INFO - Cleaned up buyer model resources
+2024-12-02 10:06:32,070 - INFO - 
