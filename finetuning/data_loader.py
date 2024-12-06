@@ -75,29 +75,63 @@ class NegotiationDialogueDataLoader:
         Prepare dataset for training by formatting with appropriate prompts.
 
         Args:
-            df: DataFrame to prepare
+            df: DataFrame to prepare.
 
         Returns:
-            Dict with 'input' and 'target' lists ready for tokenization
+            Dict with 'input' and 'target' lists ready for tokenization.
         """
         prompts = []
         responses = []
-
         for _, row in df.iterrows():
-            # build system prompt with role and value information
+            # validate required fields
+            if pd.isna(row['role']) or pd.isna(row['values']) or pd.isna(row['partner_values']):
+                logger.warning(f"Skipping row due to missing essential fields: {row}")
+                continue
+
+            # build role-specific system instructions
+            if row['role'] == "buyer":
+                role_instructions = (
+                    "Your goal is to negotiate effectively. "
+                    "As a buyer, aim to reach a deal as close as possible to maximizing your benefit.\n"
+                )
+            elif row['role'] == "seller":
+                role_instructions = (
+                    "Your goal is to negotiate effectively. "
+                    "As a seller, aim to achieve a price above the average valuation while closing the deal.\n"
+                )
+            else:
+                role_instructions = (
+                    "Your goal is to negotiate effectively as either a buyer or a seller. "
+                    "Adapt your strategy to the situation.\n"
+                )
+
+            # incorporate additional scenario details if available
             system_prompt = (
                 f"You are a {row['role']} negotiating over items.\n"
-                f"Your item values: {row['values']}\n"
-                f"Partner's values: {row['partner_values']}\n"
+                f"Item Description: <INJECTED DURING INFERENCE>.\n"
+                f"Your Values: {row['values']}\n"
+                f"Partner's Values: {row['partner_values']}\n"
             )
+            if 'price' in row and pd.notna(row['price']):
+                system_prompt += f"Offered Price: ${row['price']}\n"
 
-            # combine with context and utterance
+            # combine system instructions and conversation history
             context = row['context'].strip() if pd.notna(row['context']) else ""
             if context:
-                prompt = f"{system_prompt}\nPrevious messages:\n{context}\nYour response:"
+                prompt = (
+                    f"{role_instructions}\n"
+                    f"{system_prompt}\n"
+                    f"Previous Conversation:\n{context}\n"
+                    f"Your Response:"
+                )
             else:
-                prompt = f"{system_prompt}\nYour first message:"
+                prompt = (
+                    f"{role_instructions}\n"
+                    f"{system_prompt}\n"
+                    f"Your First Message:"
+                )
 
+            # add generated prompts and corresponding responses
             prompts.append(prompt)
             responses.append(row['utterance'])
 
@@ -107,8 +141,7 @@ class NegotiationDialogueDataLoader:
         }
 
 
-def main():
-    """Test data loading functionality."""
+if __name__ == "__main__":
     loader = NegotiationDialogueDataLoader()
 
     # test loading each role
@@ -125,6 +158,3 @@ def main():
         print("\nSample prepared example:")
         print("Input:", prepared['input'][0][:100], "...")
         print("Target:", prepared['target'][0])
-
-if __name__ == "__main__":
-    main()

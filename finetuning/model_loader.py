@@ -9,7 +9,7 @@ from transformers import AutoModelForCausalLM, AutoTokenizer
 
 class ModelLoader:
     """
-    Simplified model loader specifically for Llama-3.2-1B-Instruct finetuning.
+    Simplified model loader specifically for Llama-3.1-8B-Instruct finetuning.
     Handles basic model loading, caching, and testing functionality.
     """
 
@@ -24,7 +24,7 @@ class ModelLoader:
             self.MODEL_ID = os.path.join(snapshot_dir, snapshot_folder)
             self.cache_dir = Path(os.path.join(snapshot_dir, snapshot_folder))
         else: # point to online cache
-            self.MODEL_ID = "meta-llama/Llama-3.2-1B-Instruct"
+            self.MODEL_ID = "meta-llama/Llama-3.1-8B-Instruct"
             self.cache_dir = Path(finetuning_dir)
 
         # ensure cache directory exists
@@ -43,16 +43,17 @@ class ModelLoader:
             size_in_bytes /= 1024
         return f"{size_in_bytes:.1f}TB"
 
+
     def load_model_and_tokenizer(
         self,
         device: str = "cuda" if torch.cuda.is_available() else "cpu",
         torch_dtype: torch.dtype = torch.float32,
         local_only: bool = False
     ) -> Tuple[AutoModelForCausalLM, AutoTokenizer]:
-        """Load Llama model and tokenizer."""
+        """Load base Llama model from web or local (sharded or single) and tokenizer."""
 
         try:
-            if self.tokenizer is None:
+            if self.tokenizer is None: # load tokenizer if not already loaded
                 self.tokenizer = AutoTokenizer.from_pretrained(
                     pretrained_model_name_or_path=self.MODEL_ID,
                     cache_dir=self.cache_dir,
@@ -61,27 +62,26 @@ class ModelLoader:
                 )
                 print("✓ Tokenizer loaded successfully")
 
-            if self.model is None:
-                # calculate memory limits (85% of GPU memory, 60% of CPU memory)
-                total_gpu_memory = torch.cuda.get_device_properties(0).total_memory if torch.cuda.is_available() else 0
-                gpu_memory_limit = total_gpu_memory * 0.85
-                total_cpu_memory = psutil.virtual_memory().total
-                cpu_memory_limit = total_cpu_memory * 0.60
-                gpu_memory_limit_str = self.format_memory_size(gpu_memory_limit)
-                cpu_memory_limit_str = self.format_memory_size(cpu_memory_limit)
+            if self.model is None: # download or load model if not already loaded
+                max_memory = { # calculate max GPU (85%) and CPU (70%) memory utilization for model
+                    0: self.format_memory_size(
+                        torch.cuda.get_device_properties(0).total_memory * 0.85
+                    ) if torch.cuda.is_available() else None,
+                    "cpu": self.format_memory_size(
+                        psutil.virtual_memory().total * 0.70
+                    )
+                }
 
+                # load model with memory constraints and offloading
                 self.model = AutoModelForCausalLM.from_pretrained(
                     pretrained_model_name_or_path=self.MODEL_ID,
                     cache_dir=self.cache_dir,
                     torch_dtype=torch_dtype,
-                    device_map="auto",
-                    local_files_only=local_only,
-                    max_memory={ # set memory limits for GPU and CPU
-                        0: gpu_memory_limit_str,
-                        "cpu": cpu_memory_limit_str
-                    },
+                    device_map="auto", # auto-distribute across devices
+                    max_memory=max_memory, # apply memory constraints
                     offload_folder="./offload", # enable offloading unused layers to disk
-                    trust_remote_code=True
+                    trust_remote_code=True,
+                    local_files_only=local_only
                 )
                 print("✓ Model loaded successfully")
 
@@ -89,6 +89,34 @@ class ModelLoader:
 
         except Exception as e:
             raise RuntimeError(f"Error loading Llama model: {str(e)}")
+
+    def reload_model(self, model_path: str, torch_dtype: torch.dtype = torch.float16) -> AutoModelForCausalLM:
+        """Reload a local model (sharded or single) from its specified path."""
+        try:
+            # calculate max GPU (85%) and CPU (70%) memory utilization for model
+            max_memory = {
+                0: self.format_memory_size(
+                    torch.cuda.get_device_properties(0).total_memory * 0.85
+                ) if torch.cuda.is_available() else None,
+                "cpu": self.format_memory_size(
+                    psutil.virtual_memory().total * 0.70
+                )
+            }
+
+            # reload local model
+            model = AutoModelForCausalLM.from_pretrained(
+                pretrained_model_name_or_path=model_path,
+                torch_dtype=torch_dtype,
+                device_map="auto", # auto-distribute across devices
+                max_memory=max_memory, # apply memory constraints
+                trust_remote_code=True
+            )
+
+            return model
+
+        except Exception as e:
+            raise RuntimeError(f"Error reloading model from {model_path}: {str(e)}")
+
 
     def test_model(self) -> bool:
         """Run basic model test to verify functionality."""
@@ -147,24 +175,8 @@ class ModelLoader:
             print(f"Test failed: {str(e)}")
             return False
 
-    def reload_model(self, model_path: str) -> AutoModelForCausalLM:
-        """Helper to reload a model from its specified path."""
-        try:
-            model = AutoModelForCausalLM.from_pretrained(
-                pretrained_model_name_or_path=model_path,
-                torch_dtype=torch.float16,
-                device_map="auto",
-                trust_remote_code=True
-            )
-            device = torch.device("cuda" if torch.cuda.is_available() else "cpu")
-            model = model.to(device)
-            return model
-        except Exception as e:
-            raise RuntimeError(f"Error loading model from {model_path}: {str(e)}")
 
-
-def main():
-    """Test the model loader functionality."""
+if __name__ == "__main__":
     loader = ModelLoader()
 
     print(f"Using torch device: {torch.device('cuda' if torch.cuda.is_available() else 'cpu')}")
@@ -190,6 +202,3 @@ def main():
 
     except Exception as e:
         print(f"Setup failed: {str(e)}")
-
-if __name__ == "__main__":
-    main()

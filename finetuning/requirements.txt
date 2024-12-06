@@ -1,3 +1,8 @@
+# Jupyter Notebook
+notebook
+jupyterlab
+ipywidgets
+
 tqdm # for progress bars
 
 # PyTorch and related packages
