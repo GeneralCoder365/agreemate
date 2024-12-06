@@ -5,17 +5,22 @@ ipywidgets
 
 tqdm # for progress bars
 
-# PyTorch and related packages
+# Data Science packages
+pandas
+numpy
+matplotlib
+
+# PyTorch packages
 torch
 torchvision
 torchaudio
 
-# Transformers and Huggingface ecosystem
+# Huggingface ecosystem packages
 transformers
 datasets
 accelerate
 
-# Machine Learning utilities
+# Machine Learning packages
 scikit-learn
 triton
 tensorboard

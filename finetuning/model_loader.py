@@ -1,10 +1,10 @@
 # model_loader.py
-import os, psutil
+import os, gc, psutil
 os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:128,expandable_segments:True"
 import torch
 from pathlib import Path
 from typing import Optional, Tuple
-from transformers import AutoModelForCausalLM, AutoTokenizer
+from transformers import PretrainedConfig, AutoModelForCausalLM, AutoTokenizer
 
 
 class ModelLoader:
@@ -53,14 +53,40 @@ class ModelLoader:
         """Load base Llama model from web or local (sharded or single) and tokenizer."""
 
         try:
-            if self.tokenizer is None: # load tokenizer if not already loaded
-                self.tokenizer = AutoTokenizer.from_pretrained(
-                    pretrained_model_name_or_path=self.MODEL_ID,
-                    cache_dir=self.cache_dir,
+            # Load tokenizer first with minimal configuration, without model reference
+            if self.tokenizer is None:
+                # load minimal config first
+                minimal_config = PretrainedConfig.from_pretrained(
+                    self.MODEL_ID,
                     trust_remote_code=True,
                     local_files_only=local_only
                 )
-                print("✓ Tokenizer loaded successfully")
+
+                # extract only the essential tokenizer attributes
+                tokenizer_config = {
+                    "model_max_length": getattr(minimal_config, "max_position_embeddings", 4096),
+                    "padding_side": "right",
+                    "truncation_side": "right",
+                    "clean_up_tokenization_spaces": True
+                }
+
+                # initialize tokenizer with essential config
+                self.tokenizer = AutoTokenizer.from_pretrained(
+                    self.MODEL_ID,
+                    cache_dir=self.cache_dir,
+                    trust_remote_code=True,
+                    local_files_only=local_only,
+                    use_fast=True,
+                    # keep essential configs
+                    **tokenizer_config
+                )
+
+                # ensure essential token IDs are set
+                if self.tokenizer.pad_token is None:
+                    self.tokenizer.pad_token = self.tokenizer.eos_token
+                    self.tokenizer.pad_token_id = self.tokenizer.eos_token_id
+
+                print("✓ Tokenizer loaded successfully without model reference")
 
             if self.model is None: # download or load model if not already loaded
                 max_memory = { # calculate max GPU (85%) and CPU (70%) memory utilization for model
@@ -84,6 +110,13 @@ class ModelLoader:
                     local_files_only=local_only
                 )
                 print("✓ Model loaded successfully")
+
+            # ensure no lingering cross-references between model and tokenizer
+            if hasattr(self.tokenizer, 'config'):
+                if hasattr(self.tokenizer.config, 'architectures'):
+                    delattr(self.tokenizer.config, 'architectures')
+                if hasattr(self.tokenizer.config, '_name_or_path'):
+                    delattr(self.tokenizer.config, '_name_or_path')
 
             return self.model, self.tokenizer
 
@@ -116,6 +149,19 @@ class ModelLoader:
 
         except Exception as e:
             raise RuntimeError(f"Error reloading model from {model_path}: {str(e)}")
+
+    def unload_model(self):
+        """Unload the base model from memory."""
+        if self.model:
+            print("Unloading model from memory...")
+            del self.model
+            self.model = None
+
+        # force garbage collection and GPU memory cleanup
+        torch.cuda.empty_cache()
+        torch.cuda.synchronize() # ensure all GPU operations are finished
+        gc.collect()
+        print("Memory cleanup completed.")
 
 
     def test_model(self) -> bool:

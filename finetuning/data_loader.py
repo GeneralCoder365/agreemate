@@ -88,7 +88,7 @@ class NegotiationDialogueDataLoader:
                 logger.warning(f"Skipping row due to missing essential fields: {row}")
                 continue
 
-            # build role-specific system instructions
+            # role-specific instructions
             if row['role'] == "buyer":
                 role_instructions = (
                     "Your goal is to negotiate effectively. "
@@ -105,34 +105,18 @@ class NegotiationDialogueDataLoader:
                     "Adapt your strategy to the situation.\n"
                 )
 
-            # incorporate additional scenario details if available
-            system_prompt = (
-                f"You are a {row['role']} negotiating over items.\n"
-                f"Item Description: <INJECTED DURING INFERENCE>.\n"
-                f"Your Values: {row['values']}\n"
-                f"Partner's Values: {row['partner_values']}\n"
-            )
-            if 'price' in row and pd.notna(row['price']):
-                system_prompt += f"Offered Price: ${row['price']}\n"
-
-            # combine system instructions and conversation history
-            context = row['context'].strip() if pd.notna(row['context']) else ""
-            if context:
-                prompt = (
-                    f"{role_instructions}\n"
-                    f"{system_prompt}\n"
-                    f"Previous Conversation:\n{context}\n"
-                    f"Your Response:"
-                )
-            else:
-                prompt = (
-                    f"{role_instructions}\n"
-                    f"{system_prompt}\n"
-                    f"Your First Message:"
-                )
+            # build the input structure
+            prompt_data = {
+                "values": row['values'],
+                "partner_values": row['partner_values'],
+                "context": row['context'].strip() if pd.notna(row['context']) else "",
+                "role": row['role'],
+                "thought": row['thought'] if pd.notna(row['thought']) else "",
+                "utterance": row['utterance']
+            }
 
             # add generated prompts and corresponding responses
-            prompts.append(prompt)
+            prompts.append(prompt_data)
             responses.append(row['utterance'])
 
         return {
