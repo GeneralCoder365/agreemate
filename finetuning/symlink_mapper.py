@@ -19,7 +19,7 @@ def save_mappings_to_json(mappings, output_file):
 
 if __name__ == "__main__":
     # directory containing the symlinks
-    sym_dir = r"D:\Personal_Folders\Tocho\UMD\fall_2024\CMSC723\agreemate\finetuning\models--meta-llama--Llama-3.1-8B-Instruct\snapshots\0e9e39f249a16976918f6564b8830bc894c89659"
+    sym_dir = r"D:\Personal_Folders\Tocho\UMD\fall_2024\CMSC723\agreemate\finetuning\models--meta-llama--Llama-3.2-3B-Instruct\snapshots\0cb88a4f764b7a12671c53f0838cd831a0843b95"
 
     # generate the mappings
     symlink_mappings = generate_symlink_mapping(sym_dir)

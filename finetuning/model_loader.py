@@ -10,7 +10,7 @@ from transformers import PretrainedConfig, AutoModelForCausalLM, AutoTokenizer, 
 
 class ModelLoader:
     """
-    Simplified model loader specifically for Llama-3.1-8B-Instruct finetuning.
+    Simplified model loader specifically for Llama-3.2-3B-Instruct finetuning.
     Handles basic model loading, caching, and testing functionality.
     """
 
@@ -25,7 +25,7 @@ class ModelLoader:
             self.MODEL_ID = os.path.join(snapshot_dir, snapshot_folder)
             self.cache_dir = Path(os.path.join(snapshot_dir, snapshot_folder))
         else: # point to online cache
-            self.MODEL_ID = "meta-llama/Llama-3.1-8B-Instruct"
+            self.MODEL_ID = "meta-llama/Llama-3.2-3B-Instruct"
             self.cache_dir = Path(finetuning_dir)
 
         # ensure cache directory exists
