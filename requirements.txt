@@ -16,6 +16,7 @@ torchvision
 torchaudio
 triton # PyTorch backend for TorchInductor
 bitsandbytes # for model quantization
+peft # need Parameter-Efficient Fine-Tuning to finetune quantized models
 
 # Huggingface ecosystem packages
 transformers

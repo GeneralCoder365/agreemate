@@ -4,7 +4,8 @@ os.environ["PYTORCH_CUDA_ALLOC_CONF"] = "max_split_size_mb:128,expandable_segmen
 import torch
 from pathlib import Path
 from typing import Optional, Tuple
-from transformers import PretrainedConfig, AutoModelForCausalLM, AutoTokenizer
+from peft import LoraConfig, get_peft_model, prepare_model_for_kbit_training
+from transformers import PretrainedConfig, AutoModelForCausalLM, AutoTokenizer, BitsAndBytesConfig
 
 
 class ModelLoader:
@@ -124,7 +125,7 @@ class ModelLoader:
             raise RuntimeError(f"Error loading Llama model: {str(e)}")
 
     def reload_model(self, model_path: str, torch_dtype: torch.dtype = torch.float16) -> AutoModelForCausalLM:
-        """Reload a local model (sharded or single) from its specified path, with 4-bit quantization."""
+        """Reload a local model (sharded or single) from its specified path, with 4-bit quantization and LoRA config."""
         try:
             # calculate max GPU (85%) and CPU (70%) memory utilization for model
             max_memory = {
@@ -136,17 +137,44 @@ class ModelLoader:
                 )
             }
 
-            # reload local model with 4-bit quantization
+            # quantization config (4-bit with double quantization)
+            quantization_config = BitsAndBytesConfig(
+                load_in_4bit=True,
+                bnb_4bit_compute_dtype=torch_dtype,
+                bnb_4bit_use_double_quant=True,
+                bnb_4bit_quant_type="nf4"
+            )
+
+            # reload model with 4-bit quantization
             model = AutoModelForCausalLM.from_pretrained(
                 pretrained_model_name_or_path=model_path,
-                load_in_4bit=True,  # Enable 4-bit quantization
-                bnb_4bit_compute_dtype=torch_dtype, # compute in fp16
-                bnb_4bit_quant_type="nf4", # use normalized float 4 for better accuracy
-                bnb_4bit_use_double_quant=True, # use nested quantization for more savings
-                device_map="auto", # auto-distribute across devices
-                max_memory=max_memory, # apply memory constraints
-                trust_remote_code=False
+                quantization_config=quantization_config,
+                device_map="auto",
+                max_memory=max_memory,
+                trust_remote_code=True
             )
+
+            # prepare model for k-bit training
+            model = prepare_model_for_kbit_training(model)
+
+            # LoRA config parameters (approximated for 8B model)
+            peft_config = LoraConfig(
+                lora_alpha=16, # scaling factor
+                lora_dropout=0.1, # dropout probability
+                r=32, # rank of update matrices
+                bias="none", # don't train biases
+                task_type="CAUSAL_LM", # for language modeling
+                target_modules=[
+                    "q_proj", "k_proj", "v_proj", "o_proj", # attention
+                    "gate_proj", "up_proj", "down_proj" # mlp
+                ]
+            )
+
+            # apply LoRA
+            model = get_peft_model(model, peft_config)
+
+            # print trainable parameters info
+            model.print_trainable_parameters()
 
             return model
 
