@@ -88,23 +88,6 @@ class NegotiationDialogueDataLoader:
                 logger.warning(f"Skipping row due to missing essential fields: {row}")
                 continue
 
-            # role-specific instructions
-            if row['role'] == "buyer":
-                role_instructions = (
-                    "Your goal is to negotiate effectively. "
-                    "As a buyer, aim to reach a deal as close as possible to maximizing your benefit.\n"
-                )
-            elif row['role'] == "seller":
-                role_instructions = (
-                    "Your goal is to negotiate effectively. "
-                    "As a seller, aim to achieve a price above the average valuation while closing the deal.\n"
-                )
-            else:
-                role_instructions = (
-                    "Your goal is to negotiate effectively as either a buyer or a seller. "
-                    "Adapt your strategy to the situation.\n"
-                )
-
             # build the input structure
             prompt_data = {
                 "values": row['values'],

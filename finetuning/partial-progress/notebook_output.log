@@ -1,0 +1,531 @@
+2024-12-07 06:35:55,062 - INFO - 
+==================================================
+2024-12-07 06:35:55,064 - INFO - Starting BUYER model finetuning
+2024-12-07 06:35:55,375 - INFO - Training Output Directory: /content/.cache/checkpoints/buyer
+2024-12-07 06:35:55,377 - INFO - Selected buyer datasets - Train size: 32936, Eval size: 3660
+2024-12-07 06:35:55,379 - INFO - Reloading base model from: /content/drive/My Drive/agreemate/finetuning/models--meta-llama--Llama-3.2-3B-Instruct/snapshots/0cb88a4f764b7a12671c53f0838cd831a0843b95
+Loading checkpoint shards: 100%
+ 2/2 [00:06<00:00,  2.80s/it]
+trainable params: 48,627,712 || all params: 3,261,377,536 || trainable%: 1.4910
+2024-12-07 06:36:03,166 - INFO - Initializing training for buyer model
+2024-12-07 06:36:03,168 - INFO - Logging training progress to: /content/.cache/logs/tensorboard/buyer
+2024-12-07 06:36:03,186 - INFO - Starting training
+2024-12-07 06:36:03,757 - INFO - Initializing layerwise learning rates with decay factor 0.95
+2024-12-07 06:36:03,759 - INFO - Base learning rate: 0.0002
+2024-12-07 06:36:03,764 - INFO - embedding: lr = 4.76e-05
+2024-12-07 06:36:03,770 - INFO - layer.0: lr = 5.01e-05
+2024-12-07 06:36:03,775 - INFO - layer.1: lr = 5.27e-05
+2024-12-07 06:36:03,780 - INFO - layer.2: lr = 5.55e-05
+2024-12-07 06:36:03,785 - INFO - layer.3: lr = 5.84e-05
+2024-12-07 06:36:03,790 - INFO - layer.4: lr = 6.15e-05
+2024-12-07 06:36:03,795 - INFO - layer.5: lr = 6.47e-05
+2024-12-07 06:36:03,801 - INFO - layer.6: lr = 6.81e-05
+2024-12-07 06:36:03,806 - INFO - layer.7: lr = 7.17e-05
+2024-12-07 06:36:03,811 - INFO - layer.8: lr = 7.55e-05
+2024-12-07 06:36:03,817 - INFO - layer.9: lr = 7.94e-05
+2024-12-07 06:36:03,823 - INFO - layer.10: lr = 8.36e-05
+2024-12-07 06:36:03,828 - INFO - layer.11: lr = 8.80e-05
+2024-12-07 06:36:03,833 - INFO - layer.12: lr = 9.27e-05
+2024-12-07 06:36:03,839 - INFO - layer.13: lr = 9.75e-05
+2024-12-07 06:36:03,844 - INFO - layer.14: lr = 1.03e-04
+2024-12-07 06:36:03,849 - INFO - layer.15: lr = 1.08e-04
+2024-12-07 06:36:03,854 - INFO - layer.16: lr = 1.14e-04
+2024-12-07 06:36:03,859 - INFO - layer.17: lr = 1.20e-04
+2024-12-07 06:36:03,864 - INFO - layer.18: lr = 1.26e-04
+2024-12-07 06:36:03,869 - INFO - layer.19: lr = 1.33e-04
+2024-12-07 06:36:03,875 - INFO - layer.20: lr = 1.40e-04
+2024-12-07 06:36:03,880 - INFO - layer.21: lr = 1.47e-04
+2024-12-07 06:36:03,885 - INFO - layer.22: lr = 1.55e-04
+2024-12-07 06:36:03,890 - INFO - layer.23: lr = 1.63e-04
+2024-12-07 06:36:03,895 - INFO - layer.24: lr = 1.71e-04
+2024-12-07 06:36:03,900 - INFO - layer.25: lr = 1.80e-04
+2024-12-07 06:36:03,905 - INFO - layer.26: lr = 1.90e-04
+2024-12-07 06:36:03,910 - INFO - layer.27: lr = 2.00e-04
+2024-12-07 06:36:03,915 - INFO - output_norm: lr = 2.00e-04
+2024-12-07 06:36:03,969 - INFO - Initializing 2 training cycles with 1029 steps per cycle
+2024-12-07 06:36:08,351 - INFO - Memory usage (GB) - Peak: 21.77, Current: 3.20, Difference from start: 0.20
+2024-12-07 06:36:11,212 - INFO - Memory usage (GB) - Peak: 21.96, Current: 3.20, Difference from start: 0.00
+ [2058/2058 4:51:45, Epoch 1/2]
+Step	Training Loss	Validation Loss
+200	3.736100	4.144058
+400	3.700100	4.142954
+600	3.683500	4.114239
+800	3.648200	4.088265
+1000	3.653000	4.099895
+1200	3.637700	4.083528
+1400	3.682400	4.075490
+1600	3.648200	4.073171
+1800	3.673500	4.067831
+2000	3.601700	4.049487
+2024-12-07 06:42:19,051 - INFO - New best EMA loss: 7.0642 (improved by inf)
+2024-12-07 06:42:21,869 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 06:42:26,069 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 06:48:51,077 - INFO - New best EMA loss: 7.0021 (improved by 0.0621)
+2024-12-07 06:48:54,701 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 06:48:58,368 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 06:55:18,715 - INFO - New best EMA loss: 6.9370 (improved by 0.0651)
+2024-12-07 06:55:23,281 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 06:55:27,951 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+2024-12-07 07:01:47,257 - INFO - New best EMA loss: 6.8729 (improved by 0.0640)
+2024-12-07 07:04:36,154 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 07:04:40,354 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 07:11:03,698 - INFO - New best EMA loss: 6.8117 (improved by 0.0613)
+2024-12-07 07:11:07,375 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 07:11:10,410 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 07:17:28,522 - INFO - New best EMA loss: 6.7502 (improved by 0.0615)
+2024-12-07 07:17:32,318 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 07:17:35,889 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 07:23:49,956 - INFO - New best EMA loss: 6.6901 (improved by 0.0602)
+2024-12-07 07:23:53,275 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 07:23:57,227 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+2024-12-07 07:30:05,318 - INFO - New best EMA loss: 6.6303 (improved by 0.0598)
+2024-12-07 07:32:52,125 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 07:32:55,827 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 07:39:26,374 - INFO - New best EMA loss: 6.5722 (improved by 0.0580)
+2024-12-07 07:39:30,231 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 07:39:34,001 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 07:45:45,619 - INFO - New best EMA loss: 6.5152 (improved by 0.0571)
+2024-12-07 07:45:47,847 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 07:45:50,237 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 07:51:59,479 - INFO - New best EMA loss: 6.4582 (improved by 0.0570)
+2024-12-07 07:52:03,099 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 07:52:06,768 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+2024-12-07 07:58:15,079 - INFO - New best EMA loss: 6.4027 (improved by 0.0555)
+2024-12-07 08:01:01,301 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 08:01:05,717 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 08:07:22,392 - INFO - New best EMA loss: 6.3484 (improved by 0.0542)
+2024-12-07 08:07:26,332 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 08:07:30,617 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 08:13:40,185 - INFO - New best EMA loss: 6.2951 (improved by 0.0533)
+2024-12-07 08:13:44,581 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 08:13:49,519 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 08:20:18,799 - INFO - New best EMA loss: 6.2425 (improved by 0.0526)
+2024-12-07 08:20:21,743 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 08:20:25,969 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+2024-12-07 08:26:46,232 - INFO - New best EMA loss: 6.1907 (improved by 0.0519)
+2024-12-07 08:29:31,637 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 08:29:35,215 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 08:35:52,522 - INFO - New best EMA loss: 6.1403 (improved by 0.0504)
+2024-12-07 08:35:55,958 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 08:35:58,854 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 08:42:23,068 - INFO - New best EMA loss: 6.0904 (improved by 0.0499)
+2024-12-07 08:42:27,693 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 08:42:31,606 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 08:48:37,216 - INFO - New best EMA loss: 6.0430 (improved by 0.0474)
+2024-12-07 08:48:40,277 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 08:48:43,426 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+2024-12-07 08:54:59,687 - INFO - New best EMA loss: 5.9952 (improved by 0.0478)
+2024-12-07 08:57:45,806 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 08:57:49,589 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 09:01:30,209 - INFO - Moving to training cycle 2/2
+2024-12-07 09:01:34,977 - INFO - Synced buyer from local to Drive
+2024-12-07 09:01:34,992 - INFO - Synced buyer from local to Drive
+2024-12-07 09:01:34,993 - INFO - Completed epoch 0 sync to Drive
+2024-12-07 09:04:08,999 - INFO - New best EMA loss: 5.9488 (improved by 0.0464)
+2024-12-07 09:04:13,398 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 09:04:17,536 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 09:10:40,753 - INFO - New best EMA loss: 5.9023 (improved by 0.0465)
+2024-12-07 09:10:44,757 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 09:10:48,626 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 09:17:08,461 - INFO - New best EMA loss: 5.8574 (improved by 0.0449)
+2024-12-07 09:17:12,019 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 09:17:16,815 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+2024-12-07 09:23:37,644 - INFO - New best EMA loss: 5.8130 (improved by 0.0444)
+2024-12-07 09:26:29,781 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 09:26:33,999 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 09:32:51,044 - INFO - New best EMA loss: 5.7705 (improved by 0.0425)
+2024-12-07 09:32:54,698 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 09:32:58,583 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 09:39:15,653 - INFO - New best EMA loss: 5.7291 (improved by 0.0414)
+2024-12-07 09:39:19,711 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 09:39:23,586 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 09:45:39,669 - INFO - New best EMA loss: 5.6889 (improved by 0.0402)
+2024-12-07 09:45:43,377 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 09:45:46,832 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+2024-12-07 09:52:16,052 - INFO - New best EMA loss: 5.6488 (improved by 0.0401)
+2024-12-07 09:55:12,816 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 09:55:16,076 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 10:01:28,418 - INFO - New best EMA loss: 5.6101 (improved by 0.0387)
+2024-12-07 10:01:31,798 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 10:01:36,542 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 10:07:51,374 - INFO - New best EMA loss: 5.5703 (improved by 0.0398)
+2024-12-07 10:07:55,910 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 10:08:01,091 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 10:14:15,068 - INFO - New best EMA loss: 5.5331 (improved by 0.0373)
+2024-12-07 10:14:18,713 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 10:14:22,461 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+2024-12-07 10:20:33,256 - INFO - New best EMA loss: 5.4954 (improved by 0.0377)
+2024-12-07 10:23:20,691 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 10:23:24,680 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 10:29:53,089 - INFO - New best EMA loss: 5.4581 (improved by 0.0373)
+2024-12-07 10:29:56,170 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 10:30:00,812 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 10:36:23,327 - INFO - New best EMA loss: 5.4223 (improved by 0.0358)
+2024-12-07 10:36:27,172 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 10:36:30,783 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 10:42:42,063 - INFO - New best EMA loss: 5.3866 (improved by 0.0357)
+2024-12-07 10:42:45,225 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 10:42:49,021 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+2024-12-07 10:48:55,290 - INFO - New best EMA loss: 5.3523 (improved by 0.0343)
+2024-12-07 10:51:41,180 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 10:51:44,585 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 10:58:08,168 - INFO - New best EMA loss: 5.3170 (improved by 0.0353)
+2024-12-07 10:58:13,212 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 10:58:17,255 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 11:04:38,944 - INFO - New best EMA loss: 5.2823 (improved by 0.0347)
+2024-12-07 11:04:42,200 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 11:04:45,466 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 11:11:02,975 - INFO - New best EMA loss: 5.2493 (improved by 0.0330)
+2024-12-07 11:11:07,314 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 11:11:10,770 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+2024-12-07 11:17:43,064 - INFO - New best EMA loss: 5.2164 (improved by 0.0330)
+2024-12-07 11:20:31,802 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 11:20:35,239 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 11:26:47,445 - INFO - New best EMA loss: 5.1838 (improved by 0.0325)
+2024-12-07 11:26:50,950 - INFO - Memory usage (GB) - Peak: 22.14, Current: 3.56, Difference from start: 0.18
+2024-12-07 11:26:54,360 - INFO - Memory usage (GB) - Peak: 22.32, Current: 3.56, Difference from start: 0.00
+2024-12-07 11:27:56,576 - INFO - Synced buyer from local to Drive
+2024-12-07 11:27:56,592 - INFO - Synced buyer from local to Drive
+2024-12-07 11:27:56,593 - INFO - Completed epoch 1 sync to Drive
+2024-12-07 11:27:56,768 - INFO - ✓ Training completed. Metrics: {'train_runtime': 17512.8048, 'train_samples_per_second': 3.761, 'train_steps_per_second': 0.118, 'total_flos': 6.298732152695685e+17, 'train_loss': 3.764185549566419, 'epoch': 1.9990286546867413}
+2024-12-07 11:27:56,772 - INFO - Cleaned finetuned model save directory: /content/drive/My Drive/agreemate/finetuning/models--buyer-finetuned--Llama-3.2-3B-Instruct
+2024-12-07 11:27:56,773 - INFO - Copying best model from checkpoint: /content/.cache/checkpoints/buyer/checkpoint-2000
+2024-12-07 11:27:58,402 - INFO - ✓ Saved best model to: /content/drive/My Drive/agreemate/finetuning/models--buyer-finetuned--Llama-3.2-3B-Instruct
+2024-12-07 11:27:58,409 - INFO - ✓ Saved training metadata to /content/drive/My Drive/agreemate/finetuning/models--buyer-finetuned--Llama-3.2-3B-Instruct/training_meta.json
+2024-12-07 11:27:58,798 - INFO - ✓ Successfully Completed buyer training
+2024-12-07 11:27:58,800 - INFO - Training metrics: {
+    "train_runtime": 17512.8048,
+    "train_samples_per_second": 3.761,
+    "train_steps_per_second": 0.118,
+    "total_flos": 6.298732152695685e+17,
+    "train_loss": 3.764185549566419,
+    "epoch": 1.9990286546867413
+}
+2024-12-07 11:27:58,985 - INFO - Cleaned up local checkpoints for buyer
+2024-12-07 11:27:58,986 - INFO - Cleaned up local checkpoints for buyer
+2024-12-07 11:27:59,296 - INFO - Cleaned up buyer model resources
+2024-12-07 11:27:59,299 - INFO - 
+==================================================
+2024-12-07 11:27:59,300 - INFO - Starting SELLER model finetuning
+2024-12-07 11:27:59,631 - INFO - Training Output Directory: /content/.cache/checkpoints/seller
+2024-12-07 11:27:59,633 - INFO - Selected seller datasets - Train size: 32935, Eval size: 3660
+2024-12-07 11:27:59,634 - INFO - Reloading base model from: /content/drive/My Drive/agreemate/finetuning/models--meta-llama--Llama-3.2-3B-Instruct/snapshots/0cb88a4f764b7a12671c53f0838cd831a0843b95
+Loading checkpoint shards: 100%
+ 2/2 [00:07<00:00,  3.35s/it]
+trainable params: 48,627,712 || all params: 3,261,377,536 || trainable%: 1.4910
+2024-12-07 11:28:08,474 - INFO - Initializing training for seller model
+2024-12-07 11:28:08,477 - INFO - Logging training progress to: /content/.cache/logs/tensorboard/seller
+2024-12-07 11:28:08,496 - INFO - Starting training
+2024-12-07 11:28:09,144 - INFO - Initializing layerwise learning rates with decay factor 0.95
+2024-12-07 11:28:09,146 - INFO - Base learning rate: 0.0002
+2024-12-07 11:28:09,153 - INFO - embedding: lr = 4.76e-05
+2024-12-07 11:28:09,159 - INFO - layer.0: lr = 5.01e-05
+2024-12-07 11:28:09,166 - INFO - layer.1: lr = 5.27e-05
+2024-12-07 11:28:09,172 - INFO - layer.2: lr = 5.55e-05
+2024-12-07 11:28:09,178 - INFO - layer.3: lr = 5.84e-05
+2024-12-07 11:28:09,184 - INFO - layer.4: lr = 6.15e-05
+2024-12-07 11:28:09,190 - INFO - layer.5: lr = 6.47e-05
+2024-12-07 11:28:09,195 - INFO - layer.6: lr = 6.81e-05
+2024-12-07 11:28:09,201 - INFO - layer.7: lr = 7.17e-05
+2024-12-07 11:28:09,207 - INFO - layer.8: lr = 7.55e-05
+2024-12-07 11:28:09,213 - INFO - layer.9: lr = 7.94e-05
+2024-12-07 11:28:09,218 - INFO - layer.10: lr = 8.36e-05
+2024-12-07 11:28:09,224 - INFO - layer.11: lr = 8.80e-05
+2024-12-07 11:28:09,230 - INFO - layer.12: lr = 9.27e-05
+2024-12-07 11:28:09,236 - INFO - layer.13: lr = 9.75e-05
+2024-12-07 11:28:09,242 - INFO - layer.14: lr = 1.03e-04
+2024-12-07 11:28:09,247 - INFO - layer.15: lr = 1.08e-04
+2024-12-07 11:28:09,253 - INFO - layer.16: lr = 1.14e-04
+2024-12-07 11:28:09,259 - INFO - layer.17: lr = 1.20e-04
+2024-12-07 11:28:09,265 - INFO - layer.18: lr = 1.26e-04
+2024-12-07 11:28:09,270 - INFO - layer.19: lr = 1.33e-04
+2024-12-07 11:28:09,276 - INFO - layer.20: lr = 1.40e-04
+2024-12-07 11:28:09,282 - INFO - layer.21: lr = 1.47e-04
+2024-12-07 11:28:09,288 - INFO - layer.22: lr = 1.55e-04
+2024-12-07 11:28:09,293 - INFO - layer.23: lr = 1.63e-04
+2024-12-07 11:28:09,299 - INFO - layer.24: lr = 1.71e-04
+2024-12-07 11:28:09,305 - INFO - layer.25: lr = 1.80e-04
+2024-12-07 11:28:09,310 - INFO - layer.26: lr = 1.90e-04
+2024-12-07 11:28:09,316 - INFO - layer.27: lr = 2.00e-04
+2024-12-07 11:28:09,321 - INFO - output_norm: lr = 2.00e-04
+2024-12-07 11:28:09,379 - INFO - Initializing 2 training cycles with 1029 steps per cycle
+2024-12-07 11:28:13,586 - INFO - Memory usage (GB) - Peak: 21.42, Current: 3.20, Difference from start: 0.18
+2024-12-07 11:28:18,368 - INFO - Memory usage (GB) - Peak: 21.60, Current: 3.20, Difference from start: 0.00
+ [2058/2058 5:06:21, Epoch 1/2]
+Step	Training Loss	Validation Loss
+200	3.756400	4.140468
+400	3.745400	4.119113
+600	3.687700	4.095182
+800	3.673900	4.092621
+1000	3.658100	4.079079
+1200	3.630800	4.071132
+1400	3.639400	4.069489
+1600	3.632700	4.060728
+1800	3.637700	4.062852
+2000	3.669700	4.057549
+2024-12-07 11:35:12,449 - INFO - New best EMA loss: 7.0748 (improved by inf)
+2024-12-07 11:35:16,626 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 11:35:20,935 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 11:42:02,565 - INFO - New best EMA loss: 7.0123 (improved by 0.0625)
+2024-12-07 11:42:06,395 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 11:42:11,036 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 11:48:48,814 - INFO - New best EMA loss: 6.9465 (improved by 0.0658)
+2024-12-07 11:48:53,137 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 11:48:57,201 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+2024-12-07 11:55:52,109 - INFO - New best EMA loss: 6.8827 (improved by 0.0638)
+2024-12-07 11:58:32,533 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 11:58:37,711 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 12:05:20,786 - INFO - New best EMA loss: 6.8189 (improved by 0.0638)
+2024-12-07 12:05:24,020 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 12:05:27,412 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 12:12:05,728 - INFO - New best EMA loss: 6.7566 (improved by 0.0624)
+2024-12-07 12:12:09,910 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 12:12:14,226 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 12:19:04,390 - INFO - New best EMA loss: 6.6945 (improved by 0.0620)
+2024-12-07 12:19:07,722 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 12:19:12,114 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+2024-12-07 12:25:49,190 - INFO - New best EMA loss: 6.6356 (improved by 0.0590)
+2024-12-07 12:28:30,947 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 12:28:35,710 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 12:35:13,668 - INFO - New best EMA loss: 6.5775 (improved by 0.0581)
+2024-12-07 12:35:19,069 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 12:35:23,168 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 12:42:08,100 - INFO - New best EMA loss: 6.5213 (improved by 0.0562)
+2024-12-07 12:42:11,649 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 12:42:14,654 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 12:48:48,533 - INFO - New best EMA loss: 6.4643 (improved by 0.0569)
+2024-12-07 12:48:53,926 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 12:48:57,332 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+2024-12-07 12:55:23,594 - INFO - New best EMA loss: 6.4088 (improved by 0.0555)
+2024-12-07 12:58:04,401 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 12:58:07,432 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 13:04:39,033 - INFO - New best EMA loss: 6.3540 (improved by 0.0547)
+2024-12-07 13:04:42,944 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 13:04:46,425 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 13:11:32,869 - INFO - New best EMA loss: 6.3005 (improved by 0.0536)
+2024-12-07 13:11:36,376 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 13:11:41,053 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 13:18:13,407 - INFO - New best EMA loss: 6.2469 (improved by 0.0535)
+2024-12-07 13:18:17,724 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 13:18:21,009 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+2024-12-07 13:25:10,295 - INFO - New best EMA loss: 6.1955 (improved by 0.0515)
+2024-12-07 13:27:49,921 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 13:27:53,925 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 13:34:38,540 - INFO - New best EMA loss: 6.1457 (improved by 0.0498)
+2024-12-07 13:34:42,949 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 13:34:47,118 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 13:41:36,213 - INFO - New best EMA loss: 6.0960 (improved by 0.0497)
+2024-12-07 13:41:40,336 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 13:41:43,936 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 13:48:36,966 - INFO - New best EMA loss: 6.0478 (improved by 0.0482)
+2024-12-07 13:48:40,183 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 13:48:44,248 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+2024-12-07 13:55:20,206 - INFO - New best EMA loss: 6.0000 (improved by 0.0478)
+2024-12-07 13:58:03,691 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 13:58:09,047 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 14:02:05,046 - INFO - Moving to training cycle 2/2
+2024-12-07 14:02:13,309 - INFO - Synced seller from local to Drive
+2024-12-07 14:02:13,329 - INFO - Synced seller from local to Drive
+2024-12-07 14:02:13,330 - INFO - Completed epoch 0 sync to Drive
+2024-12-07 14:04:51,463 - INFO - New best EMA loss: 5.9536 (improved by 0.0464)
+2024-12-07 14:04:55,371 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 14:04:59,795 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 14:11:32,916 - INFO - New best EMA loss: 5.9083 (improved by 0.0453)
+2024-12-07 14:11:37,472 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 14:11:41,939 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 14:18:17,157 - INFO - New best EMA loss: 5.8631 (improved by 0.0452)
+2024-12-07 14:18:20,980 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 14:18:24,776 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+2024-12-07 14:24:58,565 - INFO - New best EMA loss: 5.8184 (improved by 0.0446)
+2024-12-07 14:27:38,706 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 14:27:43,748 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 14:34:31,304 - INFO - New best EMA loss: 5.7747 (improved by 0.0437)
+2024-12-07 14:34:36,624 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 14:34:42,008 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 14:41:20,612 - INFO - New best EMA loss: 5.7312 (improved by 0.0435)
+2024-12-07 14:41:25,332 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 14:41:29,984 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 14:48:10,886 - INFO - New best EMA loss: 5.6896 (improved by 0.0416)
+2024-12-07 14:48:14,430 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 14:48:18,636 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+2024-12-07 14:54:59,117 - INFO - New best EMA loss: 5.6486 (improved by 0.0410)
+2024-12-07 14:57:40,719 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 14:57:44,339 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 15:04:11,447 - INFO - New best EMA loss: 5.6102 (improved by 0.0385)
+2024-12-07 15:04:15,769 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 15:04:20,212 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 15:10:56,769 - INFO - New best EMA loss: 5.5690 (improved by 0.0411)
+2024-12-07 15:11:00,084 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 15:11:04,468 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 15:17:36,849 - INFO - New best EMA loss: 5.5303 (improved by 0.0387)
+2024-12-07 15:17:41,663 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 15:17:45,833 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+2024-12-07 15:24:30,663 - INFO - New best EMA loss: 5.4923 (improved by 0.0380)
+2024-12-07 15:27:11,728 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 15:27:15,749 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 15:34:10,856 - INFO - New best EMA loss: 5.4563 (improved by 0.0360)
+2024-12-07 15:34:13,973 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 15:34:18,008 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 15:40:52,358 - INFO - New best EMA loss: 5.4199 (improved by 0.0364)
+2024-12-07 15:40:56,604 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 15:41:01,551 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 15:47:30,295 - INFO - New best EMA loss: 5.3853 (improved by 0.0346)
+2024-12-07 15:47:34,456 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 15:47:38,759 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+2024-12-07 15:54:28,471 - INFO - New best EMA loss: 5.3504 (improved by 0.0350)
+2024-12-07 15:57:08,663 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 15:57:12,390 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 16:03:54,875 - INFO - New best EMA loss: 5.3161 (improved by 0.0343)
+2024-12-07 16:03:57,765 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 16:04:01,035 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 16:10:33,952 - INFO - New best EMA loss: 5.2827 (improved by 0.0333)
+2024-12-07 16:10:37,692 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 16:10:41,581 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 16:17:13,333 - INFO - New best EMA loss: 5.2498 (improved by 0.0330)
+2024-12-07 16:17:17,781 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 16:17:21,142 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+2024-12-07 16:24:11,543 - INFO - New best EMA loss: 5.2182 (improved by 0.0316)
+2024-12-07 16:26:51,737 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 16:26:55,621 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 16:33:27,322 - INFO - New best EMA loss: 5.1878 (improved by 0.0303)
+2024-12-07 16:33:31,505 - INFO - Memory usage (GB) - Peak: 21.79, Current: 3.56, Difference from start: 0.18
+2024-12-07 16:33:36,485 - INFO - Memory usage (GB) - Peak: 21.97, Current: 3.56, Difference from start: 0.00
+2024-12-07 16:34:39,829 - INFO - Synced seller from local to Drive
+2024-12-07 16:34:39,843 - INFO - Synced seller from local to Drive
+2024-12-07 16:34:39,844 - INFO - Completed epoch 1 sync to Drive
+2024-12-07 16:34:40,020 - INFO - ✓ Training completed. Metrics: {'train_runtime': 18390.6472, 'train_samples_per_second': 3.582, 'train_steps_per_second': 0.112, 'total_flos': 6.174023185069978e+17, 'train_loss': 3.7593934195382253, 'epoch': 1.9990286546867413}
+2024-12-07 16:34:40,025 - INFO - Cleaned finetuned model save directory: /content/drive/My Drive/agreemate/finetuning/models--seller-finetuned--Llama-3.2-3B-Instruct
+2024-12-07 16:34:40,026 - INFO - Copying best model from checkpoint: /content/.cache/checkpoints/seller/checkpoint-2000
+2024-12-07 16:34:41,725 - INFO - ✓ Saved best model to: /content/drive/My Drive/agreemate/finetuning/models--seller-finetuned--Llama-3.2-3B-Instruct
+2024-12-07 16:34:41,733 - INFO - ✓ Saved training metadata to /content/drive/My Drive/agreemate/finetuning/models--seller-finetuned--Llama-3.2-3B-Instruct/training_meta.json
+2024-12-07 16:34:42,164 - INFO - ✓ Successfully Completed seller training
+2024-12-07 16:34:42,166 - INFO - Training metrics: {
+    "train_runtime": 18390.6472,
+    "train_samples_per_second": 3.582,
+    "train_steps_per_second": 0.112,
+    "total_flos": 6.174023185069978e+17,
+    "train_loss": 3.7593934195382253,
+    "epoch": 1.9990286546867413
+}
+2024-12-07 16:34:42,349 - INFO - Cleaned up local checkpoints for seller
+2024-12-07 16:34:42,351 - INFO - Cleaned up local checkpoints for seller
+2024-12-07 16:34:42,661 - INFO - Cleaned up seller model resources
+2024-12-07 16:34:42,663 - INFO - 
+==================================================
+2024-12-07 16:34:42,664 - INFO - Starting GENERALIST model finetuning
+2024-12-07 16:34:43,019 - INFO - Training Output Directory: /content/.cache/checkpoints/generalist
+2024-12-07 16:34:43,021 - INFO - Selected generalist datasets - Train size: 65871, Eval size: 7320
+2024-12-07 16:34:43,023 - INFO - Reloading base model from: /content/drive/My Drive/agreemate/finetuning/models--meta-llama--Llama-3.2-3B-Instruct/snapshots/0cb88a4f764b7a12671c53f0838cd831a0843b95
+Loading checkpoint shards: 100%
+ 2/2 [00:06<00:00,  2.78s/it]
+trainable params: 48,627,712 || all params: 3,261,377,536 || trainable%: 1.4910
+2024-12-07 16:34:50,438 - INFO - Initializing training for generalist model
+2024-12-07 16:34:50,442 - INFO - Logging training progress to: /content/.cache/logs/tensorboard/generalist
+2024-12-07 16:34:50,457 - INFO - Starting training
+2024-12-07 16:34:51,314 - INFO - Initializing layerwise learning rates with decay factor 0.95
+2024-12-07 16:34:51,316 - INFO - Base learning rate: 0.0002
+2024-12-07 16:34:51,322 - INFO - embedding: lr = 4.76e-05
+2024-12-07 16:34:51,329 - INFO - layer.0: lr = 5.01e-05
+2024-12-07 16:34:51,334 - INFO - layer.1: lr = 5.27e-05
+2024-12-07 16:34:51,340 - INFO - layer.2: lr = 5.55e-05
+2024-12-07 16:34:51,346 - INFO - layer.3: lr = 5.84e-05
+2024-12-07 16:34:51,352 - INFO - layer.4: lr = 6.15e-05
+2024-12-07 16:34:51,357 - INFO - layer.5: lr = 6.47e-05
+2024-12-07 16:34:51,363 - INFO - layer.6: lr = 6.81e-05
+2024-12-07 16:34:51,369 - INFO - layer.7: lr = 7.17e-05
+2024-12-07 16:34:51,374 - INFO - layer.8: lr = 7.55e-05
+2024-12-07 16:34:51,380 - INFO - layer.9: lr = 7.94e-05
+2024-12-07 16:34:51,385 - INFO - layer.10: lr = 8.36e-05
+2024-12-07 16:34:51,391 - INFO - layer.11: lr = 8.80e-05
+2024-12-07 16:34:51,397 - INFO - layer.12: lr = 9.27e-05
+2024-12-07 16:34:51,402 - INFO - layer.13: lr = 9.75e-05
+2024-12-07 16:34:51,408 - INFO - layer.14: lr = 1.03e-04
+2024-12-07 16:34:51,414 - INFO - layer.15: lr = 1.08e-04
+2024-12-07 16:34:51,420 - INFO - layer.16: lr = 1.14e-04
+2024-12-07 16:34:51,426 - INFO - layer.17: lr = 1.20e-04
+2024-12-07 16:34:51,431 - INFO - layer.18: lr = 1.26e-04
+2024-12-07 16:34:51,437 - INFO - layer.19: lr = 1.33e-04
+2024-12-07 16:34:51,442 - INFO - layer.20: lr = 1.40e-04
+2024-12-07 16:34:51,448 - INFO - layer.21: lr = 1.47e-04
+2024-12-07 16:34:51,454 - INFO - layer.22: lr = 1.55e-04
+2024-12-07 16:34:51,459 - INFO - layer.23: lr = 1.63e-04
+2024-12-07 16:34:51,465 - INFO - layer.24: lr = 1.71e-04
+2024-12-07 16:34:51,470 - INFO - layer.25: lr = 1.80e-04
+2024-12-07 16:34:51,476 - INFO - layer.26: lr = 1.90e-04
+2024-12-07 16:34:51,481 - INFO - layer.27: lr = 2.00e-04
+2024-12-07 16:34:51,487 - INFO - output_norm: lr = 2.00e-04
+2024-12-07 16:34:51,545 - INFO - Initializing 2 training cycles with 2058 steps per cycle
+2024-12-07 16:34:55,734 - INFO - Memory usage (GB) - Peak: 22.20, Current: 3.20, Difference from start: 0.18
+2024-12-07 16:35:00,896 - INFO - Memory usage (GB) - Peak: 22.38, Current: 3.20, Difference from start: 0.00
+ [ 450/4116 1:14:50 < 10:12:29, 0.10 it/s, Epoch 0.22/2]
+Step	Training Loss	Validation Loss
+200	3.804700	4.148294
+400	3.712200	4.112037
+2024-12-07 16:42:13,871 - INFO - New best EMA loss: 7.9786 (improved by inf)
+2024-12-07 16:42:19,004 - INFO - Memory usage (GB) - Peak: 22.56, Current: 3.56, Difference from start: 0.18
+2024-12-07 16:42:22,941 - INFO - Memory usage (GB) - Peak: 22.74, Current: 3.56, Difference from start: 0.00
+2024-12-07 16:49:28,459 - INFO - New best EMA loss: 7.8991 (improved by 0.0795)
+2024-12-07 16:49:31,215 - INFO - Memory usage (GB) - Peak: 22.56, Current: 3.56, Difference from start: 0.18
+2024-12-07 16:49:34,915 - INFO - Memory usage (GB) - Peak: 22.74, Current: 3.56, Difference from start: 0.00
+2024-12-07 16:56:44,794 - INFO - New best EMA loss: 7.8161 (improved by 0.0830)
+2024-12-07 16:56:48,817 - INFO - Memory usage (GB) - Peak: 22.56, Current: 3.56, Difference from start: 0.18
+2024-12-07 16:56:53,969 - INFO - Memory usage (GB) - Peak: 22.74, Current: 3.56, Difference from start: 0.00
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+2024-12-07 17:04:02,822 - INFO - New best EMA loss: 7.7358 (improved by 0.0802)
+2024-12-07 17:08:40,854 - INFO - Memory usage (GB) - Peak: 22.56, Current: 3.56, Difference from start: 0.18
+2024-12-07 17:08:45,378 - INFO - Memory usage (GB) - Peak: 22.74, Current: 3.56, Difference from start: 0.00
+2024-12-07 17:15:57,794 - INFO - New best EMA loss: 7.6551 (improved by 0.0807)
+2024-12-07 17:16:02,384 - INFO - Memory usage (GB) - Peak: 22.56, Current: 3.56, Difference from start: 0.18
+2024-12-07 17:16:06,117 - INFO - Memory usage (GB) - Peak: 22.74, Current: 3.56, Difference from start: 0.00
+2024-12-07 17:23:22,291 - INFO - New best EMA loss: 7.5757 (improved by 0.0794)
+2024-12-07 17:23:26,197 - INFO - Memory usage (GB) - Peak: 22.56, Current: 3.56, Difference from start: 0.18
+2024-12-07 17:23:31,218 - INFO - Memory usage (GB) - Peak: 22.74, Current: 3.56, Difference from start: 0.00
+2024-12-07 17:30:47,579 - INFO - New best EMA loss: 7.4985 (improved by 0.0772)
+2024-12-07 17:30:52,199 - INFO - Memory usage (GB) - Peak: 22.56, Current: 3.56, Difference from start: 0.18
+2024-12-07 17:30:57,096 - INFO - Memory usage (GB) - Peak: 22.74, Current: 3.56, Difference from start: 0.00
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+Trainer.tokenizer is now deprecated. You should use Trainer.processing_class instead.
+2024-12-07 17:38:11,623 - INFO - New best EMA loss: 7.4227 (improved by 0.0757)
+2024-12-07 17:42:48,867 - INFO - Memory usage (GB) - Peak: 22.56, Current: 3.56, Difference from start: 0.18
+2024-12-07 17:42:53,466 - INFO - Memory usage (GB) - Peak: 22.74, Current: 3.56, Difference from start: 0.00
