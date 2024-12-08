@@ -6,8 +6,8 @@ ipywidgets
 tqdm # for progress bars
 
 # Data Science packages
-pandas
 numpy
+pandas
 matplotlib
 
 # PyTorch packages

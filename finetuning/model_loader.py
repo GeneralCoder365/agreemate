@@ -151,7 +151,8 @@ class ModelLoader:
                 quantization_config=quantization_config,
                 device_map="auto",
                 max_memory=max_memory,
-                trust_remote_code=True
+                attn_implementation="eager", # allows attention analysis on quantized models
+                trust_remote_code=False,
             )
 
             # prepare model for k-bit training
