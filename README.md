@@ -42,7 +42,11 @@ AgreeMate advances this by leveraging LLMs to unify strategy and generation with
 - Chain of Thought prompting enhances exploratory behavior
 - Personality traits significantly influence negotiation dynamics
 - Attention analysis reveals semantic understanding of negotiation concepts
----
+
+### Media
+
+Listen to a summary of our research paper on [NotebookLM](https://notebooklm.google.com/notebook/603ffc75-00a3-4269-8a8a-e10d4d9634ec/audio)
+
 
 ## Critical Project Structure
 
@@ -88,9 +92,9 @@ AgreeMate advances this by leveraging LLMs to unify strategy and generation with
 ### Figures
 - **`figures/`**:
   - Stores visualizations generated during the analysis of the paper.
----
 
-## Usage
+
+## Basic Usage
 
 ### Installation
 
@@ -129,7 +133,13 @@ fair_seller = Negotiator(
     model="llama-3.2-3B-seller"
 )
 ```
----
+
+
+## Contributors
+
+- Ainesh Chatterjee - Dataset preparation, Fine-tuning, and personality analysis
+- Samuel Miller - Probing analysis and visualization
+- Nithin Parepally - Architecture design and evaluation framework
 
 ### Citation
 
@@ -141,19 +151,10 @@ fair_seller = Negotiator(
 }
 ```
 
-## Contributors
-
-- Ainesh Chatterjee - Dataset preparation, Fine-tuning, and personality analysis
-- Samuel Miller - Probing analysis and visualization
-- Nithin Parepally - Architecture design and evaluation framework
-
-## License
+### License
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-### Media
-
-Listen to a summary of our research paper on [NotebookLM](https://notebooklm.google.com/notebook/603ffc75-00a3-4269-8a8a-e10d4d9634ec/audio)
 
 ## Acknowledgments
 
