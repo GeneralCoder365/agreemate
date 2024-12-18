@@ -14,6 +14,12 @@ AgreeMate presents a comprehensive finetuning/testing framework and negotiation 
 - Personality-driven behavior modeling
 - Attention mechanism analysis
 
+### Related Work
+
+Our work builds on [*"Decoupling Strategy and Generation in Negotiation Dialogues"*](https://arxiv.org/abs/1808.09637) by He et al. (2018), which introduced a modular approach to negotiation using coarse dialogue acts for strategy control.
+
+AgreeMate advances this by leveraging LLMs to unify strategy and generation without requiring explicit intermediate representations, enabling more nuanced and scalable negotiation behaviors.
+
 ## Key Features
 
 - **Model Variants**: Specialized fine-tuned models for buyer, seller, and generalist roles
