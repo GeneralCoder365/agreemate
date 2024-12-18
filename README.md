@@ -20,7 +20,7 @@ Our work builds on [*"Decoupling Strategy and Generation in Negotiation Dialogue
 
 AgreeMate advances this by leveraging LLMs to unify strategy and generation without requiring explicit intermediate representations, enabling more nuanced and scalable negotiation behaviors.
 
-## Key Features
+### Key Features
 
 - **Model Variants**: Specialized fine-tuned models for buyer, seller, and generalist roles
 - **Multiple Scales**: Support for LLaMA models from 3B to 70B parameters
@@ -28,7 +28,7 @@ AgreeMate advances this by leveraging LLMs to unify strategy and generation with
 - **Chain of Thought**: Enhanced reasoning capabilities through CoT prompting
 - **Comprehensive Metrics**: Novel measurements for fairness, bias, efficiency, and more
 
-## Key Technologies
+### Key Technologies
 
 - Parameter-Efficient Fine-Tuning (PEFT) with LoRA
 - 4-bit quantization for memory efficiency
@@ -36,7 +36,7 @@ AgreeMate advances this by leveraging LLMs to unify strategy and generation with
 - Mixed precision training
 - Advanced learning rate scheduling
 
-## Results & Findings
+### Results & Findings
 
 - Larger models demonstrate improved agreement rates and fairness
 - Chain of Thought prompting enhances exploratory behavior
@@ -90,15 +90,15 @@ AgreeMate advances this by leveraging LLMs to unify strategy and generation with
   - Stores visualizations generated during the analysis of the paper.
 ---
 
-## Installation
+## Usage
+
+### Installation
 
 ```bash
 git clone https://github.com/GeneralCoder365/agreemate
 cd agreemate
 pip install -r requirements.txt
 ```
-
-## Usage
 
 ### Basic Negotiation
 
@@ -131,7 +131,7 @@ fair_seller = Negotiator(
 ```
 ---
 
-## Citation
+### Citation
 
 ```bibtex
 @article{chatterjee2024agreemate,
@@ -151,7 +151,7 @@ fair_seller = Negotiator(
 
 This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
 
-## Media
+### Media
 
 Listen to a summary of our research paper on [NotebookLM](https://notebooklm.google.com/notebook/603ffc75-00a3-4269-8a8a-e10d4d9634ec/audio)
 
