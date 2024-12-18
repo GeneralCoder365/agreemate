@@ -1,9 +1,7 @@
-# Jupyter Notebook
+# Jupyter Notebook packages
 notebook
 jupyterlab
 ipywidgets
-
-tqdm # for progress bars
 
 # Data Science packages
 numpy
@@ -25,6 +23,7 @@ accelerate
 
 # Machine Learning packages
 scikit-learn
+tqdm # for progress bars
 tensorboard
 
 # Google Colab-specific packages

@@ -1,0 +1,1123 @@
+Unnamed: 0,scenario_id,title,description,category,listing_price,buyer_target,seller_target,outcome,accepted_price,transcript,prices,actions,transcript_display,bias,aggressiveness,fairness,dialogue_length,bias_cond_dialogue_length,rel_efficiency,probing_ratio,concession_rate
+0,09aea678-c5cd-4967-8a2f-b650f3520c55,Verizon Car Charger with Dual Output Micro USB and LED Light,Charge two devices simultaneously on the go. This vehicle charger with an additional USB port delivers enough power to charge two devices at once. The push-button activated LED connector light means no more fumbling in the dark trying to connect your device. Auto Detect IC Technology automatically detects the device type and its specific charging needs for improved compatibility. And the built-in indicator light illuminates red to let you know the charger is receiving power and the power socket is working properly.,phone,10.0,7.0,10.0,Accepted,8.0,"	Buyer: Hi, I'm interested in the Verizon Car Charger with Dual Output Micro USB and LED Light. Can we discuss the price?
+	Seller: That's a great product. I'm the seller, and I'd be happy to discuss the price with you.
+	Buyer: Hi, thanks for being open to negotiation. How much are you thinking of selling it for?
+	Seller: I'm thinking of selling it for $9.
+	Buyer: How about $7?
+	Seller: $8.
+	Buyer: I can do $7.50.
+	Seller: I can do $8.50.
+	Buyer: $8 is still a bit too high for me. I think I could meet you in the middle at $8.
+	Seller: Fine, you can have it for $8.
+","[-1.0, -1.0, -1.0, 9.0, 7.0, 8.0, 7.5, 8.5, 8.0, 8.0]","['intro', 'intro', 'init-price', 'init-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'agree']","
+      =================================================================================================
+      Negotiation for: <Verizon Car Charger with Dual Output Micro USB and LED Light>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in the Verizon Car Charger with Dual Output Micro USB and LED Light. Can we discuss the price?
+	Seller: That's a great product. I'm the seller, and I'd be happy to discuss the price with you.
+	Buyer: Hi, thanks for being open to negotiation. How much are you thinking of selling it for?
+	Seller: I'm thinking of selling it for $9.
+	Buyer: How about $7?
+	Seller: $8.
+	Buyer: I can do $7.50.
+	Seller: I can do $8.50.
+	Buyer: $8 is still a bit too high for me. I think I could meet you in the middle at $8.
+	Seller: Fine, you can have it for $8.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Accepted
+      Agreed Price: 8.0
+      =================================================================================================
+      ",0.3333333333333332,0.2,0.6666666666666667,10,0.0333333333333333,0.0666666666666666,0.0,0.7142857142857143
+1,e5cd53dc-424c-4197-8eb8-ed8861b19e0d,Long board custom bilt from the board up,Hey there cl I have a long board for sale pretty much brand knew rode all together 4 or 5 times . The brand on the deck is a gravity skateboard. The brand of trucks are sidewinder 2sGuwuing.mini monster hawgs 70mm 78a Wheels with Swiss bones bearings brand new. Please no low ballers thank you and have a great day .,bike,200.0,120.0,200.0,Rejected,,"	Buyer: I'm interested in your long board for sale. It looks like it's in great condition.
+	Seller: Yeah, it is. Like new, only 4 or 5 rides.
+	Buyer: Are the Swiss bones bearings still wrapped, I didn't see any mention of them being used.
+	Seller: Yeah, they are still wrapped, brand new.
+	Buyer: What's the current price on the long board?
+	Seller: The current price is $200.
+	Buyer: I can do $120 for it, that's the highest I can go.
+	Seller: I can do $180.
+	Buyer: $150 is my final offer.
+	Seller: I can do $170.
+	Buyer: I'm still a bit above my target, how about $160?
+	Seller: $165.
+	Buyer: I can do $162.
+	Seller: I think I can meet you halfway at $163.
+	Buyer: $161.
+","[-1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 120.0, 180.0, 150.0, 170.0, 160.0, 165.0, 162.0, 163.0, 161.0]","['intro', 'inform', 'inquire', 'inform', 'inquire', 'inform', 'init-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price']","
+      =================================================================================================
+      Negotiation for: <Long board custom bilt from the board up>
+      =================================================================================================
+      	Buyer: I'm interested in your long board for sale. It looks like it's in great condition.
+	Seller: Yeah, it is. Like new, only 4 or 5 rides.
+	Buyer: Are the Swiss bones bearings still wrapped, I didn't see any mention of them being used.
+	Seller: Yeah, they are still wrapped, brand new.
+	Buyer: What's the current price on the long board?
+	Seller: The current price is $200.
+	Buyer: I can do $120 for it, that's the highest I can go.
+	Seller: I can do $180.
+	Buyer: $150 is my final offer.
+	Seller: I can do $170.
+	Buyer: I'm still a bit above my target, how about $160?
+	Seller: $165.
+	Buyer: I can do $162.
+	Seller: I think I can meet you halfway at $163.
+	Buyer: $161.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.1333333333333333,14.555555555555555
+2,02cfdc52-9530-4ac7-97fa-e4055cd0b6d0,Sectional Couch,I am remodeling my space and selling a beautiful custom modern terra cotta color sectional couch. It is in like-new condition and can be taken apart in two pieces while transporting. Absolutely no wear or tear in a non-smoking home. I am located in the Sunset district of SF. Please email if you are interested in seeing it. Thank you!,furniture,585.0,444.0,585.0,Rejected,,"	Buyer: Hi, I'm interested in your custom modern terra cotta color sectional couch. What's the current price for it?
+	Seller: The listing price is 585.
+	Buyer: I'd like to offer 490 for it.
+	Seller: I can do 520.
+	Buyer: I can do 480.
+	Seller: 500.
+	Buyer: 480 is my final offer.
+	Seller: 490.
+	Buyer: I can do 475.
+	Seller: 487.5.
+	Buyer: 475 is my final offer.
+	Seller: 482.5.
+	Buyer: 477.
+	Seller: 480.
+	Buyer: I will not go any higher than $477.
+","[-1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 477.0]","['intro', 'inform', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'insist']","
+      =================================================================================================
+      Negotiation for: <Sectional Couch>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in your custom modern terra cotta color sectional couch. What's the current price for it?
+	Seller: The listing price is 585.
+	Buyer: I'd like to offer 490 for it.
+	Seller: I can do 520.
+	Buyer: I can do 480.
+	Seller: 500.
+	Buyer: 480 is my final offer.
+	Seller: 490.
+	Buyer: I can do 475.
+	Seller: 487.5.
+	Buyer: 475 is my final offer.
+	Seller: 482.5.
+	Buyer: 477.
+	Seller: 480.
+	Buyer: I will not go any higher than $477.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.0,
+3,8ba14ae4-1de2-4551-9959-d95d54141be5,2006 Toyota 4Runner 4WD - Only 106k Miles - Clean Title,"Selling my 2006 Toyota 4 Runner with only 106k original miles. The truck is in great condition with no mechanical flaws whatsoever and a clean accident history. Got new tires about 3,000 miles ago. Always has the oil changed on time (due in about 1k). Just got a thorough cleaning inside and a wash and wax outside (still wet in the photos). This truck has never been offroad, but the 4WD is working perfectly from the few times we've been up to Tahoe in it. However, it's a 10+ year old truck that's been driven, not babied and garaged all the time. It's got some scratches, paint is not perfect, but zero body damage.",car,14500.0,8700.0,14500.0,Rejected,,"	Buyer: Hi, I'm interested in the 2006 Toyota 4Runner. I'd like to start the negotiation with an offer of $8,500.
+	Seller: I'd be willing to consider $13,000.
+	Buyer: I can do $9,500.
+	Seller: $12,000.
+	Buyer: I can go as low as $9,000.
+	Seller: I can go as low as $11,500.
+	Buyer: I can go as low as $9,500.
+	Seller: $10,500.
+	Buyer: I can go as low as $9,000.
+	Seller: I can go as low as $10,000.
+	Buyer: I can go as low as $8,700.
+	Seller: $10,500.
+	Buyer: I can do $9,200.
+	Seller: I can do $10,000.
+	Buyer: I can do $9,000.
+","[8500.0, 13000.0, 9500.0, 12000.0, 9000.0, 11500.0, 9500.0, 10500.0, 9000.0, 10000.0, 8700.0, 10500.0, 9200.0, 10000.0, 9000.0]","['init-price', 'counter-price', 'counter-price', 'counter-price', 'offer', 'counter-price', 'offer', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price']","
+      =================================================================================================
+      Negotiation for: <2006 Toyota 4Runner 4WD - Only 106k Miles - Clean Title>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in the 2006 Toyota 4Runner. I'd like to start the negotiation with an offer of $8,500.
+	Seller: I'd be willing to consider $13,000.
+	Buyer: I can do $9,500.
+	Seller: $12,000.
+	Buyer: I can go as low as $9,000.
+	Seller: I can go as low as $11,500.
+	Buyer: I can go as low as $9,500.
+	Seller: $10,500.
+	Buyer: I can go as low as $9,000.
+	Seller: I can go as low as $10,000.
+	Buyer: I can go as low as $8,700.
+	Seller: $10,500.
+	Buyer: I can do $9,200.
+	Seller: I can do $10,000.
+	Buyer: I can do $9,000.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.0,1846.6666666666667
+4,cbd117d3-ebb8-4b5d-9817-905e351a2368,Wooden FULL SIZED Futon w/ 2 Slip Covers $125 obo,Just bought on craigslist a few months ago. was exactly what I was looking for but ended up being a tight fit for the space. Classic design. comes with all white slip cover and dove grey slip cover.,furniture,125.0,95.0,125.0,Rejected,,"	Buyer: Hi, I'm interested in buying the wooden full-sized futon with the two slip covers. It looks like a great piece of furniture.
+	Seller: Yes, I think you'd really like it. It's a nice, classic design.
+	Buyer: What's the original price you paid for it?
+	Seller: I bought it on Craigslist a few months ago for $125.
+	Buyer: How long are you looking to sell it for?
+	Seller: I'm looking to sell it quickly because it's a tight fit for the space, so I'm open to reasonable offers.
+	Buyer: I'd like to make a reasonable offer of $100.
+	Seller: I think I can do $115.
+	Buyer: Can you do $105.
+	Seller: I can meet you at $110.
+	Buyer: $105
+	Seller: I can meet you halfway at $107.5.
+	Buyer: I'd be willing to meet you at $106.
+	Seller: How about $110?
+	Buyer: I think $105 is the closest we can get.
+","[-1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 100.0, 115.0, 105.0, 110.0, 105.0, 107.5, 106.0, 110.0, 105.0]","['intro', 'inform', 'inquire', 'inform', 'inquire', 'inform', 'offer', 'counter-price', 'counter-price', 'offer', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price']","
+      =================================================================================================
+      Negotiation for: <Wooden FULL SIZED Futon w/ 2 Slip Covers $125 obo>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in buying the wooden full-sized futon with the two slip covers. It looks like a great piece of furniture.
+	Seller: Yes, I think you'd really like it. It's a nice, classic design.
+	Buyer: What's the original price you paid for it?
+	Seller: I bought it on Craigslist a few months ago for $125.
+	Buyer: How long are you looking to sell it for?
+	Seller: I'm looking to sell it quickly because it's a tight fit for the space, so I'm open to reasonable offers.
+	Buyer: I'd like to make a reasonable offer of $100.
+	Seller: I think I can do $115.
+	Buyer: Can you do $105.
+	Seller: I can meet you at $110.
+	Buyer: $105
+	Seller: I can meet you halfway at $107.5.
+	Buyer: I'd be willing to meet you at $106.
+	Seller: How about $110?
+	Buyer: I think $105 is the closest we can get.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.1333333333333333,5.333333333333333
+5,15a0be73-0d95-4adb-9231-b3e0e0a687b3,Brand NEW SanDisk ULTRA MicroSDXC 200GB,"I have a brand new unopened microSD card. Great for Android users, Nintendo Switch, 3DS and GoPro cameras, and beyond.",electronics,75.0,69.0,75.0,Rejected,,"	Buyer: Hi, I'm interested in buying the Brand NEW SanDisk ULTRA MicroSDXC 200GB.
+	Seller: I'm glad you're interested in the microSD card. It's brand new and unopened. What would you like to know about it?
+	Buyer: It's a great product for Android users, Nintendo Switch, 3DS and GoPro cameras, and beyond.
+	Seller: Exactly, and it's a 200GB capacity which is very spacious for storing media files.
+	Buyer: I'm interested in buying it. Can you sell it to me for $62?
+	Seller: $70.
+	Buyer: $69.
+	Seller: $67.
+	Buyer: I can do $65.
+	Seller: I can go as low as $66.
+	Buyer: I think the lowest I would want to go is $64.
+	Seller: I think the lowest I can go is $65.
+	Buyer: I can do $64.
+	Seller: I think I can do $65.
+	Buyer: I can do $63.
+","[-1.0, -1.0, -1.0, -1.0, 62.0, 70.0, 69.0, 67.0, 65.0, 66.0, 64.0, 65.0, 64.0, 65.0, 63.0]","['intro', 'intro', 'inform', 'inform', 'init-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'offer']","
+      =================================================================================================
+      Negotiation for: <Brand NEW SanDisk ULTRA MicroSDXC 200GB>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in buying the Brand NEW SanDisk ULTRA MicroSDXC 200GB.
+	Seller: I'm glad you're interested in the microSD card. It's brand new and unopened. What would you like to know about it?
+	Buyer: It's a great product for Android users, Nintendo Switch, 3DS and GoPro cameras, and beyond.
+	Seller: Exactly, and it's a 200GB capacity which is very spacious for storing media files.
+	Buyer: I'm interested in buying it. Can you sell it to me for $62?
+	Seller: $70.
+	Buyer: $69.
+	Seller: $67.
+	Buyer: I can do $65.
+	Seller: I can go as low as $66.
+	Buyer: I think the lowest I would want to go is $64.
+	Seller: I think the lowest I can go is $65.
+	Buyer: I can do $64.
+	Seller: I think I can do $65.
+	Buyer: I can do $63.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.0,1.9090909090909092
+6,69a2d2b0-e339-45bc-8e00-9ff69db0d124,Bose Soundlink 3 brand new,"Brand new never use, i got it has a gift but i am using sonos system.",electronics,220.0,132.0,220.0,Rejected,,"	Buyer: Hi, I'm interested in buying the Bose Soundlink 3 brand new from you. Can you tell me more about it?
+	Seller: It's a brand new Bose Soundlink 3, never used, and I got it as a gift but ended up using my Sonos system instead.
+	Buyer: I see, so it's still sealed in the box, right?
+	Seller: Yeah, it's still sealed in the box and comes with all original accessories.
+	Buyer: What's the original price you got it for when you bought it as a gift?
+	Seller: I bought it for 220.
+	Buyer: That's interesting, I looked up the price online and it's usually around $132.
+	Seller: The price I'm willing to sell it for is 220.
+	Buyer: I'd be willing to go up to $200.
+	Seller: $210.
+	Buyer: I can do 195.
+	Seller: $205.
+	Buyer: $190.
+	Seller: I can do $200.
+	Buyer: No, I don't think that's fair. I'd be happy to go up to $198, but that's my final offer.
+","[-1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 200.0, 210.0, -1.0, 205.0, 190.0, 200.0, -1.0]","['intro', 'inform', 'inform', 'inform', 'inquire', 'inform', 'inform', 'inform', 'offer', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'offer', 'disagree']","
+      =================================================================================================
+      Negotiation for: <Bose Soundlink 3 brand new>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in buying the Bose Soundlink 3 brand new from you. Can you tell me more about it?
+	Seller: It's a brand new Bose Soundlink 3, never used, and I got it as a gift but ended up using my Sonos system instead.
+	Buyer: I see, so it's still sealed in the box, right?
+	Seller: Yeah, it's still sealed in the box and comes with all original accessories.
+	Buyer: What's the original price you got it for when you bought it as a gift?
+	Seller: I bought it for 220.
+	Buyer: That's interesting, I looked up the price online and it's usually around $132.
+	Seller: The price I'm willing to sell it for is 220.
+	Buyer: I'd be willing to go up to $200.
+	Seller: $210.
+	Buyer: I can do 195.
+	Seller: $205.
+	Buyer: $190.
+	Seller: I can do $200.
+	Buyer: No, I don't think that's fair. I'd be happy to go up to $198, but that's my final offer.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.0666666666666666,8.0
+7,ff3d27d6-5a0d-4908-9df4-ecf8b2b279aa,Apple iPhone 5S 16gb Space Gray,"Apple iPhone 5S 16gb Space Gray,Like New Condition (no scratches anywhere),Will be reset to factory specs before sale",phone,160.0,121.0,160.0,Rejected,,"	Buyer: Hi, I'm interested in buying the Apple iPhone 5S 16gb Space Gray you have listed. Can you tell me more about it?
+	Seller: It's a Like New Condition (no scratches anywhere), Apple iPhone 5S 16gb Space Gray, which will be reset to factory specs before sale.
+	Buyer: I see you've reset it to factory specs, which is great.
+	Seller: It's a great phone with no scratches anywhere.
+	Buyer: What is your current asking price for the iPhone?
+	Seller: I'm looking to sell it for $140.
+	Buyer: I would be willing to pay $135 for it.
+	Seller: I can do $140, that's as low as I can go.
+	Buyer: I can go up to $137, that's my final offer.
+	Seller: I can sell it to you for $145.
+	Buyer: I can go up to $140, that's my final offer.
+	Seller: I can sell it to you for $142.
+	Buyer: I would do $136.
+	Seller: I can sell it to you for $138.
+	Buyer: How about $128?
+","[-1.0, -1.0, -1.0, -1.0, -1.0, 140.0, 135.0, 140.0, 137.0, 145.0, 140.0, 142.0, 136.0, 138.0, 128.0]","['intro', 'inform', 'inform', 'inform', 'inquire', 'init-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'offer', 'offer']","
+      =================================================================================================
+      Negotiation for: <Apple iPhone 5S 16gb Space Gray>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in buying the Apple iPhone 5S 16gb Space Gray you have listed. Can you tell me more about it?
+	Seller: It's a Like New Condition (no scratches anywhere), Apple iPhone 5S 16gb Space Gray, which will be reset to factory specs before sale.
+	Buyer: I see you've reset it to factory specs, which is great.
+	Seller: It's a great phone with no scratches anywhere.
+	Buyer: What is your current asking price for the iPhone?
+	Seller: I'm looking to sell it for $140.
+	Buyer: I would be willing to pay $135 for it.
+	Seller: I can do $140, that's as low as I can go.
+	Buyer: I can go up to $137, that's my final offer.
+	Seller: I can sell it to you for $145.
+	Buyer: I can go up to $140, that's my final offer.
+	Seller: I can sell it to you for $142.
+	Buyer: I would do $136.
+	Seller: I can sell it to you for $138.
+	Buyer: How about $128?
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.0666666666666666,4.6
+8,8d7a36d0-3926-4ef7-be9d-b1dbee2b2d15,Steel Frame Colnago,Rare and classic 62cm Steel Frame Colnago!! It's made and designed for the tall/ large man. Campanella components. Saddle is on my Cannondale. It was turned up about 25 miles of riding ago.,bike,600.0,456.0,600.0,Rejected,,"	Buyer: Hi, I'm interested in the Colnago bike you have for sale. Can we discuss the price?
+	Seller: It's a rare 62cm Steel Frame Colnago with Campanella components, designed for tall and large men.
+	Buyer: What's the listing price for this bike?
+	Seller: The listing price is $600.
+	Buyer: What's the lowest you're willing to sell it for?
+	Seller: I can do $5 less than the listing price.
+	Buyer: I can do $550.
+	Seller: I can do $580.
+	Buyer: I think $540 is the lowest I would be willing to go.
+	Seller: I can do $560.
+	Buyer: I think $520 is the lowest I would want to go.
+	Seller: I think the lowest I would want to go is $545.
+	Buyer: I'm not sure I can go that low, how about $530?
+	Seller: $535
+	Buyer: I can do $530, that's the lowest I can go.
+","[-1.0, -1.0, -1.0, -1.0, -1.0, 5.0, 550.0, 580.0, 540.0, 560.0, 520.0, 545.0, 530.0, 535.0, 530.0]","['intro', 'inform', 'inquire', 'inform', 'inquire', 'offer', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price']","
+      =================================================================================================
+      Negotiation for: <Steel Frame Colnago>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in the Colnago bike you have for sale. Can we discuss the price?
+	Seller: It's a rare 62cm Steel Frame Colnago with Campanella components, designed for tall and large men.
+	Buyer: What's the listing price for this bike?
+	Seller: The listing price is $600.
+	Buyer: What's the lowest you're willing to sell it for?
+	Seller: I can do $5 less than the listing price.
+	Buyer: I can do $550.
+	Seller: I can do $580.
+	Buyer: I think $540 is the lowest I would be willing to go.
+	Seller: I can do $560.
+	Buyer: I think $520 is the lowest I would want to go.
+	Seller: I think the lowest I would want to go is $545.
+	Buyer: I'm not sure I can go that low, how about $530?
+	Seller: $535
+	Buyer: I can do $530, that's the lowest I can go.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.1333333333333333,72.5
+9,28281abc-4e98-4748-bab4-1e095d8d68bf,Beautiful 1 Bedroom Home with Balcony Available Mid June!,"Essex Property Trust,EMME Apartment Homes,6350 Christie Ave, Emeryville, CA 94608,We will have a 1 bedroom 1 bath 643 sq ft apartment #130 available on June 10th! Your beautiful new kitchen will have Cesar stone countertops, dark cherry wood on the cabinets and stainless steel appliances!,All of emme apartments come with a full size front load washer & dryer! Emme offers amenities such as our 24 hour gym, courtyard, clubhouse and our beautiful roof top deck, a must see with a great view of San Francisco! Living at emme makes life a bit easier with having everything you need right around the corner, from grocery stores to retail! Not to mention, transportation!,Emeryville provides us a free shuttle that picks you up right in front of the community and takes you straight to bart!,Schedule your appointment today!!,Stop by our 2 bedroom home OPEN HOUSE this Saturday, May 20th from 10:00 AM - 12:00 PM!",housing,2834.0,1700.0,2834.0,Rejected,,"	Buyer: Hi, I'm interested in the 1 bedroom home on Christie Ave. Can you tell me more about it?
+	Seller: It's a beautiful 1 bedroom, 1 bath apartment with 643 sq ft, available mid-June. It features a new kitchen with Cesar stone countertops and a full-size washer & dryer.
+	Buyer: That sounds great. How much is it listed for?
+	Seller: The listing price is $2834.
+	Buyer: I'm familiar with the listing price, but my target is $1700.
+	Seller: That's a bit low, considering the amenities and the location.
+	Buyer: I'd be willing to go up to $2200.
+	Seller: I can do $2400, that's my best offer.
+	Buyer: I'm still a bit high on the offer, how about $2300?
+	Seller: I can do $2325.
+	Buyer: I can do $2250.
+	Seller: I can consider 2350.
+	Buyer: I can do $2300, that's my final offer.
+	Seller: I can do $2325.
+	Buyer: I can do $2300, that's my final offer.
+","[-1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 2200.0, 2400.0, 2300.0, 2325.0, 2250.0, -1.0, 2300.0, 2325.0, 2300.0]","['intro', 'inform', 'inquire', 'inform', 'inform', 'disagree', 'offer', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price']","
+      =================================================================================================
+      Negotiation for: <Beautiful 1 Bedroom Home with Balcony Available Mid June!>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in the 1 bedroom home on Christie Ave. Can you tell me more about it?
+	Seller: It's a beautiful 1 bedroom, 1 bath apartment with 643 sq ft, available mid-June. It features a new kitchen with Cesar stone countertops and a full-size washer & dryer.
+	Buyer: That sounds great. How much is it listed for?
+	Seller: The listing price is $2834.
+	Buyer: I'm familiar with the listing price, but my target is $1700.
+	Seller: That's a bit low, considering the amenities and the location.
+	Buyer: I'd be willing to go up to $2200.
+	Seller: I can do $2400, that's my best offer.
+	Buyer: I'm still a bit high on the offer, how about $2300?
+	Seller: I can do $2325.
+	Buyer: I can do $2250.
+	Seller: I can consider 2350.
+	Buyer: I can do $2300, that's my final offer.
+	Seller: I can do $2325.
+	Buyer: I can do $2300, that's my final offer.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.0666666666666666,62.5
+10,c497f40d-ef5a-4808-83f6-65762f2af59c,Travel Electrical Adaptor Connection Pack Adapter,"Features:,*Each adapter clearly labeled for easy identification.,*Selection guide makes adapter identification quick and easy,*Deluxe organizer case holds all adapters,*Mini-zipper case lets you carry just the adapters you need",electronics,15.0,13.0,15.0,Rejected,,"	Buyer: Hi, I'm interested in purchasing the Travel Electrical Adaptor Connection Pack Adapter. Can you tell me more about it?
+	Seller: This is a premium travel adapter pack that features clear labeling, a selection guide, a deluxe organizer case, and a mini-zipper case for easy portability.
+	Buyer: That sounds great, I like the features you've listed. The item description says it's for electronics, and my target price is $13. What's the listing price for this item?
+	Seller: Our listing price for the Travel Electrical Adaptor Connection Pack Adapter is $15.
+	Buyer: The listing price is higher than my target price. I'm looking to stay around $13.
+	Seller: I can do $14.
+	Buyer: I can do $13.
+	Seller: I can go to $13.75.
+	Buyer: I can do $13.49.
+	Seller: That's as low as I can go, so I'm at $13.50.
+	Buyer: I can go to $13.30.
+	Seller: I'm not comfortable going any lower than $13.40.
+	Buyer: I can do $13.20.
+	Seller: I think the lowest I would want to go is $13.25.
+	Buyer: I think the lowest I would want to go is $13.00.
+","[-1.0, -1.0, -1.0, -1.0, -1.0, 14.0, 13.0, 13.75, 13.49, 13.5, 13.3, 13.4, 13.2, 13.25, 13.0]","['intro', 'inform', 'inform', 'inform', 'inform', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price']","
+      =================================================================================================
+      Negotiation for: <Travel Electrical Adaptor Connection Pack Adapter>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in purchasing the Travel Electrical Adaptor Connection Pack Adapter. Can you tell me more about it?
+	Seller: This is a premium travel adapter pack that features clear labeling, a selection guide, a deluxe organizer case, and a mini-zipper case for easy portability.
+	Buyer: That sounds great, I like the features you've listed. The item description says it's for electronics, and my target price is $13. What's the listing price for this item?
+	Seller: Our listing price for the Travel Electrical Adaptor Connection Pack Adapter is $15.
+	Buyer: The listing price is higher than my target price. I'm looking to stay around $13.
+	Seller: I can do $14.
+	Buyer: I can do $13.
+	Seller: I can go to $13.75.
+	Buyer: I can do $13.49.
+	Seller: That's as low as I can go, so I'm at $13.50.
+	Buyer: I can go to $13.30.
+	Seller: I'm not comfortable going any lower than $13.40.
+	Buyer: I can do $13.20.
+	Seller: I think the lowest I would want to go is $13.25.
+	Buyer: I think the lowest I would want to go is $13.00.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.0,0.28200000000000003
+11,2a9d3e5b-434e-4175-8895-54f6a60f9569,Panasonic DVD Player,"Panasonic DVD Player: in excellent condition with no blemishes, scratches or dents. Looks and operates as if new.",electronics,55.0,41.0,55.0,Rejected,,"	Buyer: Hi, I'm interested in your Panasonic DVD Player.
+	Seller: Hi, glad you like it. It's in excellent condition.
+	Buyer: What's the current price for the DVD player?
+	Seller: The listing price is $55.
+	Buyer: Can you negotiate on the price?
+	Seller: It's already a great deal at $55, but if you want to make a serious offer I can consider it.
+	Buyer: I'm willing to pay $45.
+	Seller: I can do $50.
+	Buyer: I'd rather pay $48.
+	Seller: That's still a bit low, but I can do $52.
+	Buyer: $49.
+	Seller: I can do $49.50.
+	Buyer: I can do $48.50.
+	Seller: I can do $51.
+	Buyer: I think the lowest I would want to go is $49.
+","[-1.0, -1.0, -1.0, -1.0, -1.0, 55.0, 45.0, 50.0, 48.0, 52.0, 49.0, 49.5, 48.5, 51.0, 49.0]","['intro', 'intro', 'inquire', 'inform', 'inquire', 'insist', 'init-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price']","
+      =================================================================================================
+      Negotiation for: <Panasonic DVD Player>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in your Panasonic DVD Player.
+	Seller: Hi, glad you like it. It's in excellent condition.
+	Buyer: What's the current price for the DVD player?
+	Seller: The listing price is $55.
+	Buyer: Can you negotiate on the price?
+	Seller: It's already a great deal at $55, but if you want to make a serious offer I can consider it.
+	Buyer: I'm willing to pay $45.
+	Seller: I can do $50.
+	Buyer: I'd rather pay $48.
+	Seller: That's still a bit low, but I can do $52.
+	Buyer: $49.
+	Seller: I can do $49.50.
+	Buyer: I can do $48.50.
+	Seller: I can do $51.
+	Buyer: I think the lowest I would want to go is $49.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.1333333333333333,3.0
+12,aa477e27-290b-4db8-9f46-843710ac0ca6,Sol Republic Wireless Bluetooth Headphones,"A2 Sound Engines with clear highs and detailed deep bass,Super-Power Wireless - Control Tracks Air from up to 150 feet away",electronics,155.0,93.0,155.0,Rejected,,"	Buyer: Hi, I'm interested in purchasing the Sol Republic Wireless Bluetooth Headphones. Could you tell me more about it?
+	Seller: These are Sol Republic Wireless Bluetooth Headphones with A2 Sound Engines for clear highs and detailed deep bass, and they also have Super-Power Wireless – Control Tracks Air from up to 150 feet away.
+	Buyer: What's the current price for the headphones?
+	Seller: The listing price is 155 for this pair.
+	Buyer: I was thinking more along the lines of $93.
+	Seller: I'm afraid 93 is a bit lower than I'm comfortable going, but I can do 140.
+	Buyer: 125 is the lowest I'm willing to go.
+	Seller: I can see you're serious, how about $132?
+	Buyer: I'm still a bit above my target, how about $119?
+	Seller: I can do 129, but that's as low as I can go.
+	Buyer: I'm still a bit above my target, $117.
+	Seller: I can meet you in the middle at $123.
+	Buyer: I think the lowest I would want to go is 120.
+	Seller: I can do 122.
+	Buyer: I think I can do 119.
+","[-1.0, -1.0, -1.0, -1.0, 93.0, -1.0, -1.0, 132.0, 119.0, -1.0, 117.0, 123.0, -1.0, -1.0, -1.0]","['intro', 'inform', 'inquire', 'inform', 'init-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price']","
+      =================================================================================================
+      Negotiation for: <Sol Republic Wireless Bluetooth Headphones>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in purchasing the Sol Republic Wireless Bluetooth Headphones. Could you tell me more about it?
+	Seller: These are Sol Republic Wireless Bluetooth Headphones with A2 Sound Engines for clear highs and detailed deep bass, and they also have Super-Power Wireless – Control Tracks Air from up to 150 feet away.
+	Buyer: What's the current price for the headphones?
+	Seller: The listing price is 155 for this pair.
+	Buyer: I was thinking more along the lines of $93.
+	Seller: I'm afraid 93 is a bit lower than I'm comfortable going, but I can do 140.
+	Buyer: 125 is the lowest I'm willing to go.
+	Seller: I can see you're serious, how about $132?
+	Buyer: I'm still a bit above my target, how about $119?
+	Seller: I can do 129, but that's as low as I can go.
+	Buyer: I'm still a bit above my target, $117.
+	Seller: I can meet you in the middle at $123.
+	Buyer: I think the lowest I would want to go is 120.
+	Seller: I can do 122.
+	Buyer: I think I can do 119.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.0666666666666666,12.0
+13,004ae449-2c9c-4c29-b133-035ba955ff36,2010 camaro ss   on zl1 rims runs good 2018 tags clean title,selling my 2010 camaro ss  6.2L  auto and  maunal  runs good  120miles,car,14800.0,11248.0,14800.0,Rejected,,"	Buyer: I'm interested in the '10 Camaro SS, can you tell me more about it?
+	Seller: It's a 2010 Camaro SS with a 6.2L engine, automatic transmission, and 6,200 miles.
+	Buyer: That sounds great, I've always been a fan of the '10 Camaro SS. The listing says it's clean title with 2018 tags.
+	Seller: The car runs good and I've kept it well maintained, just be aware it's a manual transmission despite being auto listed.
+	Buyer: I noticed the listing price is 14800.
+	Seller: Yes, that's correct. I've priced it to sell, but I'm willing to negotiate.
+	Buyer: I'd be willing to do $10500.
+	Seller: I can do $13500, I'm close to my target price.
+	Buyer: I can do $12200.
+	Seller: I can do $12400.
+	Buyer: I can do $12000.
+	Seller: I can do $12300.
+	Buyer: I can do $12100.
+	Seller: $12050.
+	Buyer: I can do $11900.
+","[-1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 10500.0, 13500.0, 12200.0, 12400.0, 12000.0, 12300.0, 12100.0, 12050.0, 11900.0]","['intro', 'inform', 'inform', 'inform', 'inform', 'inform', 'init-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price']","
+      =================================================================================================
+      Negotiation for: <2010 camaro ss   on zl1 rims runs good 2018 tags clean title>
+      =================================================================================================
+      	Buyer: I'm interested in the '10 Camaro SS, can you tell me more about it?
+	Seller: It's a 2010 Camaro SS with a 6.2L engine, automatic transmission, and 6,200 miles.
+	Buyer: That sounds great, I've always been a fan of the '10 Camaro SS. The listing says it's clean title with 2018 tags.
+	Seller: The car runs good and I've kept it well maintained, just be aware it's a manual transmission despite being auto listed.
+	Buyer: I noticed the listing price is 14800.
+	Seller: Yes, that's correct. I've priced it to sell, but I'm willing to negotiate.
+	Buyer: I'd be willing to do $10500.
+	Seller: I can do $13500, I'm close to my target price.
+	Buyer: I can do $12200.
+	Seller: I can do $12400.
+	Buyer: I can do $12000.
+	Seller: I can do $12300.
+	Buyer: I can do $12100.
+	Seller: $12050.
+	Buyer: I can do $11900.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.0,622.2222222222222
+14,a0506792-e0c2-49e0-a0a3-600a1d46e42b,2016 Raleigh Kodiak II 27.5 Upgraded Size L 2x10 spd.,"Got for sale a sweet 2016 Raleigh Kodiak II Full suspension w/120mm of travel front and back by Rock Shox with lockout on the front and 3 positions on the rear from Fox Factory w/Boost and Kashima Coating (pictured is the RT3 but that's not longer available) full SRAM's components i.e. SRAM XX rear der. (long cage) XO front der. XO grip shift, 175mm Race Face Turbine with CINCH technology 38/26, Praxis Works 11/40 cassette, KS Lev eTen remote (100mm travel) dropper post, and a sweet ass Roval Traverse Alloy boost+ wheelset w/DT's internals, SRAM Guide Hydro RS brakes (4 piston caliper) frame and fork is 15mm/12mm t/a and a nice Fizïk Tundra 2 kium rails. if you like to see the bike Monday's or Thursday's are the best as those are my day off, let me know if you have any questions and hit me up @",bike,2000.0,1520.0,2000.0,Rejected,,"	Buyer: Hi, I'm interested in buying the 2016 Raleigh Kodiak II 27.5. Based on my research, I was thinking of offering $1520.
+	Seller: I'm willing to consider $1800.
+	Buyer: I'm a bit high on the budget for that, how about $1650?
+	Seller: I can do $1750.
+	Buyer: $1680.
+	Seller: I can do $1700.
+	Buyer: $1655
+	Seller: I can do $1675.
+	Buyer: I'm still a bit off on the budget, can you do $1665?
+	Seller: $1680 is the lowest I'd be willing to go.
+	Buyer: I can do $1660.
+	Seller: How about we meet in the middle at $1670?
+	Buyer: I'd prefer to be $10 lower.
+	Seller: $1680
+	Buyer: I can go up to $1660, but not $1680.
+","[1520.0, 1800.0, 1650.0, 1750.0, 1680.0, 1700.0, 1655.0, 1675.0, 1665.0, 1680.0, 1660.0, 1670.0, 10.0, 1680.0, 1660.0]","['init-price', 'counter-price', 'offer', 'counter-price', 'offer', 'counter-price', 'offer', 'counter-price', 'counter-price', 'counter-price', 'offer', 'counter-price', 'counter-price', 'offer', 'counter-price']","
+      =================================================================================================
+      Negotiation for: <2016 Raleigh Kodiak II 27.5 Upgraded Size L 2x10 spd.>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in buying the 2016 Raleigh Kodiak II 27.5. Based on my research, I was thinking of offering $1520.
+	Seller: I'm willing to consider $1800.
+	Buyer: I'm a bit high on the budget for that, how about $1650?
+	Seller: I can do $1750.
+	Buyer: $1680.
+	Seller: I can do $1700.
+	Buyer: $1655
+	Seller: I can do $1675.
+	Buyer: I'm still a bit off on the budget, can you do $1665?
+	Seller: $1680 is the lowest I'd be willing to go.
+	Buyer: I can do $1660.
+	Seller: How about we meet in the middle at $1670?
+	Buyer: I'd prefer to be $10 lower.
+	Seller: $1680
+	Buyer: I can go up to $1660, but not $1680.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.0,272.6666666666667
+15,a3350e93-cd7e-40ce-97e3-a88b04e8bb60,~~~STUDIO CHARM~~~,"*Private bath,*Fresh new look,* very near to Emeryville Bay Street,* West MAcArthur Bart 8 - 10 blocks away",housing,1400.0,1288.0,1400.0,Rejected,,"	Buyer: I'm very interested in the ~~~STUDIO CHARM~~~. Could you tell me a little bit about it?
+	Seller: It's a private studio apartment with a fresh new look. Very close to Emeryville Bay Street and about 8-10 blocks away from the West MacArthur Bart.
+	Buyer: That sounds great. I've been looking for something near that area.
+	Seller: It's a great location, and the ~~~STUDIO CHARM~~~ has everything you need for a comfortable living.
+	Buyer: What's the listing price for the ~~~STUDIO CHARM~~~?
+	Seller: The listing price for the ~~~STUDIO CHARM~~~ is 1400.
+	Buyer: My target price is 1288.
+	Seller: I can do 1300.
+	Buyer: 1292.
+	Seller: I could do 1305.
+	Buyer: 1295.
+	Seller: 1300.
+	Buyer: I think the lowest I would want to go is 1292.
+	Seller: That's a little above my target, but I could meet you halfway at 1296.
+	Buyer: I can do 1295.
+","[-1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0, -1.0]","['intro', 'inform', 'inform', 'inform', 'inform', 'inform', 'inform', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price']","
+      =================================================================================================
+      Negotiation for: <~~~STUDIO CHARM~~~>
+      =================================================================================================
+      	Buyer: I'm very interested in the ~~~STUDIO CHARM~~~. Could you tell me a little bit about it?
+	Seller: It's a private studio apartment with a fresh new look. Very close to Emeryville Bay Street and about 8-10 blocks away from the West MacArthur Bart.
+	Buyer: That sounds great. I've been looking for something near that area.
+	Seller: It's a great location, and the ~~~STUDIO CHARM~~~ has everything you need for a comfortable living.
+	Buyer: What's the listing price for the ~~~STUDIO CHARM~~~?
+	Seller: The listing price for the ~~~STUDIO CHARM~~~ is 1400.
+	Buyer: My target price is 1288.
+	Seller: I can do 1300.
+	Buyer: 1292.
+	Seller: I could do 1305.
+	Buyer: 1295.
+	Seller: 1300.
+	Buyer: I think the lowest I would want to go is 1292.
+	Seller: That's a little above my target, but I could meet you halfway at 1296.
+	Buyer: I can do 1295.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.0,
+16,ae688733-1034-4c21-876d-33fd30897cff,KONA woman's bicycle with panniers,"Includes two Jandd panniers, Kryptonite lock, Shimano Deore gear shifts with 9 settings, bell, mirror. Great for city shopping and short trips.",bike,200.0,120.0,200.0,Accepted,162.0,"	Buyer: Hi, I'm interested in buying the KONA woman's bicycle with panniers you have listed. Can you tell me more about it?
+	Seller: This KONA woman's bicycle has Shimano Deore gear shifts with 9 settings, two Jandd panniers, a Kryptonite lock, a bell, and a mirror. It's perfect for city shopping and short trips.
+	Buyer: As for the price, I'm looking for something more in the $120 range.
+	Seller: Can you meet me at $180?
+	Buyer: I can do $160, that's as low as I'd be willing to go.
+	Seller: I can do $170.
+	Buyer: I can go up to 165.
+	Seller: I can meet you at 167.
+	Buyer: How about 162?
+	Seller: I can meet you at 165.
+	Buyer: I can go up to 162, but $165 is still a bit higher than I'd like.
+	Seller: I can meet you at $163.
+	Buyer: I think the lowest I would want to go is $162.
+	Seller: I think the lowest I'm willing to go is $162.
+	Buyer: Alright $162 works.
+","[-1.0, -1.0, -1.0, 180.0, 160.0, 170.0, -1.0, -1.0, -1.0, -1.0, 165.0, 163.0, 162.0, 162.0, 162.0]","['intro', 'inform', 'inform', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'offer', 'counter-price', 'counter-price', 'counter-price', 'agree']","
+      =================================================================================================
+      Negotiation for: <KONA woman's bicycle with panniers>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in buying the KONA woman's bicycle with panniers you have listed. Can you tell me more about it?
+	Seller: This KONA woman's bicycle has Shimano Deore gear shifts with 9 settings, two Jandd panniers, a Kryptonite lock, a bell, and a mirror. It's perfect for city shopping and short trips.
+	Buyer: As for the price, I'm looking for something more in the $120 range.
+	Seller: Can you meet me at $180?
+	Buyer: I can do $160, that's as low as I'd be willing to go.
+	Seller: I can do $170.
+	Buyer: I can go up to 165.
+	Seller: I can meet you at 167.
+	Buyer: How about 162?
+	Seller: I can meet you at 165.
+	Buyer: I can go up to 162, but $165 is still a bit higher than I'd like.
+	Seller: I can meet you at $163.
+	Buyer: I think the lowest I would want to go is $162.
+	Seller: I think the lowest I'm willing to go is $162.
+	Buyer: Alright $162 works.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Accepted
+      Agreed Price: 162.0
+      =================================================================================================
+      ",-0.05,0.19,0.95,15,-0.0033333333333333,0.0633333333333333,0.0,4.75
+17,8f89250b-64a7-4153-855d-baea499922fc,SMARTPHONE LEATHER BELT HOLSTER,"or email me at: rocksmith281@gmail for further information. I ONLY DO IN PERSON TRANSACTIONS, NO TRADES, CASH ONLY.,This stylish textured leather belt holster is big enough to accommodate the iPhone, Samsung, HTC, and many more. Features a felt lined interior for maximum protection, a solid metal clip and magnetic latch.,Specifications",phone,30.0,22.0,30.0,Rejected,,"	Buyer: Hi, I'm interested in the smartphone leather belt holster. Can we discuss the price?
+	Seller: Hi, yes, let's discuss the price. I was thinking it's a good value for $30.
+	Buyer: I appreciate the value, but I was thinking more along the lines of $25.
+	Seller: What about $27.50?
+	Buyer: That's a bit too high, how about $24?
+	Seller: I can do $26.
+	Buyer: I'm still thinking $23.
+	Seller: I can do $25.
+	Buyer: I can do $24 only.
+	Seller: I can do $25.
+	Buyer: I'm not comfortable with $25, how about $23.50?
+	Seller: I can do $24.50.
+	Buyer: I can do $24.
+	Seller: I think $25 is fair.
+	Buyer: No, I'm not willing to go above 24.
+","[-1.0, -1.0, 25.0, 27.5, 24.0, 26.0, 23.0, 25.0, 24.0, 25.0, 25.0, 24.5, 24.0, 25.0, -1.0]","['intro', 'intro', 'counter-price', 'offer', 'counter-price', 'offer', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price']","
+      =================================================================================================
+      Negotiation for: <SMARTPHONE LEATHER BELT HOLSTER>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in the smartphone leather belt holster. Can we discuss the price?
+	Seller: Hi, yes, let's discuss the price. I was thinking it's a good value for $30.
+	Buyer: I appreciate the value, but I was thinking more along the lines of $25.
+	Seller: What about $27.50?
+	Buyer: That's a bit too high, how about $24?
+	Seller: I can do $26.
+	Buyer: I'm still thinking $23.
+	Seller: I can do $25.
+	Buyer: I can do $24 only.
+	Seller: I can do $25.
+	Buyer: I'm not comfortable with $25, how about $23.50?
+	Seller: I can do $24.50.
+	Buyer: I can do $24.
+	Seller: I think $25 is fair.
+	Buyer: No, I'm not willing to go above 24.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.0,1.4166666666666667
+18,6aee3e1a-dadd-46fb-a701-b63fdaa4cdd4,"2013 mercedes c250 *navigation* clean - $12,000","Up for sale is a 2013 c250 with only  45k. Interior is loaded with technology and in new condition, the paint is immaculate on the exterior. The tires are new. Additional options include:,Navigation,Attention Assist (warns you if your drowsy),Automatic Windsheild Wipers,Bluetooth Audio Connectivity (for audio),Bluetooth Phone Connectivity (for phone calls),USB Connectivity",car,12000.0,9120.0,12000.0,Rejected,,"	Buyer: Hi, I'm interested in the 2013 Mercedes C250 you have listed.
+	Seller: Hi, I'm the seller. Great to hear you're interested in the 2013 Mercedes C250.
+	Buyer: That's a great car, by the way, what's the price you have in mind for it?
+	Seller: I was thinking $12,000.
+	Buyer: I was thinking more along the lines of $10,000.
+	Seller: I can do $11,500, that's the lowest I can go.
+	Buyer: I can stretch to $11,200.
+	Seller: I can do $11,800.
+	Buyer: $11,000 would be more in line with my budget.
+	Seller: I can do $11,300.
+	Buyer: $10,800.
+	Seller: I can do $11,500.
+	Buyer: I'd say $10,900.
+	Seller: I can do $11,000.
+	Buyer: $10,800.
+","[-1.0, -1.0, -1.0, 12000.0, 10000.0, 11500.0, 11200.0, 11800.0, 11000.0, 11300.0, 10800.0, 11500.0, 10900.0, 11000.0, 10800.0]","['intro', 'intro', 'intro', 'init-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'offer', 'counter-price', 'counter-price', 'counter-price', 'counter-price']","
+      =================================================================================================
+      Negotiation for: <2013 mercedes c250 *navigation* clean - $12,000>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in the 2013 Mercedes C250 you have listed.
+	Seller: Hi, I'm the seller. Great to hear you're interested in the 2013 Mercedes C250.
+	Buyer: That's a great car, by the way, what's the price you have in mind for it?
+	Seller: I was thinking $12,000.
+	Buyer: I was thinking more along the lines of $10,000.
+	Seller: I can do $11,500, that's the lowest I can go.
+	Buyer: I can stretch to $11,200.
+	Seller: I can do $11,800.
+	Buyer: $11,000 would be more in line with my budget.
+	Seller: I can do $11,300.
+	Buyer: $10,800.
+	Seller: I can do $11,500.
+	Buyer: I'd say $10,900.
+	Seller: I can do $11,000.
+	Buyer: $10,800.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.0,633.3333333333334
+19,e049bc9d-177f-4f9d-9cb2-d1f8c2562052,Unlocked Brand New Apple iphone 7 Plus 128GB Jet Black,"We have rose gold, matte black and gold color too.,This phone is unlocked. You can use the phones in all GSM SIM CARD carriers such as AT&T/T-Mobile or international",phone,780.0,717.0,780.0,Accepted,760.0,"	Buyer: I'm interested in the Apple iPhone 7 Plus 128GB. Can we start with a price of $700?
+	Seller: That's a bit low. I'm looking to get at least $780.
+	Buyer: I'd say $725 is more reasonable.
+	Seller: I think we're getting close, but I'd need $760.
+	Buyer: $740, that's the most I can do.
+	Seller: I can do $750.
+	Buyer: I can do $744.
+	Seller: I can do $760.
+	Buyer: I'm really close, can you do $758?
+	Seller: How about $762?
+	Buyer: $760.
+	Seller: We have a deal.
+","[700.0, 780.0, 725.0, 760.0, 740.0, 750.0, 744.0, 760.0, 758.0, 762.0, 760.0, -1.0]","['init-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'accept']","
+      =================================================================================================
+      Negotiation for: <Unlocked Brand New Apple iphone 7 Plus 128GB Jet Black>
+      =================================================================================================
+      	Buyer: I'm interested in the Apple iPhone 7 Plus 128GB. Can we start with a price of $700?
+	Seller: That's a bit low. I'm looking to get at least $780.
+	Buyer: I'd say $725 is more reasonable.
+	Seller: I think we're getting close, but I'd need $760.
+	Buyer: $740, that's the most I can do.
+	Seller: I can do $750.
+	Buyer: I can do $744.
+	Seller: I can do $760.
+	Buyer: I'm really close, can you do $758?
+	Seller: How about $762?
+	Buyer: $760.
+	Seller: We have a deal.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Accepted
+      Agreed Price: 760.0
+      =================================================================================================
+      ",-0.3650793650793651,0.0256410256410256,0.6349206349206349,12,-0.0304232804232804,0.0529100529100529,0.0,20.90909090909091
+20,96dfb572-e670-47c4-93ee-5b933eada529,A 4 bedroom single family house for rent in central Fremont,"This is a single family house in an excellent condition. It will be available for move-in on July 2017. It's in a very nice and quiet community with great school district. Email me for viewing or further information. Thanks.,Huge living room and family room, plus 4 spacious bedrooms,2 generous bathrooms with bathtubs,Great school district (Oliveira elementary, Thornton junior high, American high),Few mins drive to Bart and Lucky and 99 Supermarkets",housing,3200.0,2432.0,3200.0,Rejected,,"	Buyer: Hi, I'm interested in the 4 bedroom single family house for rent in central Fremont. It sounds like a great opportunity, but I want to discuss the price.
+	Seller: I'm glad you like the house. It's in a very nice community with great schools. The listing price is $3200.
+	Buyer: I think that's a bit high for my budget, can we talk about something closer to $2432?
+	Seller: The listing price is the minimum I'd be willing to go for.
+	Buyer: I'm still a bit short on budget. Can you sell it to me for $2600?
+	Seller: I can offer $2950.
+	Buyer: I was thinking more like $2750.
+	Seller: I can do $2800.
+	Buyer: I'm not sure I can go that low, how about $2795?
+	Seller: I can do $2800, but I can make it $2799.
+	Buyer: I can do $2785.
+	Seller: I can do $2800, but I can make it $2799.
+	Buyer: No, I think $2790 is more reasonable.
+	Seller: I can do $2795.
+	Buyer: I'm getting close to my limit, can we meet at $2785?
+","[-1.0, -1.0, 2432.0, -1.0, 2600.0, 2950.0, 2750.0, 2800.0, 2795.0, 2800.0, 2785.0, 2800.0, 2790.0, 2795.0, 2785.0]","['intro', 'inform', 'init-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price']","
+      =================================================================================================
+      Negotiation for: <A 4 bedroom single family house for rent in central Fremont>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in the 4 bedroom single family house for rent in central Fremont. It sounds like a great opportunity, but I want to discuss the price.
+	Seller: I'm glad you like the house. It's in a very nice community with great schools. The listing price is $3200.
+	Buyer: I think that's a bit high for my budget, can we talk about something closer to $2432?
+	Seller: The listing price is the minimum I'd be willing to go for.
+	Buyer: I'm still a bit short on budget. Can you sell it to me for $2600?
+	Seller: I can offer $2950.
+	Buyer: I was thinking more like $2750.
+	Seller: I can do $2800.
+	Buyer: I'm not sure I can go that low, how about $2795?
+	Seller: I can do $2800, but I can make it $2799.
+	Buyer: I can do $2785.
+	Seller: I can do $2800, but I can make it $2799.
+	Buyer: No, I think $2790 is more reasonable.
+	Seller: I can do $2795.
+	Buyer: I'm getting close to my limit, can we meet at $2785?
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.0,69.41666666666667
+21,13b26856-64d4-4f72-8b6d-c975f9246fe5,2 x DJI Mavic Pro Original Battery / Batteries,- Selling 2 x Gently Used DJI Mavic Pro Batteries.,electronics,150.0,114.0,150.0,Rejected,,"	Buyer: Hi, I'm interested in the DJI Mavic Pro batteries. I see they're listed at $150. Can we discuss a price? My target price would be around $114.
+	Seller: That's my target price.
+	Buyer: I'd be willing to pay $120 for the two batteries.
+	Seller: My target price was a starting point, and I'm not willing to go lower than $135.
+	Buyer: I'm trying to be reasonable, so how about $126?
+	Seller: $130
+	Buyer: I'm happy to meet in the middle, how about $128.
+	Seller: I can go to $132.
+	Buyer: I can do $129.
+	Seller: I can do $130.
+	Buyer: I can do $128.
+	Seller: I can do $132.
+	Buyer: $129.
+	Seller: I can do $131.
+	Buyer: How about $127?
+","[150.0, -1.0, 120.0, 135.0, 126.0, 130.0, 128.0, 132.0, 129.0, 130.0, 128.0, 132.0, 129.0, 131.0, 127.0]","['init-price', 'counter-price', 'offer', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'offer', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price']","
+      =================================================================================================
+      Negotiation for: <2 x DJI Mavic Pro Original Battery / Batteries>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in the DJI Mavic Pro batteries. I see they're listed at $150. Can we discuss a price? My target price would be around $114.
+	Seller: That's my target price.
+	Buyer: I'd be willing to pay $120 for the two batteries.
+	Seller: My target price was a starting point, and I'm not willing to go lower than $135.
+	Buyer: I'm trying to be reasonable, so how about $126?
+	Seller: $130
+	Buyer: I'm happy to meet in the middle, how about $128.
+	Seller: I can go to $132.
+	Buyer: I can do $129.
+	Seller: I can do $130.
+	Buyer: I can do $128.
+	Seller: I can do $132.
+	Buyer: $129.
+	Seller: I can do $131.
+	Buyer: How about $127?
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.0,5.928571428571429
+22,264a9baa-e234-496e-9570-f2f90d63a8c3,2016 Ibis Mojo HD3 for sale - Large,"Get ready for summer riding!,Immaculate condition, less than 100 miles.,Frame:  Carbon fiber,Color:  Matte Black,Fork: Fox Factory series Float 36,Shock: Fox Factory series Float EVOL,Shifter: Shimano XT Deore",bike,4200.0,3864.0,4200.0,Accepted,4200.0,"	Buyer: I'm really interested in the Ibis Mojo HD3 you have listed.
+	Seller: I cant let it go for any less than $4200.
+","[-1.0, 4200.0]","['intro', 'agree']","
+      =================================================================================================
+      Negotiation for: <2016 Ibis Mojo HD3 for sale - Large>
+      =================================================================================================
+      	Buyer: I'm really interested in the Ibis Mojo HD3 you have listed.
+	Seller: I cant let it go for any less than $4200.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Accepted
+      Agreed Price: 4200.0
+      =================================================================================================
+      ",-1.0,0.0,0.0,2,-0.5,0.0,0.0,
+23,7f0e8e5a-e65e-4efd-bc00-fa638bd62e57,FASHION OPTICAL KIDS' FRAME DISPLAY,"This Fashion Optical Kids' Frame Display is in excellent condition,  It measures 75""H x 23.5""W x 9""D.  It has 3 fixed vertical bars each 36"", plus two wall-mountable bars each 20.5"".  Comes with 20 frame clips that can be moved from bar to bar and spaced in any configuration.  Additional frame clips available at Fashion Optical.  LED lighting is available for an additional fee.",furniture,49.0,45.0,49.0,Accepted,47.0,"	Buyer: Hi, I'm interested in the Fashion Optical Kids' Frame Display. It looks like it's in great condition. Can you tell me more about it?
+	Seller: This Fashion Optical Kids' Frame Display is in excellent condition, It measures 75""H x 23.5""W x 9""D,  it has 3 fixed vertical bars each 36"", plus two wall-mountable bars each 20.5"" and comes with 20 frame clips.
+	Buyer: That sounds good. I've looked at the description, and I'd like to make an offer on it.
+	Seller: The listing price for this item is $49.
+	Buyer: I'm willing to make an offer of $45.
+	Seller: I think we can meet in the middle at $47.
+	Buyer: I can do $46.
+	Seller: I can do $48.
+	Buyer: I can do $46, that's my final offer.
+	Seller: I'm sorry, but I can't go below $48, it's already a good deal.
+	Buyer: I'm not comfortable going over $46.50.
+	Seller: That's a bit lower than I had hoped for but I can do $47.50.
+	Buyer: I can go up to 47.
+	Seller: Alright, $47 is a good number for both of us.
+","[-1.0, -1.0, -1.0, -1.0, 45.0, 47.0, 46.0, 48.0, 46.0, 48.0, 46.5, 47.5, -1.0, 47.0]","['intro', 'inform', 'inform', 'inform', 'init-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'agree']","
+      =================================================================================================
+      Negotiation for: <FASHION OPTICAL KIDS' FRAME DISPLAY>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in the Fashion Optical Kids' Frame Display. It looks like it's in great condition. Can you tell me more about it?
+	Seller: This Fashion Optical Kids' Frame Display is in excellent condition, It measures 75""H x 23.5""W x 9""D,  it has 3 fixed vertical bars each 36"", plus two wall-mountable bars each 20.5"" and comes with 20 frame clips.
+	Buyer: That sounds good. I've looked at the description, and I'd like to make an offer on it.
+	Seller: The listing price for this item is $49.
+	Buyer: I'm willing to make an offer of $45.
+	Seller: I think we can meet in the middle at $47.
+	Buyer: I can do $46.
+	Seller: I can do $48.
+	Buyer: I can do $46, that's my final offer.
+	Seller: I'm sorry, but I can't go below $48, it's already a good deal.
+	Buyer: I'm not comfortable going over $46.50.
+	Seller: That's a bit lower than I had hoped for but I can do $47.50.
+	Buyer: I can go up to 47.
+	Seller: Alright, $47 is a good number for both of us.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Accepted
+      Agreed Price: 47.0
+      =================================================================================================
+      ",0.0,0.0408163265306122,1.0,14,0.0,0.0714285714285714,0.0,1.3333333333333333
+24,95889926-0c1a-471c-861f-aa61dc965d55,2003 350z,2003 350z has 120k miles. JWT Clutch and flywheel installed 2 months ago. K&N long tube cold air intake with 5/16 motordyne spacer kit. Lowered on tein springs. New Michelin A/S sport plus tires installed at 109k. Maintenced every 3500 miles. Just selling because I'm looking for a work truck. 8900 OBO,car,8900.0,8188.0,8900.0,Rejected,,"	Buyer: Hi, I'm interested in the 2003 350z you're selling. Can I get a bit more info on the car?
+	Seller: Sure, the 2003 350z has 120k miles. JWT Clutch and flywheel installed 2 months ago. K&N long tube cold air intake with 5/16 motordyne spacer kit. Lowered on tein springs. New Michelin A/S sport plus tires installed at 109k. Maintenced every 3500 miles. Just selling because I'm looking for a work truck.
+	Buyer: The car sounds great, but I'm a bit concerned about the high mileage. What maintenance is included in the price?
+	Seller: Everything's been taken care of, all maintenance records are included in the price.
+	Buyer: That's reassuring, the maintenance records are helpful.
+	Seller: The current price of the 350z is $8900 OBO.
+	Buyer: I was thinking more around $8300.
+	Seller: I can do $8600.
+	Buyer: I can do $8450.
+	Seller: $8550.
+	Buyer: I can do $8400.
+	Seller: I can do $8450.
+	Buyer: I can do $8388.
+	Seller: The lowest I'll go is $8390, but I'll throw in some free detailing to sweeten the deal.
+	Buyer: I'll go up to $8392.
+","[-1.0, -1.0, -1.0, -1.0, -1.0, -1.0, 8300.0, 8600.0, 8450.0, 8550.0, 8400.0, 8450.0, 8388.0, 8390.0, 8392.0]","['intro', 'inform', 'inform', 'inform', 'inform', 'inform', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price']","
+      =================================================================================================
+      Negotiation for: <2003 350z>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in the 2003 350z you're selling. Can I get a bit more info on the car?
+	Seller: Sure, the 2003 350z has 120k miles. JWT Clutch and flywheel installed 2 months ago. K&N long tube cold air intake with 5/16 motordyne spacer kit. Lowered on tein springs. New Michelin A/S sport plus tires installed at 109k. Maintenced every 3500 miles. Just selling because I'm looking for a work truck.
+	Buyer: The car sounds great, but I'm a bit concerned about the high mileage. What maintenance is included in the price?
+	Seller: Everything's been taken care of, all maintenance records are included in the price.
+	Buyer: That's reassuring, the maintenance records are helpful.
+	Seller: The current price of the 350z is $8900 OBO.
+	Buyer: I was thinking more around $8300.
+	Seller: I can do $8600.
+	Buyer: I can do $8450.
+	Seller: $8550.
+	Buyer: I can do $8400.
+	Seller: I can do $8450.
+	Buyer: I can do $8388.
+	Seller: The lowest I'll go is $8390, but I'll throw in some free detailing to sweeten the deal.
+	Buyer: I'll go up to $8392.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.0,90.66666666666667
+25,96e91a61-963a-4d0f-bd41-3f9c43aa8744,4 Cubicles for Sale,"Cubes for sale, 4 pack (2 deep, 2 wide). H:47, W:72, D:72.",furniture,400.0,240.0,400.0,Rejected,,"	Buyer: Hi, I'm interested in purchasing the 4 cubicles for sale, can we discuss the price?
+	Seller: The price of $400 for the 4 cubicles is non-negotiable.
+	Buyer: That's really steep, I was thinking more around $240.
+	Seller: I can do $320 for all of them.
+	Buyer: $260 is the lowest I'm willing to go.
+	Seller: $300 is the lowest I'd be willing to go.
+	Buyer: $280.
+	Seller: I can offer $290.
+	Buyer: I think the lowest I would go is $285.
+	Seller: I'd say $295 is reasonable.
+	Buyer: I think the lowest I would go is $285.
+	Seller: How about $287.5?
+	Buyer: I think the lowest I would go is $282.
+	Seller: $285.
+	Buyer: I can do $280.
+","[-1.0, 400.0, -1.0, 320.0, 260.0, 300.0, 280.0, 290.0, 285.0, 295.0, 285.0, 287.5, 282.0, 285.0, 280.0]","['intro', 'insist', 'disagree', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price']","
+      =================================================================================================
+      Negotiation for: <4 Cubicles for Sale>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in purchasing the 4 cubicles for sale, can we discuss the price?
+	Seller: The price of $400 for the 4 cubicles is non-negotiable.
+	Buyer: That's really steep, I was thinking more around $240.
+	Seller: I can do $320 for all of them.
+	Buyer: $260 is the lowest I'm willing to go.
+	Seller: $300 is the lowest I'd be willing to go.
+	Buyer: $280.
+	Seller: I can offer $290.
+	Buyer: I think the lowest I would go is $285.
+	Seller: I'd say $295 is reasonable.
+	Buyer: I think the lowest I would go is $285.
+	Seller: How about $287.5?
+	Buyer: I think the lowest I would go is $282.
+	Seller: $285.
+	Buyer: I can do $280.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.0,19.307692307692307
+26,c88f8812-523c-404c-b12b-ea6507495419,Long board custom bilt from the board up,Hey there cl I have a long board for sale pretty much brand knew rode all together 4 or 5 times . The brand on the deck is a gravity skateboard. The brand of trucks are sidewinder 2sGuwuing.mini monster hawgs 70mm 78a Wheels with Swiss bones bearings brand new. Please no low ballers thank you and have a great day .,bike,200.0,184.0,200.0,Rejected,,"	Buyer: I'm interested in your long board, sounds like it's in great condition.
+	Seller: Yeah, been barely used. The Gravity skateboard deck is still under warranty.
+	Buyer: That's good to know about the warranty.
+	Seller: And the trucks and wheels are all brand new, never ridden.
+	Buyer: That's good to know about the warranty and the brand new parts.
+	Seller: I'm willing to let it go for $220, considering its excellent condition.
+	Buyer: I was thinking more along the lines of $192.
+	Seller: I can do $205.
+	Buyer: I'm willing to go up to $194.
+	Seller: I can do $200.
+	Buyer: I can go $189.
+	Seller: I can do $195.
+	Buyer: I can go $184.
+	Seller: I can do $190.
+	Buyer: That's still a bit over my target, I'm not comfortable with $190.
+","[-1.0, -1.0, -1.0, -1.0, -1.0, 220.0, 192.0, 205.0, 194.0, 200.0, 189.0, 195.0, 184.0, 190.0, -1.0]","['intro', 'inform', 'inform', 'inform', 'inform', 'init-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'disagree']","
+      =================================================================================================
+      Negotiation for: <Long board custom bilt from the board up>
+      =================================================================================================
+      	Buyer: I'm interested in your long board, sounds like it's in great condition.
+	Seller: Yeah, been barely used. The Gravity skateboard deck is still under warranty.
+	Buyer: That's good to know about the warranty.
+	Seller: And the trucks and wheels are all brand new, never ridden.
+	Buyer: That's good to know about the warranty and the brand new parts.
+	Seller: I'm willing to let it go for $220, considering its excellent condition.
+	Buyer: I was thinking more along the lines of $192.
+	Seller: I can do $205.
+	Buyer: I'm willing to go up to $194.
+	Seller: I can do $200.
+	Buyer: I can go $189.
+	Seller: I can do $195.
+	Buyer: I can go $184.
+	Seller: I can do $190.
+	Buyer: That's still a bit over my target, I'm not comfortable with $190.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.0,10.222222222222221
+27,74609904-d277-4a99-91db-848cc47b5000,MASI 3V Volumetrica CCCP 1990 BRAND NEW (NOS),"IRD Blackbird Modified / Thomson X2,Masi CroMoly / Record C,Record (36h) / DT Swiss / Velocity Deep V / Schwalbe Ultremo R,Rear Wheel / Hub / Rim / Tire:,Record (36h) / DT Swiss / Velocity Deep V / Schwalbe Ultremo R,Saddle / Seat Post:",bike,3450.0,2070.0,3450.0,Rejected,,"	Buyer: Hi, I'm interested in the MASI 3V Volumetrica CCCP 1990 bike you're listing. It seems like a great piece of cycling history. Can we discuss the price?
+	Seller: $3400.
+	Buyer: That's a bit high for me, can we do $2500?
+	Seller: I can do $2850.
+	Buyer: I can do $2300.
+	Seller: $2700.
+	Buyer: Can we do $2400?
+	Seller: I can do $2475.
+	Buyer: I can do $2350.
+	Seller: I'm glad we're getting closer. My final offer is $2450.
+	Buyer: I'm still not quite there, how about $2395?
+	Seller: I can do $2425.
+	Buyer: I think the lowest I would want to go is $2380.
+	Seller: My final offer is $2400.
+	Buyer: I can do $2375.
+","[-1.0, 3400.0, 2500.0, 2850.0, 2300.0, 2700.0, 2400.0, 2475.0, 2350.0, 2450.0, 2395.0, 2425.0, 2380.0, 2400.0, 2375.0]","['intro', 'offer', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'offer', 'counter-price']","
+      =================================================================================================
+      Negotiation for: <MASI 3V Volumetrica CCCP 1990 BRAND NEW (NOS)>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in the MASI 3V Volumetrica CCCP 1990 bike you're listing. It seems like a great piece of cycling history. Can we discuss the price?
+	Seller: $3400.
+	Buyer: That's a bit high for me, can we do $2500?
+	Seller: I can do $2850.
+	Buyer: I can do $2300.
+	Seller: $2700.
+	Buyer: Can we do $2400?
+	Seller: I can do $2475.
+	Buyer: I can do $2350.
+	Seller: I'm glad we're getting closer. My final offer is $2450.
+	Buyer: I'm still not quite there, how about $2395?
+	Seller: I can do $2425.
+	Buyer: I think the lowest I would want to go is $2380.
+	Seller: My final offer is $2400.
+	Buyer: I can do $2375.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.0,212.5
+28,88b0b813-3328-4d84-a6b9-fe3dbc639050,TREK JET 20 S for 5-10 Year Old Kid,"Fits 5-10 year old child depening on height,Single Speed",bike,100.0,76.0,100.0,Rejected,,"	Buyer: Hi, I'm interested in the TREK JET 20 S bike for my 7-year-old. Can you tell me more about it?
+	Seller: The TREK JET 20 S is designed for kids aged 5-10 years, depending on their height, and features a single speed. Would you like to know the listing price?
+	Buyer: Yeah, I'd love to know the listing price.
+	Seller: The listing price is $100.
+	Buyer: That sounds perfect for my child. Considering its features and target age group, my target price is $76.
+	Seller: I can do $90, and it includes a free bike helmet.
+	Buyer: I appreciate the helmet, but I'd rather pay $88.
+	Seller: I can do $92.
+	Buyer: I can go up to $89 but that's my limit.
+	Seller: How about $92.50?
+	Buyer: I can do $90.
+	Seller: I can do $92.
+	Buyer: I think $89 is my limit.
+	Seller: I'm still at $90, so I can't do any lower than that.
+	Buyer: I can go up to $88.
+","[-1.0, -1.0, -1.0, -1.0, -1.0, 90.0, 88.0, 92.0, 89.0, 92.5, 90.0, 92.0, 89.0, 90.0, 88.0]","['intro', 'inform', 'inquire', 'inform', 'inform', 'offer', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'counter-price']","
+      =================================================================================================
+      Negotiation for: <TREK JET 20 S for 5-10 Year Old Kid>
+      =================================================================================================
+      	Buyer: Hi, I'm interested in the TREK JET 20 S bike for my 7-year-old. Can you tell me more about it?
+	Seller: The TREK JET 20 S is designed for kids aged 5-10 years, depending on their height, and features a single speed. Would you like to know the listing price?
+	Buyer: Yeah, I'd love to know the listing price.
+	Seller: The listing price is $100.
+	Buyer: That sounds perfect for my child. Considering its features and target age group, my target price is $76.
+	Seller: I can do $90, and it includes a free bike helmet.
+	Buyer: I appreciate the helmet, but I'd rather pay $88.
+	Seller: I can do $92.
+	Buyer: I can go up to $89 but that's my limit.
+	Seller: How about $92.50?
+	Buyer: I can do $90.
+	Seller: I can do $92.
+	Buyer: I think $89 is my limit.
+	Seller: I'm still at $90, so I can't do any lower than that.
+	Buyer: I can go up to $88.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Rejected
+      Agreed Price: N/A
+      =================================================================================================
+      ",,,,15,,,0.0666666666666666,2.3
+29,2064a51a-6395-4888-b8de-0bf65d43f2e9,"Bottom Floor, 2 Bd/2 Bth, Large Patio! Close to downtown, W.C. area!","Unwind in Your New Home Call Now:,114 Sharene Lane, Walnut creek, CA, 94596,http://rent.braddockandloganhomes.com/i0k029,This is a 2 Bedroom, 1 Bath, approximately 950 Sq. Ft.,Why look any more we have the Perfect home for you!!!Hurry they are going fast!! You will restore your energy so you can be doing the activities you enjoy. Make The Pines your next apartment home! Pets are also welcome!,- Private Patio,- Dishwasher,- Cable Ready,- Range (Electric/ Gas),- Air Conditioner (Window),- Heat (gas),- Microwave,- Large Closets",housing,2250.0,1350.0,2250.0,Accepted,1508.0,"	Buyer: I'm interested in the apartment, and I'd like to discuss the price. Can we talk about the cost?
+	Seller: The apartment is listed for $2250.
+	Buyer: I'm interested, but I'm looking to spend around $1350.
+	Seller: $1800.
+	Buyer: $1450.
+	Seller: $1600.
+	Buyer: $1500.
+	Seller: $1550.
+	Buyer: I'd be willing to meet you at $1525.
+	Seller: I can do $1530.
+	Buyer: I can do $1515.
+	Seller: I can do $1508.
+	Buyer: $1508.
+","[-1.0, -1.0, 1350.0, 1800.0, 1450.0, 1600.0, 1500.0, 1550.0, 1525.0, 1530.0, 1515.0, 1508.0, 1508.0]","['intro', 'inform', 'init-price', 'counter-price', 'counter-price', 'offer', 'counter-price', 'counter-price', 'counter-price', 'counter-price', 'offer', 'counter-price', 'agree']","
+      =================================================================================================
+      Negotiation for: <Bottom Floor, 2 Bd/2 Bth, Large Patio! Close to downtown, W.C. area!>
+      =================================================================================================
+      	Buyer: I'm interested in the apartment, and I'd like to discuss the price. Can we talk about the cost?
+	Seller: The apartment is listed for $2250.
+	Buyer: I'm interested, but I'm looking to spend around $1350.
+	Seller: $1800.
+	Buyer: $1450.
+	Seller: $1600.
+	Buyer: $1500.
+	Seller: $1550.
+	Buyer: I'd be willing to meet you at $1525.
+	Seller: I can do $1530.
+	Buyer: I can do $1515.
+	Seller: I can do $1508.
+	Buyer: $1508.
+      ~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~~
+      Outcome: Accepted
+      Agreed Price: 1508.0
+      =================================================================================================
+      ",0.6488888888888888,0.3297777777777778,0.3511111111111111,13,0.0499145299145299,0.027008547008547,0.0,104.72727272727273
