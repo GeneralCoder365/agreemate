@@ -132,3 +132,9 @@ Listen to a summary of our research paper on [NotebookLM](https://notebooklm.goo
 - **Meta AI**: For developing the LLaMA model family, which served as the foundation for our large language model experiments.
 
 - **He et al. (2018)**: For their foundational work, [*"Decoupling Strategy and Generation in Negotiation Dialogues"*](https://arxiv.org/abs/1808.09637), introducing a modular approach to negotiation by leveraging coarse dialogue acts for strategy control, inspiring our efforts to unify strategy and generation in negotiation through LLMs.
+
+### Academic Context
+
+This project was conducted as part of the **CMSC723: Graduate Natural Language Processing (Fall 2024)** course at the University of Maryland, College Park.
+
+The content and findings reflect our independent research and do not imply any endorsement or ownership by the university.
