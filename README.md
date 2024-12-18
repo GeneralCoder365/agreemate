@@ -28,30 +28,6 @@ AgreeMate advances this by leveraging LLMs to unify strategy and generation with
 - **Chain of Thought**: Enhanced reasoning capabilities through CoT prompting
 - **Comprehensive Metrics**: Novel measurements for fairness, bias, efficiency, and more
 
-## Installation
-
-```bash
-git clone https://github.com/GeneralCoder365/agreemate
-cd agreemate
-pip install -r requirements.txt
-```
-
-## Project Structure
-
-- `data/`: Training datasets and preprocessing utilities
-  - `craigslist_bargains/`: 6.6k human negotiation dialogues
-  - `deal_or_no_deal/`: 12k multi-issue bargaining dialogues
-
-- `finetuning/`: Model training and fine-tuning components
-  - Fine-tuning configurations
-  - Training logs and checkpoints
-  - TensorBoard visualization data
-
-- `results/`: Analysis notebooks and evaluation results
-  - Performance metrics across model combinations
-  - Comparative analysis visualizations
-  - Example negotiation transcripts
-
 ## Key Technologies
 
 - Parameter-Efficient Fine-Tuning (PEFT) with LoRA
@@ -59,6 +35,68 @@ pip install -r requirements.txt
 - Gradient checkpointing
 - Mixed precision training
 - Advanced learning rate scheduling
+
+## Results & Findings
+
+- Larger models demonstrate improved agreement rates and fairness
+- Chain of Thought prompting enhances exploratory behavior
+- Personality traits significantly influence negotiation dynamics
+- Attention analysis reveals semantic understanding of negotiation concepts
+---
+
+## Critical Project Structure
+
+### Data
+- **`data/craigslist_bargains/`**:
+  - Dataset: 6.6k human-human negotiation dialogues from the *Craigslist Bargains* dataset.
+  - Files:
+    - `train.csv`, `test.csv`, `validation.csv`: Split, reformatted datasets.
+  - Source: Stanford NLP's [CraigslistBargains dataset](https://huggingface.co/datasets/stanfordnlp/craigslist_bargains).
+
+- **`data/deal_or_no_deal/`**:
+  - Dataset: 12k multi-issue bargaining dialogues.
+  - Files:
+    - `buyer_training.csv`, `seller_training.csv`, `generalist_training.csv`: Split, reformatted datasets for buyer, seller, and generalist fine-tuning.
+  - Source: Facebook's [Deal or No Deal dataset](https://huggingface.co/datasets/mikelewis0/deal_or_no_dialog).
+
+### Finetuning
+- **`finetuning/`**:
+  - Contains all fine-tuning and training scripts.
+  - Key Components:
+    - `data_loader.py`: Utility for loading and preparing datasets.
+    - `finetuner.ipynb`: Fine-tuning workflow for LLaMA models.
+    - `model_loader.py`: Script to load pre-trained models.
+    - **`models-<role>-finetuned-<scale>`**: Checkpoints for fine-tuned models at various scales (3B–70B).
+
+### Results
+- **`results/`**:
+  - Repository for analysis outputs and key findings.
+  - Key Files:
+    - `analysis.ipynb` and `analysis_interactive.ipynb`: Jupyter notebooks for model evaluation and visualizations.
+    - **Performance CSVs**: Extensive evaluation results across buyer-seller roles, model scales, and negotiation styles:
+      - Baseline comparisons (e.g., `baseline-3B-buyer+baseline-3B-seller.csv`)
+      - Chain of Thought prompting results (e.g., `baseline-COT-3B-buyer+baseline-3B-seller.csv`)
+      - Updated datasets for improved model iterations.
+  - **Visualization Outputs**: Use these notebooks to analyze performance trends, fairness, and strategy success metrics.
+
+### Paper & Supporting Files
+- **`paper.pdf`**: The research paper detailing AgreeMate’s methodology, experiments, and findings.
+- **`poster.png`**: Visual summary from our halfway-point.
+- **`LICENSE`**: MIT License information.
+- **`requirements.txt`**: Dependency list for easy setup.
+
+### Figures
+- **`figures/`**:
+  - Stores visualizations generated during the analysis of the paper.
+---
+
+## Installation
+
+```bash
+git clone https://github.com/GeneralCoder365/agreemate
+cd agreemate
+pip install -r requirements.txt
+```
 
 ## Usage
 
@@ -91,13 +129,7 @@ fair_seller = Negotiator(
     model="llama-3.2-3B-seller"
 )
 ```
-
-## Results & Findings
-
-- Larger models demonstrate improved agreement rates and fairness
-- Chain of Thought prompting enhances exploratory behavior
-- Personality traits significantly influence negotiation dynamics
-- Attention analysis reveals semantic understanding of negotiation concepts
+---
 
 ## Citation
 
