@@ -92,15 +92,17 @@ Listen to a summary of our research paper on [NotebookLM](https://notebooklm.goo
       - Updated datasets for improved model iterations.
   - **Visualization Outputs**: Use these notebooks to analyze performance trends, fairness, and strategy success metrics.
 
-### Paper & Supporting Files
-- **`paper.pdf`**: The research paper detailing AgreeMate’s methodology, experiments, and findings.
+### Supporting Files
+- **`paper.pdf`**: PDF of our research paper detailing AgreeMate’s methodology, experiments, and findings.
 - **`poster.png`**: Visual summary from our halfway-point.
 - **`LICENSE`**: MIT License information.
 - **`requirements.txt`**: Dependency list for easy setup.
 
-### Figures
-- **`figures/`**:
-  - Stores visualizations generated during the analysis of the paper.
+### Paper
+- **`paper/`**:
+  - Contains main paper files such as .tex, .bib, etc.
+  - **`figures/`**:
+    - Stores visualizations generated during analysis for the paper.
 
 
 ## Basic Usage
