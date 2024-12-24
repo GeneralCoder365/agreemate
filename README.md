@@ -2,12 +2,12 @@
 
 A framework for training Large Language Models (LLMs) to perform strategic price negotiations through natural language. AgreeMate combines role-specialized fine-tuning with systematic model comparison across scales and architectures.
 
-<div style="display: flex; gap: 10px; align-items: center;">
-  <a href="https://arxiv.org/abs/PLACEHOLDER">
-    <img src="https://img.shields.io/badge/📄_Read_the_Paper-arXiv-orange" alt="Read the Paper" style="display: block;">
+<div style="display: flex; flex-wrap: wrap; gap: 10px; align-items: center;">
+  <a href="https://arxiv.org/abs/PLACEHOLDER" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/📄_Read_the_Paper-arXiv-orange" alt="Read the Paper">
   </a>
-  <a href="https://notebooklm.google.com/notebook/603ffc75-00a3-4269-8a8a-e10d4d9634ec/audio">
-    <img src="https://img.shields.io/badge/🎧_Listen_to_Paper_Summary-NotebookLM-blue" alt="Listen to Paper Summary" style="display: block;">
+  <a href="https://notebooklm.google.com/notebook/603ffc75-00a3-4269-8a8a-e10d4d9634ec/audio" target="_blank" rel="noopener noreferrer">
+    <img src="https://img.shields.io/badge/🎧_Listen_to_Paper_Summary-NotebookLM-blue" alt="Listen to Paper Summary">
   </a>
 </div>
 
