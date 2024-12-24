@@ -2,6 +2,7 @@
 
 A framework for training Large Language Models (LLMs) to perform strategic price negotiations through natural language. AgreeMate combines role-specialized fine-tuning with systematic model comparison across scales and architectures.
 
+[![Read the Paper](https://img.shields.io/badge/📄_Read_the_Paper-arXiv-orange)](https://arxiv.org/abs/PLACEHOLDER)  
 [![Listen to Paper Summary](https://img.shields.io/badge/🎧_Listen_to_Paper_Summary-NotebookLM-blue)](https://notebooklm.google.com/notebook/603ffc75-00a3-4269-8a8a-e10d4d9634ec/audio)
 
 ## Overview
@@ -13,6 +14,8 @@ AgreeMate presents a comprehensive finetuning/testing framework and negotiation 
 - Chain of thought prompting
 - Personality-driven behavior modeling
 - Attention mechanism analysis
+
+For more details, read our full [paper on arXiv](https://arxiv.org/abs/PLACEHOLDER) or refer to the copy included in this repository (`paper.pdf`).
 
 ### Related Work
 
