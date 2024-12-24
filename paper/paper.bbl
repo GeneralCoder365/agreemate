@@ -1,0 +1,31 @@
+\begin{thebibliography}{5}
+\providecommand{\natexlab}[1]{#1}
+
+\bibitem[{Breum et~al.(2023)Breum, Egdal, Mortensen, M{\o}ller, and Aiello}]{breum2023persuasivepowerlargelanguage}
+Simon~Martin Breum, Daniel~V{\ae}dele Egdal, Victor~Gram Mortensen, Anders~Giovanni M{\o}ller, and Luca~Maria Aiello. 2023.
+\newblock \href {https://arxiv.org/abs/2312.15523} {The persuasive power of large language models}.
+\newblock \emph{Computing Research Repository}, arXiv:2312.15523.
+
+\bibitem[{He et~al.(2018)He, Chen, Balakrishnan, and Liang}]{he-etal-2018}
+He~He, Derek Chen, Anusha Balakrishnan, and Percy Liang. 2018.
+\newblock \href {https://doi.org/10.18653/v1/D18-1256} {Decoupling strategy and generation in negotiation dialogues}.
+\newblock In \emph{Proceedings of the 2018 Conference on Empirical Methods in Natural Language Processing}, pages 2333--2343, Brussels, Belgium. Association for Computational Linguistics.
+
+\bibitem[{Lewis et~al.(2017)Lewis, Yarats, Dauphin, Parikh, and Batra}]{lewis2017dealdealendtoendlearning}
+Mike Lewis, Denis Yarats, Yann~N Dauphin, Devi Parikh, and Dhruv Batra. 2017.
+\newblock \href {https://arxiv.org/abs/1706.05125} {Deal or no deal? end-to-end learning for negotiation dialogues}.
+\newblock \emph{Proceedings of the Conference on Empirical Methods in Natural Language Processing (EMNLP)}.
+\newblock Published by Meta AI, focusing on negotiation tasks that combine reasoning and linguistic skills. The dataset and code are available for research use.
+
+\bibitem[{Seetharaman(2024)}]{seetharaman2024turning}
+Deepa Seetharaman. 2024.
+\newblock \href {https://www.wsj.com/tech/ai/open-ai-division-for-profit-da26c24b} {Turning {OpenAI} into a real business is tearing it apart}.
+\newblock \emph{The Wall Street Journal}.
+
+\bibitem[{Touvron et~al.(2023)Touvron, Lavril, Izacard, Martinet, Lachaux, Lacroix, Rozière, Goyal, Hambro, Azhar, Rodriguez, Joulin, Grave, and Lample}]{touvron2023llamaopenefficientfoundation}
+Hugo Touvron, Thibaut Lavril, Gautier Izacard, Xavier Martinet, Marie-Anne Lachaux, Timothée Lacroix, Baptiste Rozière, Naman Goyal, Eric Hambro, Faisal Azhar, Aurelien Rodriguez, Armand Joulin, Edouard Grave, and Guillaume Lample. 2023.
+\newblock \href {https://arxiv.org/abs/2302.13971} {Llama: Open and efficient foundation language models}.
+\newblock \emph{arXiv preprint arXiv:2302.13971}.
+\newblock Published by Meta AI, introducing foundational language models trained on publicly available datasets, achieving state-of-the-art results across various benchmarks.
+
+\end{thebibliography}
