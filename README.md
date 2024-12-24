@@ -166,14 +166,11 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 
 ## Acknowledgments
-
-- **Stanford NLP Group**: For providing the [CraigslistBargains dataset](https://huggingface.co/datasets/stanfordnlp/craigslist_bargains), which comprises over 6,600 human-human negotiation dialogues across various product categories, facilitating research in negotiation strategies and language generation. 
+- **He et al. (2018)**: For their foundational work, [*"Decoupling Strategy and Generation in Negotiation Dialogues"*](https://arxiv.org/abs/1808.09637), introducing a modular approach to negotiation by leveraging coarse dialogue acts for strategy control, inspiring our efforts to unify strategy and generation in negotiation through LLMs. Additionally, for providing the [CraigslistBargains dataset](https://huggingface.co/datasets/stanfordnlp/craigslist_bargains), which comprises over 6,600 human-human negotiation dialogues across various product categories, facilitating research in negotiation strategies and language generation.
 
 - **Facebook Research**: For the [Deal or No Deal Negotiator dataset](https://huggingface.co/datasets/mikelewis0/deal_or_no_dialog), a substantial collection of human-human negotiations on a multi-issue bargaining task, enabling the development of end-to-end models for negotiation. 
 
 - **Meta AI**: For developing the [LLaMA model family](https://www.llama.com/), which served as the foundation for our large language model experiments.
-
-- **He et al. (2018)**: For their foundational work, [*"Decoupling Strategy and Generation in Negotiation Dialogues"*](https://arxiv.org/abs/1808.09637), introducing a modular approach to negotiation by leveraging coarse dialogue acts for strategy control, inspiring our efforts to unify strategy and generation in negotiation through LLMs.
 
 ### Academic Context
 
