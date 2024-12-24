@@ -2,8 +2,14 @@
 
 A framework for training Large Language Models (LLMs) to perform strategic price negotiations through natural language. AgreeMate combines role-specialized fine-tuning with systematic model comparison across scales and architectures.
 
-[![Read the Paper](https://img.shields.io/badge/📄_Read_the_Paper-arXiv-orange)](https://arxiv.org/abs/PLACEHOLDER)  
-[![Listen to Paper Summary](https://img.shields.io/badge/🎧_Listen_to_Paper_Summary-NotebookLM-blue)](https://notebooklm.google.com/notebook/603ffc75-00a3-4269-8a8a-e10d4d9634ec/audio)
+<div style="display: flex; gap: 10px;">
+  <a href="https://arxiv.org/abs/PLACEHOLDER">
+    <img src="https://img.shields.io/badge/📄_Read_the_Paper-arXiv-orange" alt="Read the Paper">
+  </a>
+  <a href="https://notebooklm.google.com/notebook/603ffc75-00a3-4269-8a8a-e10d4d9634ec/audio">
+    <img src="https://img.shields.io/badge/🎧_Listen_to_Paper_Summary-NotebookLM-blue" alt="Listen to Paper Summary">
+  </a>
+</div>
 
 ## Overview
 
@@ -165,7 +171,7 @@ This project is licensed under the MIT License - see the [LICENSE](LICENSE) file
 
 - **Facebook Research**: For the [Deal or No Deal Negotiator dataset](https://huggingface.co/datasets/mikelewis0/deal_or_no_dialog), a substantial collection of human-human negotiations on a multi-issue bargaining task, enabling the development of end-to-end models for negotiation. 
 
-- **Meta AI**: For developing the LLaMA model family, which served as the foundation for our large language model experiments.
+- **Meta AI**: For developing the [LLaMA model family](https://www.llama.com/), which served as the foundation for our large language model experiments.
 
 - **He et al. (2018)**: For their foundational work, [*"Decoupling Strategy and Generation in Negotiation Dialogues"*](https://arxiv.org/abs/1808.09637), introducing a modular approach to negotiation by leveraging coarse dialogue acts for strategy control, inspiring our efforts to unify strategy and generation in negotiation through LLMs.
 
