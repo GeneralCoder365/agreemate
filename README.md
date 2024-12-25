@@ -22,9 +22,9 @@ AgreeMate presents a comprehensive finetuning/testing framework and negotiation 
 - Personality-driven behavior modeling
 - Attention mechanism analysis
 
-For more details, read our full [paper on arXiv](https://arxiv.org/abs/PLACEHOLDER) or refer to the copy included in this repository (`paper.pdf`).
+For more details, read our full paper on [arXiv](https://arxiv.org/abs/PLACEHOLDER) or refer to the copy included in this repository (`paper.pdf`).
 
-You can also listen to a summary of our research paper on [NotebookLM](https://notebooklm.google.com/notebook/603ffc75-00a3-4269-8a8a-e10d4d9634ec/audio)
+You can also listen to a summary of our research paper on [NotebookLM](https://notebooklm.google.com/notebook/603ffc75-00a3-4269-8a8a-e10d4d9634ec/audio).
 
 ### Related Work
 
