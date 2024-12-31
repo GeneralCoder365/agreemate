@@ -154,10 +154,14 @@ fair_seller = Negotiator(
 ### Citation
 
 ```bibtex
-@article{chatterjee2024agreemate,
-  title={AgreeMate: Teaching LLMs to Haggle},
-  author={Chatterjee, Ainesh and Miller, Samuel and Parepally, Nithin},
-  year={2024}
+@misc{chatterjee2024agreemateteachingllmshaggle,
+      title={AgreeMate: Teaching LLMs to Haggle}, 
+      author={Ainesh Chatterjee and Samuel Miller and Nithin Parepally},
+      year={2024},
+      eprint={2412.18690},
+      archivePrefix={arXiv},
+      primaryClass={cs.CL},
+      url={https://arxiv.org/abs/2412.18690}, 
 }
 ```
 
